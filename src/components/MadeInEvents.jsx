@@ -53,7 +53,7 @@ export default function MadeInEvents() {
                 className="object-cover"
               />
             </div>
-          ))}
+          ))}   
         </div>
 
         {/* Navigation Arrows */}

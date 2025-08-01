@@ -93,8 +93,8 @@ const VenueShowcase = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-4 min-h-screen">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gray-50 py-16 px-4 min-h-screen ">
+      <div className=" py-28 px-6 md:px-12 lg:px-20">
         {/* Header Section */}
         <div className="mb-12">
           <p className="text-md text-black font-medium mb-2 tracking-wider uppercase">
