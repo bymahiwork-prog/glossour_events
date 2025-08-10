@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   About
@@ -130,7 +130,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/rules-regulations"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Privacy Policy
@@ -138,7 +138,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/t&c"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Terms & Conditions

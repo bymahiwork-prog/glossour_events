@@ -26,11 +26,9 @@ const Navbar = ({ variant = 'transparent' }) => {
 
   // Sample browse spaces options
   const browseOptions = [
-    { name: 'Conference Halls', href: '/spaces/conference' },
-    { name: 'Wedding Venues', href: '/spaces/wedding' },
-    { name: 'Corporate Spaces', href: '/spaces/corporate' },
-    { name: 'Party Venues', href: '/spaces/party' },
-    { name: 'Outdoor Spaces', href: '/spaces/outdoor' }
+    { name: 'Market Place', href: '/market-place' },
+    { name: 'Party Venues', href: '/venue' },
+    // { name: 'Outdoor Spaces', href: '/spaces/outdoor' }
   ];
 
   return (
