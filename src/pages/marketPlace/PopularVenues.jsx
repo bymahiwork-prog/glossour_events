@@ -1,7 +1,7 @@
+import { MapPin, Star, Users } from "lucide-react";
 import React from "react";
-import { Star, MapPin, Users } from "lucide-react";
 
-const Farms = () => {
+const PopularVenues = () => {
   const venues = [
     {
       id: 1,
@@ -40,41 +40,9 @@ const Farms = () => {
         "Farm features a spacious venue capable of accommodating approximately 20 to 500 guests, providing an excellent setting for your wedding...",
     },
   ];
-
-  const reviews = [
-    {
-      id: 1,
-      author: "J.B.",
-      venue:
-        "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
-      text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 2,
-      author: "J.B.",
-      venue:
-        "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
-      text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 3,
-      author: "J.B.",
-      venue:
-        "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
-      text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Popular Wedding Reception Venues Section */}
+    <div className="w-full bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">
             Popular wedding reception venues
@@ -139,44 +107,9 @@ const Farms = () => {
             ))}
           </div>
         </div>
-
-        {/* Reviews Section */}
-        <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            Reviews for wedding reception venues
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reviews.map((review) => (
-              <div key={review.id} className="bg-white p-4">
-                <div className="flex items-start mb-3">
-                  <img
-                    src={review.avatar}
-                    alt={review.author}
-                    className="w-8 h-8  mr-3 flex-shrink-0 object-cover"
-                  />
-                  <div className="flex-1 min-w-0">
-                    <h4 className="text-sm font-medium text-gray-900 mb-1">
-                      {review.author}
-                    </h4>
-                    <p className="text-sm text-gray-600 leading-tight mb-2">
-                      {review.venue}
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-gray-700 mb-2">{review.text}</p>
-
-                <button className="text-blue-600 text-sm font-medium hover:underline">
-                  Read more
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Farms;
+export default PopularVenues;

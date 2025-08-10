@@ -3,7 +3,7 @@ import React from 'react';
 const FeaturedSection = () => {
   const placeholderImages = [
     'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1486312338219-ce68e2c6b0d4?w=300&h=200&fit=crop',
+    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
     'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=200&fit=crop',
     'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop'
   ];

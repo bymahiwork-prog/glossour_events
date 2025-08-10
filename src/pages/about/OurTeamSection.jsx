@@ -37,8 +37,14 @@ export default function OurTeamSection() {
             </p>
           </div>
 
-          {/* Right Image Placeholder */}
-          <div className="bg-[#D9D9D9] h-48 sm:h-64 md:h-80 lg:h-96 order-1 lg:order-2 rounded-lg"></div>
+          {/* Right Image */}
+          <div className="order-1 lg:order-2">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
+              alt="Our team collaborating" 
+              className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

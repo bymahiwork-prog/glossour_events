@@ -2,7 +2,7 @@ import React from "react";
 
 const WeddingVenue = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full min-h-screen lg:h-screen bg-white">
+    <div className="flex flex-col lg:flex-row w-full min-h-screen  lg:h-screen bg-white mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 py-8">
       {/* Left Section */}
       <div className="lg:w-[60%] flex items-center justify-center px-6 py-12 lg:py-0 lg:ml-15">
         <div className="">

@@ -1,9 +1,9 @@
-import Locations from "@/components/Locations";
-import EffortLessEvent from "@/components/EffortLessEvent";
-import BookSpace from "@/components/BookSpace";
-import MadeInEvents from "@/components/MadeInEvents";
-import VenueShowcase from "@/components/VenueShowcase";
-import Footer from "@/components/Footer";
+import BookSpace from "@/pages/home/BookSpace";
+import EffortLessEvent from "@/pages/home/EffortLessEvent";
+import Locations from "@/pages/home/Locations";
+import MadeInEvents from "@/pages/home/MadeInEvents";
+import VenueShowcase from "@/pages/home/VenueShowcase";
+
 
 export default function Home() {
   return (
@@ -13,7 +13,6 @@ export default function Home() {
       <MadeInEvents />
       <Locations />
       <VenueShowcase />
-      <Footer />
     </>
   );
 }

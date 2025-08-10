@@ -4,7 +4,7 @@ export default function TermsAndCond() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <div className="relative h-[60vh] pt-20 sm:pt-24 md:pt-28 flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
           src="/home-page.png"
@@ -14,11 +14,11 @@ export default function TermsAndCond() {
 
         {/* Content */}
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">
             Terms & Condition
           </h1>
 
-          <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             Welcome to Effortless Events. By booking our venue or services, you
             agree to comply with the following terms and conditions
           </p>
@@ -26,9 +26,9 @@ export default function TermsAndCond() {
       </div>
 
       {/* Terms Content Section */}
-      <div className="bg-white py-12 px-4">
+      <div className="bg-white py-8 sm:py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <ol className="list-decimal list-inside space-y-6 text-gray-800">
+          <ol className="list-decimal list-inside space-y-4 sm:space-y-6 text-gray-800 text-sm sm:text-base">
             <li>
               <strong>Booking Confirmation -</strong> All bookings are confirmed
               only after receiving the specified advance payment. No verbal or
@@ -86,3 +86,4 @@ export default function TermsAndCond() {
     </div>
   );
 }
+
