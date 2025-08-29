@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const cities = [
   { name: "Chandigarh", code: "CHN" },
@@ -40,9 +41,12 @@ export default function Locations() {
           </div>
 
           {/* Button */}
-          <button className="mt-12 px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+          <Link
+            href={"/search"}
+            className="mt-12 px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+          >
             View all cities
-          </button>
+          </Link>
         </div>
 
         {/* Right Section - Image */}

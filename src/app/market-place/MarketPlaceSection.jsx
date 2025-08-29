@@ -1,17 +1,17 @@
-import FarmBookingPage from "@/pages/marketPlace/FarmBooking";
-import MarketGallery from "@/pages/marketPlace/MarketGallery";
-import MarketLocation from "@/pages/marketPlace/MarketLocation";
-import PopularVenues from "@/pages/marketPlace/PopularVenues";
+import FarmBookingPage from "@/utils/marketPlace/FarmBooking";
+import MarketGallery from "@/utils/marketPlace/MarketGallery";
+import MarketLocation from "@/utils/marketPlace/MarketLocation";
+import PopularVenues from "@/utils/marketPlace/PopularVenues";
 import React from "react";
 
 export default function MarketPlaceSection() {
   return (
     <div>
-      <MarketGallery />
+      {/* <MarketGallery />
 
       <FarmBookingPage />
-      <PopularVenues />
       <MarketLocation />
+      <PopularVenues /> */}
     </div>
   );
 }

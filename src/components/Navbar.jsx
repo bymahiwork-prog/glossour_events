@@ -1,15 +1,14 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const Navbar = ({ variant = 'transparent' }) => {
+const Navbar = ({ variant = "transparent" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBrowseDropdownOpen, setIsBrowseDropdownOpen] = useState(false);
 
   const getNavbarClasses = () => {
-    const baseClasses = "absolute top-0 left-0 w-full flex justify-between items-center px-4 sm:px-6 md:px-10 py-4 md:py-6 z-20 transition-all duration-300";
-    
-    return variant === 'black' 
-      ? `${baseClasses} bg-black` 
-      : baseClasses;
+    const baseClasses =
+      "absolute top-0 left-0 w-full flex justify-between items-center px-4 sm:px-6 md:px-10 py-4 md:py-6 z-50 transition-all duration-300";
+
+    return variant === "black" ? `${baseClasses} bg-black` : baseClasses;
   };
 
   const toggleMobileMenu = () => {
@@ -26,9 +25,12 @@ const Navbar = ({ variant = 'transparent' }) => {
 
   // Sample browse spaces options
   const browseOptions = [
-    { name: 'Market Place', href: '/market-place' },
-    { name: 'Party Venues', href: '/venue' },
-    // { name: 'Outdoor Spaces', href: '/spaces/outdoor' }
+    { name: "Noida", href: "/search?search=Noida" },
+    { name: "New Delhi", href: "/search?search=New Delhi" },
+    { name: "Gurugram", href: "/search?search=Gurugram" },
+    { name: "Chhatarpur", href: "/search?search=Chhatarpur" },
+    { name: "Rajasthan", href: "/search?search=Rajasthan" },
+    { name: "Faridabad", href: "/search?search=Faridabad" },
   ];
 
   return (
@@ -37,9 +39,7 @@ const Navbar = ({ variant = 'transparent' }) => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="/" className="block">
-            <h1 className="text-white text-xl sm:text-2xl md:text-3xl font-bold cursor-pointer">
-              Effortless Events.
-            </h1>
+            <img src="/logo.png" alt="" className="h-16" />
           </a>
         </div>
 
@@ -53,7 +53,9 @@ const Navbar = ({ variant = 'transparent' }) => {
             >
               <span>Browse Spaces</span>
               <svg
-                className={`w-4 h-4 transform transition-transform ${isBrowseDropdownOpen ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 transform transition-transform ${
+                  isBrowseDropdownOpen ? "rotate-180" : ""
+                }`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -66,7 +68,7 @@ const Navbar = ({ variant = 'transparent' }) => {
                 />
               </svg>
             </button>
-            
+
             {/* Dropdown Menu */}
             {isBrowseDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-30">
@@ -84,10 +86,16 @@ const Navbar = ({ variant = 'transparent' }) => {
             )}
           </div>
 
-          <a href="/services" className="text-white hover:text-gray-200 transition-colors">
+          <a
+            href="/services"
+            className="text-white hover:text-gray-200 transition-colors"
+          >
             Services
           </a>
-          <a href="/about" className="text-white hover:text-gray-200 transition-colors">
+          <a
+            href="/about"
+            className="text-white hover:text-gray-200 transition-colors"
+          >
             About
           </a>
           <a href="/contact">
@@ -138,8 +146,8 @@ const Navbar = ({ variant = 'transparent' }) => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-40 transform transition-transform duration-300 ease-in-out lg:hidden ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col h-full">
@@ -151,8 +159,18 @@ const Navbar = ({ variant = 'transparent' }) => {
               className="text-gray-600 hover:text-gray-800"
               aria-label="Close mobile menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -168,15 +186,22 @@ const Navbar = ({ variant = 'transparent' }) => {
                 >
                   <span className="text-lg font-medium">Browse Spaces</span>
                   <svg
-                    className={`w-5 h-5 transform transition-transform ${isBrowseDropdownOpen ? 'rotate-180' : ''}`}
+                    className={`w-5 h-5 transform transition-transform ${
+                      isBrowseDropdownOpen ? "rotate-180" : ""
+                    }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
-                
+
                 {isBrowseDropdownOpen && (
                   <div className="mt-3 ml-4 space-y-3">
                     {browseOptions.map((option, index) => (

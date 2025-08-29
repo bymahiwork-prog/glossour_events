@@ -1,12 +1,12 @@
-import ContactBannerPage from '@/pages/contact/ContactBannerPage'
-import ContactForm from '@/pages/contact/ContactForm'
-import React from 'react'
+import ContactBannerPage from "@/utils/contact/ContactBannerPage";
+import ContactForm from "@/utils/contact/ContactForm";
+import React from "react";
 
 export default function Contact() {
   return (
     <div>
-        <ContactBannerPage />
-        <ContactForm />
+      <ContactBannerPage />
+      <ContactForm />
     </div>
-  )
+  );
 }

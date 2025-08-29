@@ -1,18 +1,21 @@
 import React from "react";
-import { Twitter, Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
+import {
+  Twitter,
+  Facebook,
+  Linkedin,
+  Instagram,
+  Youtube,
+  PhoneCallIcon,
+} from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-6 px-4 sm:px-6">
       <div className="py-2 px-4 sm:px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {/* Logo Section */}
           <div className="col-span-2 sm:col-span-3 md:col-span-1">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-              Effortless
-              <br />
-              Events
-            </h1>
+            <img src="/logo.png" alt="" className="h-16" />
           </div>
 
           {/* Company Section */}
@@ -31,7 +34,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Team
@@ -39,43 +42,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Services
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Explore Section */}
-          <div className="col-span-1">
-            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-gray-300">
-              Explore
-            </h3>
-            <ul className="space-y-2 sm:space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
-                >
-                  Activities
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
-                >
-                  Locations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
-                >
-                  Resources
                 </a>
               </li>
             </ul>
@@ -89,26 +59,26 @@ const Footer = () => {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a
-                  href="#"
-                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
-                >
-                  Chandigarh
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
-                >
-                  Bhopal
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="/search"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Noida
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/search"
+                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
+                >
+                  Gurugram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/search"
+                  className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
+                >
+                  New Delhi
                 </a>
               </li>
             </ul>
@@ -122,7 +92,7 @@ const Footer = () => {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors"
                 >
                   Contact Us
@@ -160,34 +130,25 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:mr-20">
             <a
-              href="#"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Twitter size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Facebook size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/company/effortless-events-pvt-ltd/?originalSubdomain=in"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Linkedin size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/effortlesseventspvt.ltd/?hl=en"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Instagram size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
             </a>
             <a
-              href="#"
+              href="https://l.instagram.com/?u=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbAk5phDDmFSyVKnaw2Y&e=AT0FoUPCbOYuV8ZS2y4kRcl-d8-6GLpz70ugSkYK6AS46yp1vYLNZwU4HN7u_rys7EEalICpBdBvwL8zjSIFzjYmyDCoJBsfsY42Q0ePFQtsOy-c"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Youtube size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7" />
+              <PhoneCallIcon
+                size={20}
+                className="sm:w-6 sm:h-6 md:w-7 md:h-7"
+              />
             </a>
           </div>
         </div>
