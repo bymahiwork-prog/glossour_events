@@ -12,14 +12,12 @@ import {
   Youtube,
   Send, // Added for the button icon
 } from "lucide-react";
-
+import { toast } from "react-hot-toast";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
-    subject: "General Inquiry",
     message: "",
   });
 
@@ -31,20 +29,62 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Your form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Message sent successfully!");
-    // Reset form after submission
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      subject: "General Inquiry",
-      message: "",
-    });
+
+    const loadingToast = toast.loading("Submitting your inquiry...");
+
+    try {
+      // First, send the lead data to your API
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        // If API returns an error, show error toast and stop
+        throw new Error("Failed to save lead.");
+      }
+
+      const result = await response.json();
+      console.log("API Response:", result.message);
+
+      // If successful, show success toast
+      toast.success("Inquiry sent! Redirecting to WhatsApp...", {
+        id: loadingToast,
+      });
+
+      // Then, redirect to WhatsApp
+      const phoneNumber = "917838008069";
+      const message = `
+*New Inquiry*
+*Name:* ${formData.firstName} ${formData.lastName}
+*Email:* ${formData.email}
+*Message:*
+${formData.message}
+      `.trim();
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+      // Give user a moment to see the success message before redirecting
+      setTimeout(() => {
+        window.open(whatsappUrl, "_blank");
+      }, 1500);
+
+      // Reset form state
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("Could not send inquiry. Please try again.", {
+        id: loadingToast,
+      });
+    }
   };
 
   const socialLinks = [
@@ -56,6 +96,7 @@ const ContactForm = () => {
   ];
   const mapSrc = (encodedAddress) =>
     `https://maps.google.com/maps?q=${encodedAddress}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+
   return (
     <div className="antialiased bg-gray-200">
       <div className="flex w-full min-h-screen justify-center items-center py-16 md:py-20">

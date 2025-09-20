@@ -68,7 +68,7 @@ export async function GET(req) {
 
     const products = rows.map((row) => ({
       id: row.id,
-      image: `https://effortlessevents.in/admin/${row.image}`,
+      image: `https://admin.effortlessevents.in/admin/${row.image}`,
       product_category: row.product_category,
       rating: row.rating,
       category_name: row.category_name,
@@ -84,7 +84,7 @@ export async function GET(req) {
       images: row.images_list
         ? row.images_list
             .split(",")
-            .map((img) => `https://effortlessevents.in/admin/${img}`)
+            .map((img) => `https://admin.effortlessevents.in/admin/${img}`)
         : [],
     }));
 

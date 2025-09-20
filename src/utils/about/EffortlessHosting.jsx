@@ -77,7 +77,8 @@ export default function EffortlessHosting() {
                 <div key={member.id} className="text-left">
                   <img
                     src={
-                      "https://effortlessevents.in/admin/" + member.image ||
+                      "https://admin.effortlessevents.in/admin/" +
+                        member.image ||
                       "https://placehold.co/400x320/e2e8f0/4a5568?text=No+Image"
                     }
                     alt={member.team_name}

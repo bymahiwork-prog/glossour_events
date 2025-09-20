@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import NavbarWrapper from "@/components/NavbarWrapper";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
 // Improved root metadata for Effortless Events
 export const metadata = {
   // This URL is used for creating absolute paths for social media images
-  metadataBase: new URL("https://effortlessevents.in"), // 👈 Replace with your actual domain
+  metadataBase: new URL("https://admin.effortlessevents.in"), // 👈 Replace with your actual domain
 
   title: {
     template: "%s | Effortless Events", // %s will be replaced by the page's title
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Toaster />
         <FloatingWhatsAppButton />
         <NavbarWrapper />
         <main>{children}</main>

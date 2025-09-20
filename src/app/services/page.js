@@ -192,7 +192,7 @@ const servicesData = [
   {
     slug: "corporate-events",
     title: "Corporate Events",
-    image: "images/services/6_new.jpg", // Path updated. https://effortlessevents.in/images/services/6_new.jpg
+    image: "images/services/6_new.jpg", // Path updated. https://admin.effortlessevents.in/images/services/6_new.jpg
     description: [
       "Elevate your corporate events with Effortless Events' exceptional venues - where professionalism and sophistication meet to create a lasting impression.",
       "Our corporate venues are thoughtfully designed to cater to a wide range of business needs, from conferences and seminars to product launches and team-building events. Equipped with modern amenities and state-of-the-art facilities, our spaces provide the ideal setting for productive and successful gatherings.",

@@ -40,7 +40,7 @@ export async function GET(req, { params }) {
     const row = rows[0];
     const product = {
       id: row.id,
-      image: `https://effortlessevents.in/admin/${row.image}`,
+      image: `https://admin.effortlessevents.in/admin/${row.image}`,
       product_category: row.product_category,
       category_name: row.category_name,
       product_name: row.product_name,
@@ -55,7 +55,7 @@ export async function GET(req, { params }) {
       images: row.images_list
         ? row.images_list
             .split(",")
-            .map((img) => `https://effortlessevents.in/admin/${img}`)
+            .map((img) => `https://admin.effortlessevents.in/admin/${img}`)
         : [],
     };
 

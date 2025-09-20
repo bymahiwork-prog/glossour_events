@@ -164,7 +164,7 @@ const VenueShowcase = () => {
             <img
               src={
                 venue.main_image
-                  ? `https://effortlessevents.in/admin/${venue.main_image}`
+                  ? `https://admin.effortlessevents.in/admin/${venue.main_image}`
                   : "https://via.placeholder.com/400x300?text=No+Image"
               }
               alt={venue.product_name}
