@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProfessionalSearchBar from "@/components/SearchBar";
+import Image from "next/image"; 
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -34,7 +35,6 @@ const EffortlessEvent = ({ sliderData }) => {
     );
   };
 
-  // Auto-play the slider
   useEffect(() => {
     if (sliderData.length > 0) {
       const timer = setTimeout(goToNext, 5000);
@@ -43,35 +43,41 @@ const EffortlessEvent = ({ sliderData }) => {
   }, [currentIndex, sliderData]);
 
   if (sliderData.length === 0) {
-    return null; // Prevent rendering until data is loaded
+    return null;
   }
 
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image using Next/Image */}
       <AnimatePresence>
+    
         <motion.div
           key={currentIndex}
-          className="absolute inset-0 w-full h-[80vh]"
+          className="absolute inset-0 w-full h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.0, ease: "easeInOut" }}
-          style={{
-            backgroundImage: `url('${sliderData[currentIndex].imageSrc}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
+        >
+          <Image
+            src={sliderData[currentIndex].imageSrc}
+            alt={sliderData[currentIndex].altText} // This is crucial for SEO
+            fill
+            style={{ objectFit: "cover" }}
+            priority={currentIndex === 0} // Load the first image faster
+          />
+        </motion.div>
       </AnimatePresence>
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />
 
+      {/* Text Content and Search Bar */}
       <div className="relative z-20 flex flex-col justify-center h-full text-white p-8">
         <ProfessionalSearchBar />
         <div className="flex-grow flex flex-col justify-end pb-12">
           <motion.div
-            key={currentIndex}
+            key={currentIndex} // Re-trigger animation on change
             variants={containerVariant}
             initial="hidden"
             animate="visible"
@@ -106,6 +112,7 @@ const EffortlessEvent = ({ sliderData }) => {
         </div>
       </div>
 
+      {/* Navigation Buttons */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex gap-4">
         <button
           onClick={goToPrevious}

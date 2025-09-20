@@ -6,6 +6,7 @@ import NavbarWrapper from "@/components/NavbarWrapper";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,28 +18,62 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Improved root metadata
-// Improved root metadata for Effortless Events
+// NEW & IMPROVED METADATA BASED ON YOUR KEYWORDS
 export const metadata = {
-  // This URL is used for creating absolute paths for social media images
-  metadataBase: new URL("https://admin.effortlessevents.in"), // 👈 Replace with your actual domain
+  metadataBase: new URL("https://effortlessevents.in"),
 
   title: {
-    template: "%s | Effortless Events", // %s will be replaced by the page's title
-    default: "Effortless Events | Your Premier Event Partner", // Fallback title
+    template: "%s | Effortless Events",
+    default: "Event, Wedding & Party Planners in Delhi NCR | Effortless Events",
   },
   description:
-    "Discover and book unique venues for your events with Effortless Events. We offer comprehensive services to make your special occasion unforgettable.",
+    "Effortless Events offers complete event planning in Delhi NCR. We provide decoration, food catering, and bartending services for weddings, parties, and corporate events.",
+  keywords: [
+    "events",
+    "decoration services",
+    "food catering",
+    "bartending services",
+    "parties",
+    "wedding",
+    "corporate events",
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Faridabad",
+  ],
 
-  // Open Graph data for social media sharing
+  //  UPDATED: Open Graph data for social media sharing
   openGraph: {
-    title: "Effortless Events | Your Premier Event Partner",
-    description: "Find the perfect venue for your next event.",
-    images: "/favicon.png", // A default image in your /public folder
+    title: "Event, Wedding & Party Planners in Delhi NCR | Effortless Events",
+    description:
+      "Your one-stop solution for event planning, decoration, and catering in Delhi NCR.",
+    images: "/favicon.png",
+  },
+
+  alternates: {
+    canonical: "/",
   },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Effortless Events",
+    url: "https://effortlessevents.in",
+    logo: "https://effortlessevents.in/favicon.png",
+    description:
+      "Find and book unique farm houses and event venues in Noida and New Delhi.",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Your Street Address",
+      addressLocality: "Noida",
+      postalCode: "201301",
+      addressRegion: "UP",
+      addressCountry: "IN",
+    },
+    telephone: "+91-9999999999",
+  };
   return (
     <html lang="en">
       <body
@@ -49,6 +84,11 @@ export default function RootLayout({ children }) {
         <NavbarWrapper />
         <main>{children}</main>
         <Footer />
+        <GoogleAnalytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

@@ -20,6 +20,9 @@ const fetchBanners = async () => {
         : "/placeholder.jpg", // Fallback image
       subText: item?.product_name || "",
       location: item?.product_location || "",
+      altText: `View of ${item?.product_name || "event venue"} in ${
+        item?.product_location || "beautiful location"
+      }`,
     }));
   } catch (error) {
     console.error("Error fetching banners:", error);
@@ -33,6 +36,7 @@ export default async function Home() {
   return (
     <>
       <EffortLessEvent sliderData={data} />
+
       <BookSpace />
       <MadeInEvents />
       <Locations />

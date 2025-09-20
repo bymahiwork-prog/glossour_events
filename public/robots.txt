@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.effortlessevents.in/
+
+# Sitemaps
+Sitemap: https://www.effortlessevents.in/sitemap.xml
