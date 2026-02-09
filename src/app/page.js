@@ -57,7 +57,7 @@ const MapReviewEmbed = () => {
         </h2>
         <div className="aspect-w-16 aspect-h-9">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.52581674093!2d76.76358307691756!3d28.64368474706565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1c17dafc533%3A0xfcfc899d0e7a065a!2sEffortless%20Events%20Pvt.ltd!5e0!3m2!1sen!2sin!4v1755550682021!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.676728394931!2d77.2073501!3d28.532994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce21dba0fa36f%3A0x4376aad0a94fc15d!2sL57B%2C%20Captain%20Hitesh%20Mehta%20Marg%2C%20Block%20L%2C%20Malviya%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1736220000000"
             width="100%"
             height="450"
             style={{ border: 0 }}

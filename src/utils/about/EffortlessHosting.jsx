@@ -1,41 +1,35 @@
-"use client"; // Add this directive for Next.js 13+ App Router
+"use client";
 
 import { useState, useEffect } from "react";
 
 export default function EffortlessHosting() {
-  // State to store the team members fetched from the API
   const [team, setTeam] = useState([]);
-  // State to handle loading status
   const [loading, setLoading] = useState(true);
-  // State to handle any potential errors during the fetch
-  const [error, setError] = useState(null > null);
+  // Fixed: Removed the logical comparison typo (null > null)
+  const [error, setError] = useState(null);
 
-  // useEffect hook to fetch data when the component mounts
   useEffect(() => {
     const fetchTeamData = async () => {
       try {
-        // Fetch data from the local API endpoint
         const response = await fetch("/api/team");
         if (!response.ok) {
           throw new Error("Failed to fetch team data");
         }
         const data = await response.json();
-        setTeam(data); // Set the fetched data into state
+        setTeam(data);
       } catch (err) {
-        // It's better to catch the actual error message
         if (err instanceof Error) {
           setError(err.message);
         } else {
           setError("An unknown error occurred");
         }
       } finally {
-        // Set loading to false once the fetch is complete (either success or error)
         setLoading(false);
       }
     };
 
     fetchTeamData();
-  }, []); // The empty dependency array ensures this runs only once on mount
+  }, []);
 
   return (
     <div className="bg-gray-50 py-16 px-4">
@@ -66,29 +60,33 @@ export default function EffortlessHosting() {
             MEET OUR TEAM
           </h2>
 
-          {/* Conditional Rendering based on loading and error states */}
           {loading && <p className="text-gray-600">Loading team members...</p>}
           {error && <p className="text-red-500">Error: {error}</p>}
 
           {!loading && !error && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Map over the team array and render each member dynamically */}
+            // UPDATE 1: Changed grid to start at 'sm' (small tablets/large phones)
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               {team.map((member) => (
-                <div key={member.id} className="text-left">
-                  <img
-                    src={
-                      "https://admin.effortlessevents.in/admin/" +
-                        member.image ||
-                      "https://placehold.co/400x320/e2e8f0/4a5568?text=No+Image"
-                    }
-                    alt={member.team_name}
-                    className="w-full h-80 mb-6 object-cover rounded-lg shadow-md"
-                    onError={(e) => {
-                      // Fallback in case the image link is broken
-                      e.target.src =
-                        "https://placehold.co/400x320/e2e8f0/4a5568?text=Image+Error";
-                    }}
-                  />
+                <div key={member.id} className="text-left flex flex-col">
+                  {/* UPDATE 2: Image Container & Aspect Ratio */}
+                  {/* Using 'aspect-[3/4]' ensures the image acts like a portrait photo regardless of screen width */}
+                  <div className="relative w-full aspect-[3/4] mb-6 overflow-hidden rounded-lg shadow-md">
+                    <img
+                      src={
+                        "https://admin.effortlessevents.in/admin/" +
+                          member.image ||
+                        "https://placehold.co/400x320/e2e8f0/4a5568?text=No+Image"
+                      }
+                      alt={member.team_name}
+                      // 'h-full' and 'w-full' combined with the parent's aspect-ratio class fixes the layout
+                      className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300 ease-in-out"
+                      onError={(e) => {
+                        e.target.src =
+                          "https://placehold.co/400x320/e2e8f0/4a5568?text=Image+Error";
+                      }}
+                    />
+                  </div>
+
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {member.team_name}
                   </h3>
