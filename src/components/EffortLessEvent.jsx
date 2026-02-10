@@ -13,7 +13,7 @@ const EffortLessEvent = () => {
 
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-6 z-20">
-        <h1 className="text-white text-3xl font-bold">Effortless Events.</h1>
+        <h1 className="text-white text-3xl font-bold">"Event Planner in Delhi NCR for Corporate, Birthday & Private Events"</h1>
 
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-1 text-white hover:text-gray-200 cursor-pointer">
