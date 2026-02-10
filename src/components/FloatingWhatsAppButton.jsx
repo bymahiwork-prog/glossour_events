@@ -21,7 +21,7 @@ const FloatingWhatsAppButton = () => {
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
     >
-      <img src="/WhatsApp.svg" alt="" />
+      <img src="/WhatsApp.svg" alt="whatsappicon" />
     </a>
   );
 };

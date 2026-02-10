@@ -39,7 +39,7 @@ const Navbar = ({ variant = "transparent" }) => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="/" className="block">
-            <img src="/logo.png" alt="" className="h-16" />
+            <img src="/logo.png" alt="Effortless Logo" className="h-16" />
           </a>
         </div>
 

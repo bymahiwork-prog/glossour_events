@@ -13,7 +13,9 @@ const EffortLessEvent = () => {
 
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex justify-between items-center px-10 py-6 z-20">
-        <h1 className="text-white text-3xl font-bold">"Event Planner in Delhi NCR for Corporate, Birthday & Private Events"</h1>
+        <h1 className="text-white text-3xl font-bold">
+          "Event Planner in Delhi NCR for Corporate, Birthday & Private Events"
+        </h1>
 
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-1 text-white hover:text-gray-200 cursor-pointer">
@@ -81,7 +83,7 @@ const EffortLessEvent = () => {
           </div>
 
           <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 flex items-center gap-2 whitespace-nowrap font-semibold text-lg transition-colors">
-            Search <img className="w-6 h-4" src="/arrow.png" alt="" />
+            Search <img className="w-6 h-4" src="/arrow.png" alt="search" />
           </button>
         </div>
       </div>
