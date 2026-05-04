@@ -22,7 +22,7 @@ const activitiesData = [
       "Professional photography spaces with perfect lighting and versatile backdrops to capture your vision and bring your creative ideas to life.",
     imageSrc:
       "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2148&q=80",
-    location: "Mumbai, Maharashtra",
+    location: "Delhi NCR",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const activitiesData = [
       "Celebrate another year of joy in our vibrant party spaces, designed to make every birthday unforgettable with fun and festive atmospheres.",
     imageSrc:
       "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    location: "Bhopal, Madhya Pradesh",
+    location: "Delhi NCR",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const activitiesData = [
       "Professional meeting spaces equipped with modern technology and sophisticated ambiance, ideal for presentations, conferences, and team building.",
     imageSrc:
       "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    location: "Bengaluru, Karnataka",
+    location: "Pan India",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const activitiesData = [
       "Inspiring creative spaces that foster learning and collaboration, perfect for art classes, skill development, and hands-on educational experiences.",
     imageSrc:
       "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2136&q=80",
-    location: "Jaipur, Rajasthan",
+    location: "Noida, Delhi",
   },
 ];
 
