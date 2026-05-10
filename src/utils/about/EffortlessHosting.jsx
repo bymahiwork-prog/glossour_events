@@ -36,9 +36,9 @@ export default function EffortlessHosting() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8">
-            "Experience the Art of Effortless Hosting"
-          </h1>
+         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8">
+  Experience the Art of Effortless Hosting
+</h2>
 
           <div className="max-w-4xl mx-auto space-y-4 text-gray-600 text-md leading-relaxed">
             <p>
