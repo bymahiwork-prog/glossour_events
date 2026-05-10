@@ -38,7 +38,7 @@ export const metadata = {
   openGraph: {
     title: "Delhi NCR's Premier Event Planning & Venue Company | Effortless Events",
     description: "Luxury wedding planning, corporate events, birthday celebrations, and 50+ exclusive venues across Delhi NCR.",
-    images: "/favicon.png",
+    images: "/og-image.png",
   },
   alternates: {
     canonical: "/",
