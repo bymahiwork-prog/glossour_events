@@ -149,11 +149,11 @@ const Locations = () => {
             ))}
           </motion.div>
           <Link
-            href={"/search"}
-            className=" bg-white rounded p-3 text-black font-bold mt-8 cursor-pointer hover:scale-105 transition-all"
-          >
-            View Locations
-          </Link>
+  href="/services/wedding-venues"
+  className="bg-white rounded p-3 text-black font-bold mt-8 cursor-pointer hover:scale-105 transition-all"
+>
+  View Locations
+</Link>
         </div>
 
         {/* Right Section */}
