@@ -21,26 +21,23 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL("https://effortlessevents.in"),
   title: {
-    default: "Event Planner in Delhi NCR | Corporate, Birthday & Wedding Events", // [cite: 4]
+    default: "Delhi NCR's Premier Event Planning & Venue Company", // [cite: 4]
     template: "%s | Effortless Events",
   },
-  description: "Effortless Events offers complete event planning in Delhi NCR including corporate, birthday, and wedding services.", // [cite: 5]
+  description: "Luxury wedding planning, corporate events, birthday celebrations, and 50+ exclusive venues across Delhi, Gurugram, Noida, Faridabad and Ghaziabad.", // [cite: 5]
   keywords: [
-    "events",
-    "decoration services",
-    "food catering",
-    "bartending services",
-    "parties",
-    "wedding",
-    "corporate events",
-    "Delhi",
-    "Noida",
-    "Gurugram",
-    "Faridabad",
+  "event planner Delhi NCR",
+  "wedding planner Delhi",
+  "corporate event planner Gurugram",
+  "birthday party venues Noida",
+  "event management company Delhi",
+  "wedding venues Delhi NCR",
+  "event decoration services Delhi",
+  "catering services Delhi NCR",
   ],
   openGraph: {
-    title: "Event, Wedding & Party Planners in Delhi NCR | Effortless Events",
-    description: "Your one-stop solution for event planning, decoration, and catering in Delhi NCR.",
+    title: "Delhi NCR's Premier Event Planning & Venue Company | Effortless Events",
+    description: "Luxury wedding planning, corporate events, birthday celebrations, and 50+ exclusive venues across Delhi NCR.",
     images: "/favicon.png",
   },
   alternates: {
@@ -52,12 +49,12 @@ export default function RootLayout({ children }) {
   // Technical SEO Fix: LocalBusiness Schema Implementation [cite: 25]
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "EventVenue",
     "name": "Effortless Events",
     "url": "https://effortlessevents.in",
     "logo": "https://effortlessevents.in/logo.png",
     "image": "https://effortlessevents.in/home-page.png",
-    "description": "Top-rated event planner in Delhi NCR providing corporate, wedding, and birthday event services.", // [cite: 2, 4]
+    "description": "Luxury event planning and venue booking company serving Delhi, Gurugram, Noida, Faridabad, and Ghaziabad.", // [cite: 2, 4]
     "telephone": "+91-7838008069", 
     "address": {
       "@type": "PostalAddress",
