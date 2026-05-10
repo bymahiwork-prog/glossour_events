@@ -240,9 +240,18 @@ export async function generateMetadata({ params }) {
   }
 
   return {
+  title: `${service.title} | Effortless Events`,
+  description: service.description[0],
+  alternates: {
+    canonical: `/services/${service.slug}`,
+  },
+  openGraph: {
     title: `${service.title} | Effortless Events`,
-    description: service.description[0], // Use the first paragraph as the meta description
-  };
+    description: service.description[0],
+    url: `https://effortlessevents.in/services/${service.slug}`,
+    images: ["/og-image.jpg"],
+  },
+};
 }
 
 // The page itself is now an async Server Component
