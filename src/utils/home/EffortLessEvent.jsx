@@ -84,18 +84,20 @@ const EffortlessEvent = ({ sliderData }) => {
             className="flex flex-col-reverse lg:flex-row justify-between items-start lg:items-end gap-8"
           >
             <div>
-              <motion.h2
-                variants={textVariant}
-                className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight"
-              >
-                Find a space.
-              </motion.h2>
-              <motion.h2
-                variants={textVariant}
-                className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight"
-              >
-                Fulfill your vision.
-              </motion.h2>
+              <motion.h1
+  variants={textVariant}
+  className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-4xl"
+>
+  Delhi NCR's Premier Event Planning & Venue Company
+</motion.h1>
+
+<motion.p
+  variants={textVariant}
+  className="text-lg md:text-xl text-gray-200 mt-4 max-w-3xl leading-8"
+>
+  From intimate celebrations to grand corporate galas, we design
+  experiences that stay with you long after the last guest leaves.
+</motion.p>
             </div>
             <div className="text-left lg:text-right">
               <motion.p
