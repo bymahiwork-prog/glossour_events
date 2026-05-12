@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProfessionalSearchBar from "@/components/SearchBar";
-import Image from "next/image"; 
+import Image from "next/image";
 
 const textVariant = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
@@ -17,10 +18,14 @@ const textVariant = {
 
 const containerVariant = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.2 } },
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
 };
 
-const EffortlessEvent = ({ sliderData }) => {
+const EffortlessEvent = ({ sliderData = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -47,89 +52,127 @@ const EffortlessEvent = ({ sliderData }) => {
   }
 
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Background Image using Next/Image */}
-      <AnimatePresence>
-    
+    <section className="relative w-full h-screen min-h-[800px] overflow-hidden bg-black">
+      {/* Background Slider */}
+      <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.0, ease: "easeInOut" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
         >
           <Image
             src={sliderData[currentIndex].imageSrc}
-            alt={sliderData[currentIndex].altText} // This is crucial for SEO
+            alt={sliderData[currentIndex].altText}
             fill
-            style={{ objectFit: "cover" }}
-            priority={currentIndex === 0} // Load the first image faster
+            priority={currentIndex === 0}
+            className="object-cover"
           />
         </motion.div>
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/45" />
 
-      {/* Text Content and Search Bar */}
-      <div className="relative z-20 flex flex-col justify-center h-full text-white p-8">
-        <ProfessionalSearchBar />
-        <div className="flex-grow flex flex-col justify-end pb-12">
-          <motion.div
-            key={currentIndex} // Re-trigger animation on change
-            variants={containerVariant}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-col-reverse lg:flex-row justify-between items-start lg:items-end gap-8"
-          >
-            <div>
-              <motion.h1
-  variants={textVariant}
-  className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-4xl"
->
-  Delhi NCR's Premier Event Planning & Venue Company
-</motion.h1>
-
-<motion.p
-  variants={textVariant}
-  className="text-lg md:text-xl text-gray-200 mt-4 max-w-3xl leading-8"
->
-  From intimate celebrations to grand corporate galas, we design
-  experiences that stay with you long after the last guest leaves.
-</motion.p>
-            </div>
-            <div className="text-left lg:text-right">
-              <motion.p
-                variants={textVariant}
-                className="text-xl font-semibold"
-              >
-                {sliderData[currentIndex].subText}
-              </motion.p>
-              <motion.p variants={textVariant} className="text-md opacity-90">
-                {sliderData[currentIndex].location}
-              </motion.p>
-            </div>
-          </motion.div>
+      {/* Search Bar */}
+      <div className="absolute top-6 left-0 right-0 z-30 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <ProfessionalSearchBar />
         </div>
       </div>
 
-      {/* Navigation Buttons */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex gap-4">
-        <button
-          onClick={goToPrevious}
-          className="bg-black/50 text-white p-2 rounded-md hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white"
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          onClick={goToNext}
-          className="bg-black/50 text-white p-2 rounded-md hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white"
-        >
-          <ChevronRight size={24} />
-        </button>
+      {/* Hero Content */}
+      <div className="relative z-20 h-full flex items-end">
+        <div className="max-w-7xl mx-auto w-full px-6 md:px-8 pb-16 md:pb-20">
+          <motion.div
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+            className="max-w-5xl"
+          >
+            {/* Eyebrow */}
+            <motion.p
+              variants={textVariant}
+              className="text-white/80 uppercase tracking-[0.18em] text-xs md:text-sm font-medium mb-6"
+            >
+              Luxury Event Planning in Delhi NCR
+            </motion.p>
+
+            {/* H1 */}
+            <motion.h1
+              variants={textVariant}
+              className="text-white text-4xl sm:text-5xl md:text-7xl font-semibold leading-[1.05] max-w-5xl"
+            >
+              Delhi NCR&apos;s Premier Event Planning & Venue Company
+            </motion.h1>
+
+            {/* Subheadline */}
+            <motion.p
+              variants={textVariant}
+              className="text-white/90 text-lg md:text-2xl leading-relaxed max-w-3xl mt-6"
+            >
+              From intimate celebrations to grand corporate galas, we design
+              experiences that stay with you long after the last guest leaves.
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              variants={textVariant}
+              className="flex flex-col sm:flex-row gap-4 mt-10"
+            >
+              <Link
+                href="/market-place"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all"
+              >
+                Browse Our Venues
+              </Link>
+
+              <Link
+                href="https://wa.me/917838008069"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full border border-white text-white font-semibold hover:bg-white hover:text-black transition-all"
+              >
+                Talk to Us on WhatsApp
+              </Link>
+            </motion.div>
+          </motion.div>
+
+          {/* Slide Caption */}
+          <div className="mt-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div>
+              <p className="text-white text-xl md:text-2xl font-semibold">
+                {sliderData[currentIndex].subText}
+              </p>
+              <p className="text-white/80 text-sm md:text-base mt-1">
+                {sliderData[currentIndex].location}
+              </p>
+            </div>
+
+            {/* Slider Controls */}
+            <div className="flex gap-3">
+              <button
+                onClick={goToPrevious}
+                aria-label="Previous slide"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white hover:text-black transition-all flex items-center justify-center"
+              >
+                <ChevronLeft size={20} />
+              </button>
+
+              <button
+                onClick={goToNext}
+                aria-label="Next slide"
+                className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white hover:text-black transition-all flex items-center justify-center"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
