@@ -3,6 +3,7 @@ import EffortLessEvent from "@/utils/home/EffortLessEvent";
 import Locations from "@/utils/home/Locations";
 import MadeInEvents from "@/utils/home/MadeInEvents";
 import VenueShowcase from "@/utils/home/VenueShowcase";
+import EventPlanningForm from "@/components/home/EventPlanningForm";
 
 const fetchBanners = async () => {
   try {
@@ -17,7 +18,7 @@ const fetchBanners = async () => {
     return data.map((item) => ({
       imageSrc: item?.main_image
         ? `${process.env.NEXT_PUBLIC_IMG_URL || ""}${item.main_image}`
-        : "/placeholder.jpg", // Fallback image
+        : "/placeholder.jpg",
       subText: item?.product_name || "",
       location: item?.product_location || "",
       altText: `View of ${item?.product_name || "event venue"} in ${
@@ -32,10 +33,11 @@ const fetchBanners = async () => {
 
 export default async function Home() {
   const data = await fetchBanners();
-  console.log(data);
+
   return (
     <>
       <EffortLessEvent sliderData={data} />
+      <EventPlanningForm />
 
       <BookSpace />
       <MadeInEvents />
@@ -47,7 +49,6 @@ export default async function Home() {
 }
 
 // components/MapReviewEmbed.js
-
 const MapReviewEmbed = () => {
   return (
     <section className="py-12">
