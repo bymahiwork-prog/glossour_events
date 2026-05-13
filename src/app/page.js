@@ -1,13 +1,22 @@
-import BookSpace from "@/utils/home/BookSpace";
 import EffortLessEvent from "@/utils/home/EffortLessEvent";
-import Locations from "@/utils/home/Locations";
-import MadeInEvents from "@/utils/home/MadeInEvents";
 import VenueShowcase from "@/utils/home/VenueShowcase";
+
 import EventPlanningForm from "@/components/home/EventPlanningForm";
+import TrustBar from "@/components/home/TrustBar";
+import WhoWeAre from "@/components/home/WhoWeAre";
+import EventGallery from "@/components/home/EventGallery";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import Testimonials from "@/components/home/Testimonials";
+import ServiceAreas from "@/components/home/ServiceAreas";
+import FAQSection from "@/components/home/FAQSection";
+import FinalCTA from "@/components/home/FinalCTA";
 
 const fetchBanners = async () => {
   try {
-    const res = await fetch(process.env.NEXT_PUBLIC_BASE + "/api/banner");
+    const res = await fetch(process.env.NEXT_PUBLIC_BASE + "/api/banner", {
+      cache: "no-store",
+    });
+
     const data = await res.json();
 
     if (!Array.isArray(data)) {
@@ -42,26 +51,48 @@ export default async function Home() {
       {/* Event Planning Form */}
       <EventPlanningForm />
 
-      {/* Existing Sections */}
-      <BookSpace />
-      <MadeInEvents />
-      <Locations />
+      {/* Trust Bar */}
+      <TrustBar />
+
+      {/* Who We Are */}
+      <WhoWeAre />
+
+      {/* Featured Venues */}
       <VenueShowcase />
+
+      {/* Moments We’ve Brought to Life */}
+      <EventGallery />
+
+      {/* Why Delhi NCR Chooses Effortless Events */}
+      <WhyChooseUs />
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Service Areas */}
+      <ServiceAreas />
+
+      {/* Frequently Asked Questions */}
+      <FAQSection />
+
+      {/* Google Map */}
       <MapReviewEmbed />
+
+      {/* Final CTA */}
+      <FinalCTA />
     </>
   );
 }
 
-// Google Map Section
-const MapReviewEmbed = () => {
+function MapReviewEmbed() {
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-black text-center mb-8">
+    <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <h2 className="text-3xl md:text-4xl font-serif font-medium text-[#1F1F1F] text-center mb-8">
           Find Us on Google
         </h2>
 
-        <div className="aspect-w-16 aspect-h-9">
+        <div className="rounded-3xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.676728394931!2d77.2073501!3d28.532994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce21dba0fa36f%3A0x4376aad0a94fc15d!2sL57B%2C%20Captain%20Hitesh%20Mehta%20Marg%2C%20Block%20L%2C%20Malviya%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1736220000000"
             width="100%"
@@ -70,9 +101,10 @@ const MapReviewEmbed = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+            title="Effortless Events Location Map"
+          />
         </div>
       </div>
     </section>
   );
-};
+}
