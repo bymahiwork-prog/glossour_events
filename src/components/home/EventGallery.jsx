@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 export default function EventGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Make sure these exact files exist in:
-  // public/images/
+  // Images stored in:
+  // public/image/
   const images = [
-    "/images/event-gallery-1.jpeg",
-    "/images/event-gallery-2.jpeg",
-    "/images/event-gallery-3.jpeg",
-    "/images/event-gallery-4.jpeg",
-    "/images/event-gallery-5.jpeg",
+    "/image/event-gallery-1.jpeg",
+    "/image/event-gallery-2.jpeg",
+    "/image/event-gallery-3.jpeg",
+    "/image/event-gallery-4.jpeg",
+    "/image/event-gallery-5.jpeg",
   ];
 
   useEffect(() => {
@@ -50,16 +50,13 @@ export default function EventGallery() {
         <div className="relative rounded-[32px] overflow-hidden shadow-2xl">
           <div className="relative aspect-[16/9] md:aspect-[21/9]">
             {images.map((image, index) => (
-              <div
+              <img
                 key={image}
-                className={`absolute inset-0 transition-opacity duration-1000 ${
+                src={image}
+                alt={`Event gallery image ${index + 1}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
                   index === currentSlide ? "opacity-100" : "opacity-0"
                 }`}
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
               />
             ))}
 
@@ -68,7 +65,7 @@ export default function EventGallery() {
           </div>
         </div>
 
-        {/* Slide Indicators */}
+        {/* Navigation Dots */}
         <div className="flex justify-center gap-2 mt-6">
           {images.map((_, index) => (
             <button
