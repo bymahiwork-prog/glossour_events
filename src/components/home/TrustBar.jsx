@@ -7,13 +7,13 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="bg-[#0F0803] border-t border-white/10 border-b border-white/10">
+    <section className="bg-[#0F0803] border-t border-b border-[#3A2A1A]">
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center lg:text-left">
-          {items.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {items.map((item) => (
             <div
-              key={index}
-              className="text-white/90 text-sm md:text-base font-medium leading-relaxed"
+              key={item}
+              className="text-center lg:text-left text-white text-sm md:text-base font-medium leading-relaxed"
             >
               {item}
             </div>
