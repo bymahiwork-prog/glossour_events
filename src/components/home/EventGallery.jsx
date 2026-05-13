@@ -5,20 +5,14 @@ import { useEffect, useState } from "react";
 export default function EventGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Add your event images to:
+  // Make sure these exact files exist in:
   // public/images/
-  // using these exact file names:
-  // - event-gallery-1.jpg
-  // - event-gallery-2.jpg
-  // - event-gallery-3.jpg
-  // - event-gallery-4.jpg
-  // - event-gallery-5.jpg
   const images = [
-    "/images/event-gallery-1.jpg",
-    "/images/event-gallery-2.jpg",
-    "/images/event-gallery-3.jpg",
-    "/images/event-gallery-4.jpg",
-    "/images/event-gallery-5.jpg",
+    "/images/event-gallery-1.jpeg",
+    "/images/event-gallery-2.jpeg",
+    "/images/event-gallery-3.jpeg",
+    "/images/event-gallery-4.jpeg",
+    "/images/event-gallery-5.jpeg",
   ];
 
   useEffect(() => {
@@ -36,7 +30,7 @@ export default function EventGallery() {
   return (
     <section className="bg-[#F7F3EE] py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        {/* Section Heading */}
+        {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <p className="text-sm uppercase tracking-[0.18em] text-[#8A7A66] font-medium mb-4">
             Event Gallery
