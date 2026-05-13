@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 // SEO Fix: Updated metadata as per audit report 
 export const metadata = {
-  metadataBase: new URL("https://effortlessevents.in"),
+  metadataBase: new URL("https://www.effortlessevents.in"),
   title: {
     default: "Delhi NCR's Premier Event Planning & Venue Company", // [cite: 4]
     template: "%s | Effortless Events",
@@ -51,9 +51,9 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "EventVenue",
     "name": "Effortless Events",
-    "url": "https://effortlessevents.in",
-    "logo": "https://effortlessevents.in/logo.png",
-    "image": "https://effortlessevents.in/home-page.png",
+    "url": "https://www.effortlessevents.in",
+    "logo": "https://www.effortlessevents.in/logo.png",
+    "image": "https://www.effortlessevents.in/home-page.png",
     "description": "Luxury event planning and venue booking company serving Delhi, Gurugram, Noida, Faridabad, and Ghaziabad.", // [cite: 2, 4]
     "telephone": "+91-7838008069", 
     "address": {
