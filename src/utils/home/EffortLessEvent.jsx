@@ -116,7 +116,7 @@ const EffortlessEvent = ({ sliderData = [] }) => {
               className="flex flex-col sm:flex-row gap-4 mt-10"
             >
               <Link
-                href="/venue"
+                href="/search"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all"
               >
                 Browse Our Venues
