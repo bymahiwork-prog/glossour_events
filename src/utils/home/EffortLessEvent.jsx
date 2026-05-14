@@ -24,7 +24,39 @@ const containerVariant = {
   },
 };
 
-const EffortlessEvent = ({ sliderData = [] }) => {
+// Hero Slider Data with direct venue URLs
+const sliderData = [
+  {
+    imageSrc: "/images/hero-1.jpg", // Replace with your actual image path
+    altText: "Amaara Farms",
+    subText: "Amaara Farms",
+    location: "Chattarpur, Delhi",
+    href: "https://www.effortlessevents.in/venues/98",
+  },
+  {
+    imageSrc: "/images/hero-2.jpg", // Replace with your actual image path
+    altText: "The Riviera House",
+    subText: "The Riviera House",
+    location: "South Delhi",
+    href: "https://www.effortlessevents.in/venues/125",
+  },
+  {
+    imageSrc: "/images/hero-3.jpg", // Replace with your actual image path
+    altText: "Golden Turtle Farm",
+    subText: "Golden Turtle Farm",
+    location: "Manesar, Gurgaon",
+    href: "https://www.effortlessevents.in/venues/114",
+  },
+  {
+    imageSrc: "/images/hero-4.jpg", // Replace with your actual image path
+    altText: "Royal Garden Estate",
+    subText: "Royal Garden Estate",
+    location: "Delhi NCR",
+    href: "https://www.effortlessevents.in/venues/117",
+  },
+];
+
+const EffortlessEvent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -40,15 +72,9 @@ const EffortlessEvent = ({ sliderData = [] }) => {
   };
 
   useEffect(() => {
-    if (sliderData.length > 0) {
-      const timer = setTimeout(goToNext, 5000);
-      return () => clearTimeout(timer);
-    }
-  }, [currentIndex, sliderData]);
-
-  if (!sliderData || sliderData.length === 0) {
-    return null;
-  }
+    const timer = setTimeout(goToNext, 5000);
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
 
   return (
     <section className="relative w-full h-screen min-h-[800px] overflow-hidden bg-black">
@@ -135,14 +161,17 @@ const EffortlessEvent = ({ sliderData = [] }) => {
 
           {/* Slide Caption + Navigation */}
           <div className="mt-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div>
+            <Link
+              href={sliderData[currentIndex].href}
+              className="block hover:opacity-90 transition-opacity"
+            >
               <p className="text-white text-xl md:text-2xl font-semibold">
                 {sliderData[currentIndex].subText}
               </p>
               <p className="text-white/80 text-sm md:text-base mt-1">
                 {sliderData[currentIndex].location}
               </p>
-            </div>
+            </Link>
 
             <div className="flex gap-3">
               <button
