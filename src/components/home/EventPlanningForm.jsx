@@ -4,6 +4,10 @@ import React, { useState } from "react";
 
 const tabs = ["Event", "Venue", "Place"];
 
+// Reusable input styling
+const inputClass =
+  "w-full rounded-xl border border-gray-200 px-5 py-4 text-black placeholder:text-black outline-none focus:ring-2 focus:ring-[#C9A34A]";
+
 export default function EventPlanningForm() {
   const [activeTab, setActiveTab] = useState("Event");
 
@@ -38,14 +42,14 @@ export default function EventPlanningForm() {
               type="text"
               name="occasion"
               placeholder="What's the occasion?"
-              className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:ring-2 focus:ring-[#C9A34A]"
+              className={inputClass}
             />
 
             <input
               type="text"
               name="description"
               placeholder="Description"
-              className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:ring-2 focus:ring-[#C9A34A]"
+              className={inputClass}
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -53,21 +57,21 @@ export default function EventPlanningForm() {
                 type="text"
                 name="guests"
                 placeholder="Guests"
-                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:ring-2 focus:ring-[#C9A34A]"
+                className={inputClass}
               />
 
               <input
                 type="text"
                 name="budget"
                 placeholder="Budget"
-                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:ring-2 focus:ring-[#C9A34A]"
+                className={inputClass}
               />
 
               <input
                 type="text"
                 name="date"
                 placeholder="Date"
-                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:ring-2 focus:ring-[#C9A34A]"
+                className={inputClass}
               />
             </div>
 
