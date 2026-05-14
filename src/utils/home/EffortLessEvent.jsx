@@ -27,35 +27,38 @@ const containerVariant = {
 // Hero Slider Data with direct venue URLs
 const sliderData = [
   {
-    imageSrc: "/images/hero-1.jpg", // Replace with your actual image path
+    imageSrc:
+      "https://www.effortlessevents.in/storage/venues/98/featured_image.jpg",
     altText: "Amaara Farms",
     subText: "Amaara Farms",
     location: "Chattarpur, Delhi",
     href: "https://www.effortlessevents.in/venues/98",
   },
   {
-    imageSrc: "/images/hero-2.jpg", // Replace with your actual image path
+    imageSrc:
+      "https://www.effortlessevents.in/storage/venues/125/featured_image.jpg",
     altText: "The Riviera House",
     subText: "The Riviera House",
     location: "South Delhi",
     href: "https://www.effortlessevents.in/venues/125",
   },
   {
-    imageSrc: "/images/hero-3.jpg", // Replace with your actual image path
+    imageSrc:
+      "https://www.effortlessevents.in/storage/venues/114/featured_image.jpg",
     altText: "Golden Turtle Farm",
     subText: "Golden Turtle Farm",
     location: "Manesar, Gurgaon",
     href: "https://www.effortlessevents.in/venues/114",
   },
   {
-    imageSrc: "/images/hero-4.jpg", // Replace with your actual image path
+    imageSrc:
+      "https://www.effortlessevents.in/storage/venues/117/featured_image.jpg",
     altText: "Royal Garden Estate",
     subText: "Royal Garden Estate",
     location: "Delhi NCR",
     href: "https://www.effortlessevents.in/venues/117",
   },
 ];
-
 const EffortlessEvent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
