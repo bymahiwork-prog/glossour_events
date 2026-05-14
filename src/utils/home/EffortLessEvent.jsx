@@ -91,13 +91,11 @@ const EffortlessEvent = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <Image
-            src={sliderData[currentIndex].imageSrc}
-            alt={sliderData[currentIndex].altText}
-            fill
-            priority={currentIndex === 0}
-            className="object-cover"
-          />
+          <img
+  src={sliderData[currentIndex].imageSrc}
+  alt={sliderData[currentIndex].altText}
+  className="absolute inset-0 w-full h-full object-cover"
+/>
         </motion.div>
       </AnimatePresence>
 
