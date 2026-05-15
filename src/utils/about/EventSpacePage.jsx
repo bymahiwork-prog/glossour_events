@@ -48,7 +48,7 @@ const EventSpacePage = () => {
             </p>
 
             {/* Heading */}
-<h1 className="font-bold leading-[1.05] text-white mb-5">
+<h1 className="font-bold leading-[1.05] text-white mb-5 pt-10 lg:pt-0">
   <span className="block text-4xl md:text-5xl lg:text-[4.5rem]">
     Delhi NCR&apos;s Trusted
   </span>
