@@ -37,7 +37,7 @@ const EventSpacePage = () => {
       {/* Main Content */}
       <div
         ref={heroRef}
-        className="relative z-20 max-w-7xl mx-auto min-h-screen px-6 lg:px-12 flex items-center"
+       className="relative z-20 max-w-7xl mx-auto min-h-screen px-6 lg:px-12 flex items-center pt-24 lg:pt-0"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           {/* Left Content */}
