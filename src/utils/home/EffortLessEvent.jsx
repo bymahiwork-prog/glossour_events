@@ -27,35 +27,35 @@ const containerVariant = {
 // Hero Slider Data with direct venue URLs
 const sliderData = [
   {
-    imageSrc: "/images/venue 98.jpg",
+    imageSrc: "/image/venue 98.jpg",
     altText: "Luxury farmhouse venue in Gurugram",
     subText: "Venue 98",
     location: "Gawal Pahari, Gurugram",
     href: "https://www.effortlessevents.in/venues/98",
   },
   {
-    imageSrc: "/images/venue 125.webp",
+    imageSrc: "/image/venue 125.webp",
     altText: "Premium farmhouse venue in Delhi NCR",
     subText: "Venue 125",
     location: "Delhi NCR",
     href: "https://www.effortlessevents.in/venues/125",
   },
   {
-    imageSrc: "/images/venue 120.webp",
+    imageSrc: "/image/venue 120.webp",
     altText: "Luxury pool farmhouse venue in Delhi NCR",
     subText: "Venue 120",
     location: "Delhi NCR",
     href: "https://www.effortlessevents.in/venues/120",
   },
   {
-    imageSrc: "/images/venue 39.webp",
+    imageSrc: "/image/venue 39.webp",
     altText: "Elegant event farmhouse venue in Delhi NCR",
     subText: "Venue 39",
     location: "Delhi NCR",
     href: "https://www.effortlessevents.in/venues/39",
   },
   {
-    imageSrc: "/images/venue 53.jpg",
+    imageSrc: "/image/venue 53.jpg",
     altText: "Private celebration farmhouse venue in Delhi NCR",
     subText: "Venue 53",
     location: "Delhi NCR",
