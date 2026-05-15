@@ -48,20 +48,20 @@ const EventSpacePage = () => {
             </p>
 
             {/* Heading */}
-            <h1 className="font-bold leading-tight text-white mb-5">
-              <span className="block text-4xl md:text-5xl lg:text-6xl">
-                Delhi NCR&apos;s Trusted
-              </span>
-              <span className="block text-4xl md:text-5xl lg:text-6xl text-[#C9A34A]">
-                Event Planning &
-              </span>
-              <span className="block text-4xl md:text-5xl lg:text-6xl text-[#C9A34A]">
-                Venue Management
-              </span>
-              <span className="block text-4xl md:text-5xl lg:text-6xl">
-                Company
-              </span>
-            </h1>
+<h1 className="font-bold leading-[1.05] text-white mb-5">
+  <span className="block text-4xl md:text-5xl lg:text-[4.5rem]">
+    Delhi NCR&apos;s Trusted
+  </span>
+  <span className="block text-4xl md:text-5xl lg:text-[4.5rem] text-[#C9A34A]">
+    Event Planning &
+  </span>
+  <span className="block text-4xl md:text-5xl lg:text-[4.5rem] text-[#C9A34A]">
+    Venue Management
+  </span>
+  <span className="block text-4xl md:text-5xl lg:text-[4.5rem]">
+    Company
+  </span>
+</h1>
 
             {/* Description */}
             <p className="text-gray-300 text-base md:text-lg leading-8 max-w-lg mb-8">
