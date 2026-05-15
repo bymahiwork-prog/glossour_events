@@ -1,50 +1,58 @@
 export default function OurTeamSection() {
+  const directors = [
+    {
+      name: "Harsimran Singh",
+      title: "Managing Director",
+      image: "/image/managing director (Harsimar singh).jpeg",
+    },
+    {
+      name: "Karan Malhotra",
+      title: "Managing Director",
+      image: "/image/managing director (Karan malhotra).jpeg",
+    },
+  ];
+
   return (
     <section className="bg-[#121212] text-white">
       <div className="container mx-auto py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
-              Our team
-            </h2>
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Our Team
+          </h2>
+        </div>
 
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              At Effortless Events Pvt. Ltd., our people are the driving force
-              behind every experience we create. More than just planners, our
-              team is a collective of passionate professionals dedicated to
-              turning your vision into unforgettable reality.
-            </p>
+        {/* Intro Text */}
+        <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+          <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+            At Effortless Events Pvt. Ltd., our people are the driving force
+            behind every experience we create.
+          </p>
+          <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+            We combine creativity, planning, and execution to deliver memorable
+            events across weddings, corporate gatherings, and celebrations.
+          </p>
+        </div>
 
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              We believe that every great event starts with understanding. From
-              the first meeting to the final execution, we collaborate closely
-              with clients to bring their ideas to life—whether it's a grand
-              corporate affair, a wedding celebration, or an intimate gathering.
-            </p>
+        {/* Directors Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {directors.map((director) => (
+            <div key={director.name}>
+              <img
+                src={director.image}
+                alt={director.name}
+                className="w-full aspect-[4/5] object-cover rounded-2xl shadow-lg"
+              />
 
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Guided by our 360-degree approach, our team handles every
-              detail—venue, décor, logistics, catering, entertainment, and theme
-              execution—with precision and creativity. Every event is crafted to
-              reflect your unique style and leave a lasting impression.
-            </p>
+              <h3 className="mt-4 text-2xl font-bold text-white">
+                {director.name}
+              </h3>
 
-            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              At Effortless Events, we don't just organize occasions—we create
-              experiences that resonate. Let's bring your dream event to life,
-              together.
-            </p>
-          </div>
-
-          {/* Right Image */}
-          <div className="order-1 lg:order-2">
-            <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
-              alt="Our team collaborating" 
-              className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg"
-            />
-          </div>
+              <p className="text-gray-400 text-lg">
+                {director.title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
