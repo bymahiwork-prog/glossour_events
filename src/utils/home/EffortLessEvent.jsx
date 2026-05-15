@@ -54,13 +54,6 @@ const sliderData = [
     location: "Delhi NCR",
     href: "https://www.effortlessevents.in/venues/39",
   },
-  {
-    imageSrc: "/image/venue 53.jpg",
-    altText: "Private celebration farmhouse venue in Delhi NCR",
-    subText: "Venue 53",
-    location: "Delhi NCR",
-    href: "https://www.effortlessevents.in/venues/53",
-  },
 ];
 const EffortlessEvent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
