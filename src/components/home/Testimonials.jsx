@@ -16,31 +16,24 @@ export default function GoogleReviews() {
           </h2>
         </div>
 
-        {/* Load Elfsight Script */}
+        {/* Elfsight Script */}
         <Script
           src="https://elfsightcdn.com/platform.js"
           strategy="afterInteractive"
         />
 
-        {/* Reviews Widget */}
-        <div className="bg-white rounded-3xl shadow-xl p-6 md:p-8">
+        {/* Widget Container */}
+        <div className="bg-white rounded-3xl shadow-xl p-6 md:p-8 min-h-[250px]">
           <div
             className="elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b"
-            data-elfsight-app-lazy
+            data-elfsight-app-lazy={false}
           />
         </div>
       </div>
 
-      {/* Hide Elfsight branding and duplicate widget title */}
+      {/* Hide only the widget title, keep reviews visible */}
       <style jsx global>{`
-        /* Removes the "Free Google Reviews Widget" badge */
-        .elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b a[href*="elfsight.com"] {
-          display: none !important;
-        }
-
-        /* Hides the widget's internal title ("What Our Customers Say") */
-        .elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b .eapps-google-reviews-header,
-        .elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b .eapps-google-reviews-widget-header {
+        .elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b .eapps-google-reviews-header {
           display: none !important;
         }
       `}</style>
