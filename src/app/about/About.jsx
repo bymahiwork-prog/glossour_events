@@ -9,7 +9,6 @@ const About = () => {
       <EventSpacePage />
       <EffortlessHosting />
       <OurTeamSection />
-      <FeaturedSection />
     </div>
   );
 };
