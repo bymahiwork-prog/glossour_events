@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What types of events does Effortless Events manage?",
     answer:
-      "We manage the full spectrum of events, including weddings, wedding receptions, pre-wedding functions, corporate conferences, product launches, award ceremonies, team-building retreats, birthday parties, anniversaries, and private social gatherings across Delhi NCR.",
+      "We manage weddings, receptions, pre-wedding functions, corporate conferences, product launches, award ceremonies, birthday parties, anniversaries, and private social gatherings across Delhi NCR.",
   },
   {
     question: "Which areas do you cover?",
@@ -18,17 +18,17 @@ const faqs = [
     question:
       "Do you offer end-to-end event management or just venues?",
     answer:
-      "Both. You can book a venue through us, or engage us for complete end-to-end event management, including decoration, catering, bartending, vendor coordination, and on-day management.",
+      "Both. You can book a venue through us or engage us for complete event management, including decoration, catering, bartending, vendor coordination, and on-day management.",
   },
   {
     question: "How far in advance should I book?",
     answer:
-      "For weddings, we recommend booking at least 4–6 months in advance. For corporate events and birthday parties, 4–8 weeks is generally sufficient, though peak season dates (October to February) fill up quickly.",
+      "For weddings, we recommend booking 4–6 months in advance. For corporate events and birthday parties, 4–8 weeks is generally sufficient.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Contact us via the planning form above, call us at +91 78380 08069, or send us a WhatsApp message, and a dedicated event consultant will respond within 24 hours.",
+      "Contact us through the planning form, call +91 78380 08069, or send us a WhatsApp message and our event consultant will respond within 24 hours.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FAQSection() {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
-  // FAQPage JSON-LD Schema
+  // FAQPage Schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -55,7 +55,7 @@ export default function FAQSection() {
 
   return (
     <section className="bg-[#F7F3EE] py-20 md:py-28">
-      {/* FAQ Schema for Google Rich Results */}
+      {/* FAQ Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -80,7 +80,17 @@ export default function FAQSection() {
           services across Delhi NCR.
         </p>
 
-        {/* FAQ Accordion */}
+        {/* Hidden HTML for Search Engines */}
+        <div className="sr-only">
+          {faqs.map((faq) => (
+            <div key={faq.question}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Accordion UI */}
         <div className="mt-12 space-y-4">
           {faqs.map((faq, index) => (
             <div
