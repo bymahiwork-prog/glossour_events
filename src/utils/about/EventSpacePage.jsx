@@ -53,13 +53,7 @@ const EventSpacePage = () => {
     Delhi NCR&apos;s Trusted
   </span>
   <span className="block text-4xl md:text-5xl lg:text-[4.5rem] text-[#C9A34A]">
-    Event Planning &
-  </span>
-  <span className="block text-4xl md:text-5xl lg:text-[4.5rem] text-[#C9A34A]">
-    Venue Management
-  </span>
-  <span className="block text-4xl md:text-5xl lg:text-[4.5rem]">
-    Company
+    Event Planning Company
   </span>
 </h1>
 
