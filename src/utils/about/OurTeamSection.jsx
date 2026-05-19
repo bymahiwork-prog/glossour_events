@@ -4,7 +4,7 @@ export default function OurTeamSection() {
       name: "Harsimran Singh",
       title: "Managing Director",
       image: "/image/managing director (Harsimar singh).jpeg",
-      bio: "Co-founder of Effortless Events Pvt. Ltd., leading venue partnerships and end-to-end event execution across Delhi NCR.",
+      bio: "Founder of Effortless Events Pvt. Ltd., leading venue partnerships and end-to-end event execution across Delhi NCR.",
     },
     {
       name: "Karan Malhotra",
