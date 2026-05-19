@@ -5,12 +5,12 @@ import { useEffect } from "react";
 export default function GoogleReviews() {
   useEffect(() => {
     const existingScript = document.querySelector(
-      'script[src="https://elfsightcdn.com/platform.js"]'
+      'script[src="https://commoninja.site/b8a71643-f83c-403e-8ad0-fcc583b8ec3e"]'
     );
 
     if (!existingScript) {
       const script = document.createElement("script");
-      script.src = "https://elfsightcdn.com/platform.js";
+      script.src = "https://commoninja.site/b8a71643-f83c-403e-8ad0-fcc583b8ec3e";
       script.async = true;
       document.body.appendChild(script);
     }
