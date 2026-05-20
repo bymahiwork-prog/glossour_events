@@ -6,6 +6,7 @@ import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleAds from "@/components/GoogleAds";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -113,6 +114,7 @@ export default function RootLayout({ children }) {
 
         <Footer />
         <GoogleAnalytics />
+          <GoogleAds />
       </body>
     </html>
   );
