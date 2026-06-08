@@ -17,7 +17,7 @@ export default function BlogsPage() {
           </h2>
 
           <p>
-            We're preparing helpful guides and event planning
+            We are preparing helpful guides and event planning
             resources for our clients.
           </p>
         </div>
