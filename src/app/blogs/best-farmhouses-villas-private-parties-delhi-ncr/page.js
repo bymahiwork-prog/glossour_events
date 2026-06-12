@@ -59,10 +59,10 @@ export default function BlogPage() {
         </p>
 
         <p>
-       So you’ve decided to throw a party. Not like a restaurant dinner, not some banquet hall booking either. A real private celebration, with your people, your music, your vibe, your rules. The sort of night that everyone keeps going on about for months.
+       So you&apos;ve decided to throw a party. Not like a restaurant dinner, not some banquet hall booking either. A real private celebration, with your people, your music, your vibe, your rules. The sort of night that everyone keeps going on about for months.
 In Delhi NCR , farmhouses and villas have kind of become the default go-to choice for exactly this. They give you breathing space, personal privacy, and the flexibility to build something that feels yours. Like a 30th birthday blowout in Chattarpur, a bachelorette weekend in Gurgaon, or even a quiet anniversary at a villa in Noida. You know that feeling, when the place matches the mood… yeah.
-But honestly there’s a catch. Finding the right venue can be tricky. You need it to match your headcount, your budget, your aesthetic , and also deliver in the real world, not just in the photos. That takes more time and calls than most people expect, and somehow it’s never as simple as “pick one and go”.
-This guide slices through all that noise. Here’s everything you should know about booking a farmhouse or villa for a private party in Delhi NCR, and how to make the whole experience genuinely effortless. 
+But honestly there&apos;s a catch. Finding the right venue can be tricky. You need it to match your headcount, your budget, your aesthetic , and also deliver in the real world, not just in the photos. That takes more time and calls than most people expect, and somehow it&apos;s never as simple as “pick one and go”.
+This guide slices through all that noise. Here&apos;s everything you should know about booking a farmhouse or villa for a private party in Delhi NCR, and how to make the whole experience genuinely effortless. 
 
         </p>
 
@@ -71,12 +71,12 @@ This guide slices through all that noise. Here’s everything you should know ab
         </h2>
 
         <p>
-         The shift’s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young pros, are going for private venue parties instead of the usual conventional kinda settings. And yeah, here’s what’s behind it :
-Complete privacy. No random folks at the next table. No shared areas. The whole property’s essentially yours for the length of the event, uninterrupted.
+         The shift&apos;s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young pros, are going for private venue parties instead of the usual conventional kinda settings. And yeah, here&apos;s what&apos;s behind it :
+Complete privacy. No random folks at the next table. No shared areas. The whole property&apos;s essentially yours for the length of the event, uninterrupted.
 Freedom to customise. Banquet halls often come with fixed packages and super rigid layouts, but farmhouses? You can bring in your own decor team, decide the music volume , push the time a bit longer, and shape the vibe the way you actually want , not the way they pre-plan.
-Space to breathe. Most farmhouses around Chattarpur, Gurgaon, and Noida tend to have lawns, pools, outdoor seating, plus indoor areas too, so guests aren’t all cramped into one single room.
-Instagram-worthy setups. Let’s be real, green lawns , fairy lights , and open skies just look great in photos.
-The whole thing feels special. There’s something about having the entire property that makes the event feel more like it’s curated , more exclusive, and less like a generic template. 
+Space to breathe. Most farmhouses around Chattarpur, Gurgaon, and Noida tend to have lawns, pools, outdoor seating, plus indoor areas too, so guests aren&apos;t all cramped into one single room.
+Instagram-worthy setups. Let&apos;s be real, green lawns , fairy lights , and open skies just look great in photos.
+The whole thing feels special. There&apos;s something about having the entire property that makes the event feel more like it&apos;s curated , more exclusive, and less like a generic template. 
 
         </p>
 
@@ -86,7 +86,7 @@ The whole thing feels special. There’s something about having the entire prope
 
         <p>
           1. Chattarpur & Mehrauli (South Delhi)
-The whole original farmhouse vibe of Delhi , Chattarpur, sort of. Basically , it’s home to hundreds of farmhouses from kinda intimate garden corners, to those bigger sprawling places with pools, open lawns, and Mughal-inspired details. Really nice for birthday get togethers, cocktail evenings, and family reunions too, with about a 30–200 guest count, depending on the setup. 
+The whole original farmhouse vibe of Delhi , Chattarpur, sort of. Basically , it&apos;s home to hundreds of farmhouses from kinda intimate garden corners, to those bigger sprawling places with pools, open lawns, and Mughal-inspired details. Really nice for birthday get togethers, cocktail evenings, and family reunions too, with about a 30–200 guest count, depending on the setup. 
 Best for: Birthday parties, cocktail evenings, family celebrations
 2. Gurgaon (Sohna Road, Golf Course Road, Dwarka Expressway)
 Gurgaon&apos;s villa , and farmhouse inventory has grown pretty massively, you know, there is a lot more now. The modern interiors plus rooftop areas and these luxury amenities make the places really popular for corporate after-parties , for bachelorettes , and also for upscale birthdays. 
