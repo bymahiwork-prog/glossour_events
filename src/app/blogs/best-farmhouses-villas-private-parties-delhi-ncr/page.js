@@ -13,7 +13,6 @@ return ( <main className="bg-white">
        className="w-full rounded-2xl mb-12"
      />
 
-```
     <div className="max-w-4xl mx-auto">
       <div className="uppercase tracking-wider text-sm text-gray-500 mb-4">
         Private Parties • Delhi NCR • 2026 Guide
@@ -191,7 +190,6 @@ What they all have in common: they want the event to be special, and they don't 
     </div>
   </section>
 </main>
-```
 
 );
 }
