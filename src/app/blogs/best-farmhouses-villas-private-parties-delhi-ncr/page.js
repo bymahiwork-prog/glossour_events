@@ -661,7 +661,7 @@ export default function BlogPage() {
           {/* INTRO */}
           <div className="prose">
             <p>
-              So you've decided to throw a party. Not a restaurant dinner, not a
+              So you&apos;ve decided to throw a party. Not a restaurant dinner, not a
               banquet hall booking. A <strong>real private celebration</strong> —
               your people, your music, your vibe, your rules. The sort of night
               everyone keeps talking about for months.
@@ -770,7 +770,7 @@ export default function BlogPage() {
             {[
               [
                 "Guest Capacity vs. Actual Comfort",
-                'A venue that "fits 100 guests" in its listing might mean a cramped experience. Always ask for the comfortable capacity.',
+                'A venue that &quot;fits 100 guests&quot; in its listing might mean a cramped experience. Always ask for the comfortable capacity.',
               ],
               [
                 "Catering Policy",
@@ -778,11 +778,11 @@ export default function BlogPage() {
               ],
               [
                 "Sound Restrictions",
-                "Many farmhouses in residential areas have a 10 PM or 11 PM hard stop on music. If you're planning a late-night party, check this early — it's a potential deal-breaker.",
+                "Many farmhouses in residential areas have a 10 PM or 11 PM hard stop on music. If you&apos;re planning a late-night party, check this early — it's a potential deal-breaker.",
               ],
               [
                 "Included vs. Additional Costs",
-                "Parking, generator backup, security, basic furniture, washrooms — check what's included in the quoted price and what gets added later.",
+                "Parking, generator backup, security, basic furniture, washrooms — check what&apos;s included in the quoted price and what gets added later.",
               ],
               [
                 "Setup & Breakdown Time",
