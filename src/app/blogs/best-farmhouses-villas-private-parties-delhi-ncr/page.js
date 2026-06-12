@@ -105,7 +105,7 @@ Best for: Day parties, sundowners, intimate family gatherings
 
         <p>
           Not all farmhouses are equal. here&apos;s the checklist that saves you from booking regret:
-Guest capacity vs. actual comfort. A venue that "fits 100 guests" in its listing might mean a cramped, uncomfortable experience for 100 people. Ask for the comfortable capacity.
+Guest capacity vs. actual comfort. A venue that &quot;fits 100 guests&quot; in its listing might mean a cramped, uncomfortable experience for 100 people. Ask for the comfortable capacity.
 Catering policy. Some venues insist on in-house catering (often average quality at inflated prices). Others let you bring your own caterer. Clarify this before locking in.
 Sound restrictions. Many farmhouses in residential areas have a 10 PM or 11 PM hard stop on music. If you&apos;re planning a late-night party, this is a deal-breaker worth checking early.
 Included vs. additional costs. Parking, generator backup, security, basic furniture, washrooms — check what&apos;s included in the quoted price and what&apos;s charged extra.
