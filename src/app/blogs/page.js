@@ -1,49 +1,61 @@
 export default function BlogsPage() {
-  return (
-    <main className="min-h-screen pt-32 px-6 pb-20 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold mb-4">
-          Blog & Resources
-        </h1>
+return ( <main className="min-h-screen bg-white pt-32 pb-20"> <div className="max-w-6xl mx-auto px-6">
 
-        <p className="text-lg text-gray-600 mb-12">
-          Expert insights on weddings, corporate events,
-          birthdays, venue selection and event planning.
+    {/* Header */}
+    <div className="mb-16">
+      <p className="uppercase tracking-[0.2em] text-sm text-gray-500 mb-3">
+        Effortless Events Journal
+      </p>
+
+      <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        Blog & Resources
+      </h1>
+
+      <p className="text-xl text-gray-600 max-w-3xl">
+        Expert insights on event planning, luxury venues,
+        weddings, private parties, corporate celebrations,
+        and unforgettable experiences across Delhi NCR.
+      </p>
+    </div>
+
+    {/* Featured Blog */}
+    <a
+      href="/blogs/best-farmhouses-villas-private-parties-delhi-ncr"
+      className="group block overflow-hidden rounded-3xl border border-gray-200 hover:shadow-2xl transition-all duration-300"
+    >
+      <div className="overflow-hidden">
+        <img
+          src="/blogs/farmhouse-guide-cover.png"
+          alt="Best Farmhouses & Villas for Private Parties in Delhi NCR"
+          className="w-full h-[320px] md:h-[450px] object-cover group-hover:scale-105 transition duration-500"
+        />
+      </div>
+
+      <div className="p-8 md:p-10">
+        <div className="flex items-center gap-3 text-sm uppercase tracking-wider text-gray-500 mb-4">
+          <span>Private Parties</span>
+          <span>•</span>
+          <span>Delhi NCR</span>
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 group-hover:text-gray-700 transition-colors">
+          Best Farmhouses & Villas for Private Parties in Delhi NCR (2026 Guide)
+        </h2>
+
+        <p className="text-lg text-gray-600 mb-6">
+          Discover the best farmhouses and villas for birthdays,
+          anniversaries, bachelorette parties, cocktail evenings,
+          and private celebrations across Delhi NCR.
         </p>
 
-        <a
-          href="/blogs/best-farmhouses-villas-private-parties-delhi-ncr"
-          className="block overflow-hidden rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300"
-        >
-          {/* Blog Cover */}
-          <img
-            src="/blogs/farmhouse-guide-cover.png"
-            alt="Best Farmhouses & Villas for Private Parties in Delhi NCR"
-            className="w-full h-56 md:h-72 object-cover"
-          />
-
-          {/* Content */}
-          <div className="p-8">
-            <p className="text-sm uppercase tracking-wider text-gray-500 mb-3">
-              Private Parties • Delhi NCR
-            </p>
-
-            <h2 className="text-3xl font-bold mb-4">
-              Best Farmhouses & Villas for Private Parties in Delhi NCR (2026 Guide)
-            </h2>
-
-            <p className="text-gray-600 text-lg mb-6">
-              Discover the best farmhouses and villas for birthdays,
-              anniversaries, bachelorette parties, cocktail evenings,
-              and private celebrations across Delhi NCR.
-            </p>
-
-            <span className="font-semibold text-black">
-              Read Article →
-            </span>
-          </div>
-        </a>
+        <span className="inline-flex items-center font-semibold text-black">
+          Read Full Article →
+        </span>
       </div>
-    </main>
-  );
+    </a>
+
+  </div>
+</main>
+
+);
 }
