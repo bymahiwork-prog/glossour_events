@@ -50,15 +50,15 @@ export default function BlogPage() {
         </p>
       </section>
 
-      <article className="max-w-4xl mx-auto px-6 pb-20 text-lg leading-8 text-gray-800">
+      <article className="max-w-6xl mx-auto px-6 pb-20 text-xl leading-9 text-gray-800">
 
-        <p>
+        <p className="mb-8">
           So you&apos;ve decided to throw a party. Not a restaurant dinner,
           not a banquet hall booking. A real private celebration with
           your people, your music, your vibe and your rules.
         </p>
 
-        <p>
+       <p className="mb-8">
        So you&apos;ve decided to throw a party. Not like a restaurant dinner, not some banquet hall booking either. A real private celebration, with your people, your music, your vibe, your rules. The sort of night that everyone keeps going on about for months.
 In Delhi NCR , farmhouses and villas have kind of become the default go-to choice for exactly this. They give you breathing space, personal privacy, and the flexibility to build something that feels yours. Like a 30th birthday blowout in Chattarpur, a bachelorette weekend in Gurgaon, or even a quiet anniversary at a villa in Noida. You know that feeling, when the place matches the mood… yeah.
 But honestly there&apos;s a catch. Finding the right venue can be tricky. You need it to match your headcount, your budget, your aesthetic , and also deliver in the real world, not just in the photos. That takes more time and calls than most people expect, and somehow it&apos;s never as simple as “pick one and go”.
@@ -70,7 +70,7 @@ This guide slices through all that noise. Here&apos;s everything you should know
           Why Farmhouses & Villas Have Become Delhi NCR&apos;s Favourite Private Party Venues
         </h2>
 
-        <p>
+        <p className="mb-8">
          The shift&apos;s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young pros, are going for private venue parties instead of the usual conventional kinda settings. And yeah, here&apos;s what&apos;s behind it :
 Complete privacy. No random folks at the next table. No shared areas. The whole property&apos;s essentially yours for the length of the event, uninterrupted.
 Freedom to customise. Banquet halls often come with fixed packages and super rigid layouts, but farmhouses? You can bring in your own decor team, decide the music volume , push the time a bit longer, and shape the vibe the way you actually want , not the way they pre-plan.
@@ -84,26 +84,59 @@ The whole thing feels special. There&apos;s something about having the entire pr
           Top Areas for Farmhouse & Villa Parties Across Delhi NCR
         </h2>
 
-        <p>
-          1. Chattarpur & Mehrauli (South Delhi)
-The whole original farmhouse vibe of Delhi , Chattarpur, sort of. Basically , it&apos;s home to hundreds of farmhouses from kinda intimate garden corners, to those bigger sprawling places with pools, open lawns, and Mughal-inspired details. Really nice for birthday get togethers, cocktail evenings, and family reunions too, with about a 30–200 guest count, depending on the setup. 
-Best for: Birthday parties, cocktail evenings, family celebrations
-2. Gurgaon (Sohna Road, Golf Course Road, Dwarka Expressway)
-Gurgaon&apos;s villa , and farmhouse inventory has grown pretty massively, you know, there is a lot more now. The modern interiors plus rooftop areas and these luxury amenities make the places really popular for corporate after-parties , for bachelorettes , and also for upscale birthdays. 
-Best for: Bachelorette parties, corporate social events, premium birthday celebrations
-3. Noida & Greater Noida
-Noida has a bunch of roomy venues across the NCR, and the pricing is often more sensible, honestly. Places around the Yamuna Expressway and Greater Noida are getting more and more attention too, for the bigger celebrations where you want the maximum capacity, but without the maximum spend  or somehow it just feels that way. 
-Best for: Large birthday parties, anniversary gatherings, group celebrations
-4. Faridabad & Surajkund
-Often overlooked, the Surajkund belt in Faridabad has some stunning resort-style properties that function beautifully for private events. Quieter, scenic, and ideal for daytime celebrations or weekend getaways combined with a party.
-Best for: Day parties, sundowners, intimate family gatherings
+        <h3 className="text-2xl font-semibold mt-10 mb-3">
+  1. Chattarpur & Mehrauli (South Delhi)
+</h3>
 
-        </p>
+<p className="mb-4">
+  The whole original farmhouse vibe of Delhi, Chattarpur, sort of. Basically, it&apos;s home to hundreds of farmhouses ranging from intimate garden corners to bigger sprawling properties with pools, open lawns, and Mughal-inspired details. Really nice for birthday get-togethers, cocktail evenings, and family reunions too, with about a 30–200 guest count depending on the setup.
+</p>
+
+<p className="mb-8">
+  <strong>Best for:</strong> Birthday parties, cocktail evenings, family celebrations.
+</p>
+
+<h3 className="text-2xl font-semibold mt-10 mb-3">
+  2. Gurgaon (Sohna Road, Golf Course Road, Dwarka Expressway)
+</h3>
+
+<p className="mb-4">
+  Gurgaon&apos;s villa and farmhouse inventory has grown pretty massively. The modern interiors, rooftop areas, and luxury amenities make these venues especially popular for corporate after-parties, bachelorette celebrations, and upscale birthdays.
+</p>
+
+<p className="mb-8">
+  <strong>Best for:</strong> Bachelorette parties, corporate social events, premium birthday celebrations.
+</p>
+
+<h3 className="text-2xl font-semibold mt-10 mb-3">
+  3. Noida & Greater Noida
+</h3>
+
+<p className="mb-4">
+  Noida has a bunch of roomy venues across the NCR, and the pricing is often more sensible. Places around the Yamuna Expressway and Greater Noida are getting more attention for larger celebrations where you want maximum capacity without the maximum spend.
+</p>
+
+<p className="mb-8">
+  <strong>Best for:</strong> Large birthday parties, anniversary gatherings, group celebrations.
+</p>
+
+<h3 className="text-2xl font-semibold mt-10 mb-3">
+  4. Faridabad & Surajkund
+</h3>
+
+<p className="mb-4">
+  Often overlooked, the Surajkund belt in Faridabad has some stunning resort-style properties that function beautifully for private events. Quieter, scenic, and ideal for daytime celebrations or weekend getaways combined with a party.
+</p>
+
+<p className="mb-8">
+  <strong>Best for:</strong> Day parties, sundowners, intimate family gatherings.
+</p>
+            
           <h2 className="text-3xl font-bold mt-12 mb-6">
           What to Look for When Booking a Farmhouse
         </h2>
 
-        <p>
+        <p className="mb-8">
           Not all farmhouses are equal. here&apos;s the checklist that saves you from booking regret:
 Guest capacity vs. actual comfort. A venue that &quot;fits 100 guests&quot; in its listing might mean a cramped, uncomfortable experience for 100 people. Ask for the comfortable capacity.
 Catering policy. Some venues insist on in-house catering (often average quality at inflated prices). Others let you bring your own caterer. Clarify this before locking in.
@@ -118,17 +151,57 @@ On-ground property staff. Is there a venue coordinator on site during your event
           How Effortless Events Solves This
         </h2>
 
-        <p>
-          At Effortless Events, we manage the entire experience, from venue identification to the last cleanup after the party.
-here&apos;s how a typical private party engagement works with us:
-Step 1 - Understanding your vision. We start with a quick call or WhatsApp conversation to understand your occasion, guest count, aesthetic preferences, and budget. No forms, no lengthy questionnaires.
-Step 2 - Curated venue shortlist. Based on your brief, we shortlist 3–5 venues from our network across Delhi NCR that genuinely match your requirements, not just any available property.
-Step 3 - Site visits and finalisation. We coordinate site visits and handle all back-and-forth negotiations with the venue. You show up, see the space, and make the call.
-Step 4 - End-to-end event production. Once the venue is locked, we take over: decor, catering, entertainment, sound, lighting, photography, and logistics, all coordinated under one roof, with a single point of contact.
-Step 5 - Day-of execution. Our team is on the ground from setup to wrap-up. You arrive as a guest, not a coordinator.
-The result? you&apos;re present at your own party,  relaxed, celebrating, creating memories, while we handle everything behind the scenes.
+       <p className="mb-8">
+  At Effortless Events, we manage the entire experience, from venue identification to the last cleanup after the party.
+</p>
 
-        </p>
+<p className="mb-8">
+  Here&apos;s how a typical private party engagement works with us:
+</p>
+
+<h3 className="text-2xl font-semibold mt-8 mb-3">
+  Step 1 – Understanding Your Vision
+</h3>
+
+<p className="mb-8">
+  We start with a quick call or WhatsApp conversation to understand your occasion, guest count, aesthetic preferences, and budget. No forms, no lengthy questionnaires.
+</p>
+
+<h3 className="text-2xl font-semibold mt-8 mb-3">
+  Step 2 – Curated Venue Shortlist
+</h3>
+
+<p className="mb-8">
+  Based on your brief, we shortlist 3–5 venues from our network across Delhi NCR that genuinely match your requirements, not just any available property.
+</p>
+
+<h3 className="text-2xl font-semibold mt-8 mb-3">
+  Step 3 – Site Visits & Finalisation
+</h3>
+
+<p className="mb-8">
+  We coordinate site visits and handle all back-and-forth negotiations with the venue. You show up, see the space, and make the call.
+</p>
+
+<h3 className="text-2xl font-semibold mt-8 mb-3">
+  Step 4 – End-to-End Event Production
+</h3>
+
+<p className="mb-8">
+  Once the venue is locked, we take over: decor, catering, entertainment, sound, lighting, photography, and logistics, all coordinated under one roof with a single point of contact.
+</p>
+
+<h3 className="text-2xl font-semibold mt-8 mb-3">
+  Step 5 – Day-of Execution
+</h3>
+
+<p className="mb-8">
+  Our team is on the ground from setup to wrap-up. You arrive as a guest, not a coordinator.
+</p>
+
+<p className="mb-8">
+  The result? You&apos;re present at your own party, relaxed, celebrating, creating memories while we handle everything behind the scenes.
+</p>
 
       </article>
 
