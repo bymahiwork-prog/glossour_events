@@ -276,11 +276,11 @@ export default function BlogPage() {
       <section className="max-w-5xl mx-auto px-6 pb-24">
         <div className="bg-black text-white rounded-3xl p-12 text-center">
 
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 text-white">
             Ready to Plan Your Private Party?
           </h2>
 
-          <p className="text-gray-300 mb-8">
+          <p className="text-white/80 mb-8">
             Whether you already have a venue in mind or need help
             finding one, our team can help.
           </p>
