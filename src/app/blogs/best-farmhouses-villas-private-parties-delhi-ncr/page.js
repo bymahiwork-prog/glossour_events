@@ -41,7 +41,7 @@ export default function BlogPage() {
           className="w-full rounded-xl mb-10"
         />
 
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
+        <h1 className="text-black text-5xl md:text-6xl font-bold leading-tight mb-4">
           Best Farmhouses & Villas for Private Parties in Delhi NCR
         </h1>
 
@@ -82,7 +82,7 @@ export default function BlogPage() {
   This guide slices through all that noise. Here&apos;s everything you should know about booking a farmhouse or villa for a private party in Delhi NCR, and how to make the whole experience genuinely effortless.
 </p>
 
-        <h2 className="text-3xl font-bold mt-12 mb-6">
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
           Why Farmhouses & Villas Have Become Delhi NCR&apos;s Favourite Private Party Venues
         </h2>
 
@@ -251,7 +251,7 @@ export default function BlogPage() {
       </article>
 
       <section className="max-w-4xl mx-auto px-6 pb-20">
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-black text-4xl font-bold mb-8">
           Frequently Asked Questions
         </h2>
 
@@ -261,7 +261,7 @@ export default function BlogPage() {
               key={i}
               className="border rounded-xl p-5"
             >
-              <summary className="font-semibold cursor-pointer">
+              <summary className="text-black font-semibold cursor-pointer">
                 {faq.q}
               </summary>
 
