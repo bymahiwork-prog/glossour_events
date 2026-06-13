@@ -10,23 +10,23 @@ export const metadata = {
 const faqs = [
   {
     q: "How much does it cost to book a farmhouse for a private party in Delhi NCR?",
-    a: "Delhi NCR farmhouse rental prices typically range from ₹25,000 to ₹3,00,000+ depending on the property and duration.",
+    a: "Delhi NCR farmhouse rental prices can be ₹25,000 - ₹3,00,000+ per room or on the basis of per farm stay here at one go for a longer duration. At Chattarpur, a mid-range farmhouse suitable for a party of 50–80 commonly costs ₹40,000–₹80,000 for a half-day slot. Modern layouts in Gurgaon villas with a pool detail generally see the higher end of rates. Remember that the venue rental is only one component of the budget, decor, catering, entertainment and other logistics are separate. At Effortless Events, we work alongside you to work out how your final budget will be divided against all elements so there are no surprises when planning.",
   },
   {
     q: "Can I bring my own caterer and decorator to a farmhouse party?",
-    a: "Most farmhouses allow outside vendors, but policies vary by venue.",
+    a: "Most farmhouses in Delhi NCR allow outside vendors, but policies vary. Some properties have preferred vendor lists or charge a fee for bringing outside caterers (especially for food and beverages). Before signing any venue contract, always confirm: (a) whether outside catering is allowed, (b) if there's an additional charge, and (c) whether the venue has restrictions on decor materials like open flames or wall fixtures. At Effortless Events, we know the vendor policies of the properties in our network and handle all of this negotiation upfront so you don't get hit with unexpected costs on the day.",
   },
   {
     q: "What is the minimum guest count suitable for a farmhouse party?",
-    a: "Farmhouses generally work best for groups of 20 guests and above.",
+    a: "Farmhouses work best for groups of 20 guests and above. Below that, the space can feel too large and the per-head cost of the venue rental becomes harder to justify. The sweet spot for most farmhouse parties in Delhi NCR is 40–150 guests, large enough to fill the space, small enough to keep it feeling personal and curated. For very intimate gatherings under 20 people, a villa with a private indoor-outdoor setup tends to work better.",
   },
   {
     q: "How far in advance should I book?",
-    a: "For weekends and peak season, 4–8 weeks in advance is recommended.",
+    a: "For weekend dates (Friday–Sunday), especially during peak months like October–February and around major festivals, you should ideally book 4–8 weeks in advance. Popular farmhouses in Chattarpur and Gurgaon get booked out quickly during the wedding and party season. For weekday events, 2–3 weeks is usually sufficient. If you're planning a large celebration with extensive decor and entertainment, the earlier you start, the better, as vendor availability tightens around the same peak dates. Reach out to us early, and we'll help you lock in the right venue before your preferred dates go.",
   },
   {
     q: "Does Effortless Events handle everything?",
-    a: "Yes. Venue sourcing, decor, catering, entertainment and execution.",
+    a: "Everything. Venue sourcing is just where we start. Once the venue is confirmed, our team manages decor, catering, entertainment (DJ, live artists, emcees), sound and lighting, photography and videography, bartending, guest logistics, and on-ground coordination on the day of the event. You get a single point of contact for the entire experience, no juggling multiple vendors, no last-minute chaos. Whether it's a 40-person birthday party or a 150-guest bachelorette weekend, we handle it end-to-end so you can actually enjoy your own celebration.",
   },
 ];
 
@@ -59,26 +59,56 @@ export default function BlogPage() {
         </p>
 
        <p className="mb-8">
-       So you&apos;ve decided to throw a party. Not like a restaurant dinner, not some banquet hall booking either. A real private celebration, with your people, your music, your vibe, your rules. The sort of night that everyone keeps going on about for months.
-In Delhi NCR , farmhouses and villas have kind of become the default go-to choice for exactly this. They give you breathing space, personal privacy, and the flexibility to build something that feels yours. Like a 30th birthday blowout in Chattarpur, a bachelorette weekend in Gurgaon, or even a quiet anniversary at a villa in Noida. You know that feeling, when the place matches the mood… yeah.
-But honestly there&apos;s a catch. Finding the right venue can be tricky. You need it to match your headcount, your budget, your aesthetic , and also deliver in the real world, not just in the photos. That takes more time and calls than most people expect, and somehow it&apos;s never as simple as “pick one and go”.
-This guide slices through all that noise. Here&apos;s everything you should know about booking a farmhouse or villa for a private party in Delhi NCR, and how to make the whole experience genuinely effortless. 
+  So you&apos;ve decided to throw a party. Not like a restaurant dinner, not some banquet hall booking either. A real private celebration, with your people, your music, your vibe, your rules.
+</p>
 
-        </p>
+<p className="mb-8">
+  The sort of night that everyone keeps going on about for months. In Delhi NCR, farmhouses and villas have kind of become the default go-to choice for exactly this. They give you breathing space, personal privacy, and the flexibility to build something that feels yours.
+</p>
+
+<p className="mb-8">
+  Like a 30th birthday blowout in Chattarpur, a bachelorette weekend in Gurgaon, or even a quiet anniversary at a villa in Noida. You know that feeling, when the place matches the mood... yeah.
+</p>
+
+<p className="mb-8">
+  But honestly there&apos;s a catch. Finding the right venue can be tricky. You need it to match your headcount, your budget, your aesthetic, and also deliver in the real world, not just in the photos.
+</p>
+
+<p className="mb-8">
+  That takes more time and calls than most people expect, and somehow it&apos;s never as simple as "pick one and go".
+</p>
+
+<p className="mb-8">
+  This guide slices through all that noise. Here&apos;s everything you should know about booking a farmhouse or villa for a private party in Delhi NCR, and how to make the whole experience genuinely effortless.
+</p>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">
           Why Farmhouses & Villas Have Become Delhi NCR&apos;s Favourite Private Party Venues
         </h2>
 
-        <p className="mb-8">
-         The shift&apos;s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young pros, are going for private venue parties instead of the usual conventional kinda settings. And yeah, here&apos;s what&apos;s behind it :
-Complete privacy. No random folks at the next table. No shared areas. The whole property&apos;s essentially yours for the length of the event, uninterrupted.
-Freedom to customise. Banquet halls often come with fixed packages and super rigid layouts, but farmhouses? You can bring in your own decor team, decide the music volume , push the time a bit longer, and shape the vibe the way you actually want , not the way they pre-plan.
-Space to breathe. Most farmhouses around Chattarpur, Gurgaon, and Noida tend to have lawns, pools, outdoor seating, plus indoor areas too, so guests aren&apos;t all cramped into one single room.
-Instagram-worthy setups. Let&apos;s be real, green lawns , fairy lights , and open skies just look great in photos.
-The whole thing feels special. There&apos;s something about having the entire property that makes the event feel more like it&apos;s curated , more exclusive, and less like a generic template. 
+        <<p className="mb-8">
+  The shift&apos;s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young professionals, are choosing private venue parties instead of traditional banquet halls and restaurants.
+</p>
 
-        </p>
+<p className="mb-6">
+  <strong>Complete privacy.</strong> No random folks at the next table. No shared areas. The whole property is yours for the duration of the event.
+</p>
+
+<p className="mb-6">
+  <strong>Freedom to customise.</strong> Bring your own decor team, control the music, and shape the event exactly the way you want.
+</p>
+
+<p className="mb-6">
+  <strong>Space to breathe.</strong> Most farmhouses offer lawns, pools, outdoor seating, and indoor spaces, so guests aren&apos;t packed into one room.
+</p>
+
+<p className="mb-6">
+  <strong>Instagram-worthy setups.</strong> Green lawns, fairy lights, and open skies naturally create beautiful photos.
+</p>
+
+<p className="mb-8">
+  <strong>A more special experience.</strong> Having an entire property to yourself makes the event feel curated, exclusive, and memorable.
+</p>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">
           Top Areas for Farmhouse & Villa Parties Across Delhi NCR
@@ -136,16 +166,31 @@ The whole thing feels special. There&apos;s something about having the entire pr
           What to Look for When Booking a Farmhouse
         </h2>
 
-        <p className="mb-8">
-          Not all farmhouses are equal. here&apos;s the checklist that saves you from booking regret:
-Guest capacity vs. actual comfort. A venue that &quot;fits 100 guests&quot; in its listing might mean a cramped, uncomfortable experience for 100 people. Ask for the comfortable capacity.
-Catering policy. Some venues insist on in-house catering (often average quality at inflated prices). Others let you bring your own caterer. Clarify this before locking in.
-Sound restrictions. Many farmhouses in residential areas have a 10 PM or 11 PM hard stop on music. If you&apos;re planning a late-night party, this is a deal-breaker worth checking early.
-Included vs. additional costs. Parking, generator backup, security, basic furniture, washrooms — check what&apos;s included in the quoted price and what&apos;s charged extra.
-Setup and breakdown time. How many hours before the event can your decor team access the property? Is there overtime charges if you run late?
-On-ground property staff. Is there a venue coordinator on site during your event, or are you on your own if something goes wrong?
+       <ul className="space-y-6 mb-8">
+  <li>
+    <strong>Guest capacity vs. actual comfort.</strong> A venue that claims to fit 100 guests may not comfortably host 100 people.
+  </li>
 
-        </p>
+  <li>
+    <strong>Catering policy.</strong> Some venues insist on in-house catering while others allow outside vendors.
+  </li>
+
+  <li>
+    <strong>Sound restrictions.</strong> Many farmhouses have music cut-off times at 10 PM or 11 PM.
+  </li>
+
+  <li>
+    <strong>Included vs. additional costs.</strong> Check what&apos;s included in the quoted price and what incurs extra charges.
+  </li>
+
+  <li>
+    <strong>Setup and breakdown time.</strong> Understand how early your vendors can access the venue.
+  </li>
+
+  <li>
+    <strong>On-ground property staff.</strong> Confirm whether a venue coordinator will be present during the event.
+  </li>
+</ul>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">
           How Effortless Events Solves This
