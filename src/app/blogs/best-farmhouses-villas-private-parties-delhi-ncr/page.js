@@ -75,7 +75,7 @@ export default function BlogPage() {
 </p>
 
 <p className="mb-8">
-  That takes more time and calls than most people expect, and somehow it&apos;s never as simple as "pick one and go".
+  That takes more time and calls than most people expect, and somehow it&apos;s never as simple as &quot;pick one and go&quot;.
 </p>
 
 <p className="mb-8">
