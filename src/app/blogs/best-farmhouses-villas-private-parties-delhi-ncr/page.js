@@ -86,7 +86,7 @@ export default function BlogPage() {
           Why Farmhouses & Villas Have Become Delhi NCR&apos;s Favourite Private Party Venues
         </h2>
 
-        <<p className="mb-8">
+        <p className="mb-8">
   The shift&apos;s been kinda noticeable in the last few years, to be honest. More people, especially millennials and young professionals, are choosing private venue parties instead of traditional banquet halls and restaurants.
 </p>
 
