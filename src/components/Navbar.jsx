@@ -25,9 +25,9 @@ setIsMobileMenuOpen(false);
 };
 
 const browseOptions = [
-  { name: "Farmhouses", href: "/venuePages/Farms" },
-  { name: "Reception", href: "/venuePages/Reception" },
-  { name: "Wedding Venues", href: "/venuePages/WeddingVenue" },
+  { name: "Farmhouses", href: "/farmhouses" },
+  { name: "Reception", href: "/reception" },
+  { name: "Wedding Venues", href: "/wedding-venues" },
 ];
 
 return (
