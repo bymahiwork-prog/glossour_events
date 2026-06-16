@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import { Star, MapPin } from "lucide-react";
 
 const Farms = () => {
@@ -125,11 +126,12 @@ const Farms = () => {
                     {venue.product_detail}
                   </p>
 
-                  <button
-                    className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
-                  >
-                    View Details
-                  </button>
+                  <Link
+  href={`/venues/${venue.id}`}
+  className="block w-full text-center bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
+>
+  View Details
+</Link>
 
                 </div>
               </div>
