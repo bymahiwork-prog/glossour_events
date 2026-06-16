@@ -25,12 +25,9 @@ setIsMobileMenuOpen(false);
 };
 
 const browseOptions = [
-{ name: "Noida", href: "/search?search=Noida" },
-{ name: "New Delhi", href: "/search?search=New Delhi" },
-{ name: "Gurugram", href: "/search?search=Gurugram" },
-{ name: "Chhatarpur", href: "/search?search=Chhatarpur" },
-{ name: "Rajasthan", href: "/search?search=Rajasthan" },
-{ name: "Faridabad", href: "/search?search=Faridabad" },
+  { name: "Farmhouses", href: "/venuePages/Farms" },
+  { name: "Reception", href: "/venuePages/Reception" },
+  { name: "Wedding Venues", href: "/venuePages/WeddingVenue" },
 ];
 
 return (
