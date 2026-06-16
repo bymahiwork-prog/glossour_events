@@ -1,45 +1,33 @@
-import React from "react";
-import { Star, MapPin, Users } from "lucide-react";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { Star, MapPin } from "lucide-react";
 
 const Farms = () => {
-  const venues = [
-    {
-      id: 1,
-      name: "Effortless Farm45",
-      location: "Dwai Paltan, Gurugram",
-      rating: 5.0,
-      reviews: 2,
-      capacity: 20,
-      type: "Backyard",
-      image: "/venue1.jpg",
-      description:
-        "Farm features a spacious venue capable of accommodating approximately 20 to 500 guests, providing an excellent setting for your wedding...",
-    },
-    {
-      id: 2,
-      name: "Effortless Farm45",
-      location: "New Delhi, Uttarakhand",
-      rating: 5.0,
-      reviews: 2,
-      capacity: 20,
-      type: "Backyard",
-      image: "/venue2.jpg",
-      description:
-        "Farm features a spacious venue capable of accommodating approximately 20 to 500 guests, providing an excellent setting for your wedding...",
-    },
-    {
-      id: 3,
-      name: "Effortless Farm2",
-      location: "New Delhi, Chattarpur",
-      rating: 5.0,
-      reviews: 2,
-      capacity: 20,
-      type: "Backyard",
-      image: "/venue3.jpg",
-      description:
-        "Farm features a spacious venue capable of accommodating approximately 20 to 500 guests, providing an excellent setting for your wedding...",
-    },
-  ];
+  const [venues, setVenues] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchFarmhouses();
+  }, []);
+
+  const fetchFarmhouses = async () => {
+    try {
+      const response = await fetch("/api/venues?categoryId=1&limit=100");
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch venues");
+      }
+
+      const data = await response.json();
+
+      setVenues(data.products || []);
+    } catch (error) {
+      console.error("Error fetching farmhouses:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const reviews = [
     {
@@ -49,7 +37,7 @@ const Farms = () => {
         "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
       text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
       avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
     },
     {
       id: 2,
@@ -58,7 +46,7 @@ const Farms = () => {
         "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
       text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
     },
     {
       id: 3,
@@ -67,113 +55,143 @@ const Farms = () => {
         "Fatima/Union Square Classic NY Loft with High Ceilings, Filled with Light",
       text: "Andrew handled everything with care and urgency. The venue itself was beautiful and impressed my family and friends for my...",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
     },
   ];
 
-  return (
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <h2 className="text-xl font-semibold">Loading Farmhouses...</h2>
+      </div>
+    );
+  }
+    return (
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Popular Wedding Reception Venues Section */}
+        {/* Farmhouses */}
         <div className="mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">
-            Popular wedding reception venues
+            Popular Farm Houses
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {venues.map((venue, index) => (
+            {venues.map((venue) => (
               <div
                 key={venue.id}
-                className="bg-white overflow-hidden shadow-sm border border-gray-200"
+                className="bg-white overflow-hidden shadow-sm border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300"
               >
-                {/* Venue Image */}
-                <div className="relative h-48 bg-gray-200 overflow-hidden">
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
                   <img
                     src={venue.image}
-                    alt={venue.name}
+                    alt={venue.product_name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
-                {/* Venue Details */}
+                {/* Details */}
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                    {venue.name}
+
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {venue.product_name}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-2 flex items-center">
-                    <MapPin className="w-3 h-3 mr-1" />
-                    {venue.location}
+
+                  <p className="flex items-center text-gray-600 text-sm mb-3">
+                    <MapPin className="w-4 h-4 mr-1" />
+                    {venue.product_location}
                   </p>
 
-                  {/* Rating and Stats */}
-                  <div className="flex items-center gap-4 mb-3">
+                  <div className="flex items-center justify-between mb-3">
+
                     <div className="flex items-center">
-                      <Star className="w-4 h-4 fill-current text-yellow-400 mr-1" />
-                      <span className="text-sm font-medium">
-                        {venue.rating}
-                      </span>
-                      <span className="text-sm text-gray-500 ml-1">
-                        ({venue.reviews})
+                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 mr-1" />
+                      <span className="font-medium">
+                        {venue.rating || "5.0"}
                       </span>
                     </div>
-                    <div className="flex items-center">
-                      <Users className="w-4 h-4 text-gray-400 mr-1" />
-                      <span className="text-sm text-gray-600">
-                        {venue.capacity}
-                      </span>
-                    </div>
-                    <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-700">
-                      {venue.type}
+
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">
+                      {venue.category_name}
                     </span>
+
                   </div>
 
-                  <p className="text-sm text-gray-600 mb-3">
-                    {venue.description}
+                  <p className="text-lg font-semibold text-black mb-3">
+                    {venue.product_price}
                   </p>
 
-                  <button className="text-blue-600 text-sm font-medium hover:underline">
-                    Show More
+                  <p className="text-sm text-gray-600 line-clamp-4 mb-4">
+                    {venue.product_detail}
+                  </p>
+
+                  <button
+                    className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
+                  >
+                    View Details
                   </button>
+
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Reviews Section */}
+        {/* Reviews */}
+
         <div>
+
           <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            Reviews for wedding reception venues
+            Reviews for Farm Houses
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             {reviews.map((review) => (
-              <div key={review.id} className="bg-white p-4">
+
+              <div
+                key={review.id}
+                className="bg-white p-4 border rounded-lg"
+              >
+
                 <div className="flex items-start mb-3">
+
                   <img
                     src={review.avatar}
                     alt={review.author}
-                    className="w-8 h-8  mr-3 flex-shrink-0 object-cover"
+                    className="w-10 h-10 rounded-full mr-3 object-cover"
                   />
-                  <div className="flex-1 min-w-0">
-                    <h4 className="text-sm font-medium text-gray-900 mb-1">
+
+                  <div>
+
+                    <h4 className="font-semibold">
                       {review.author}
                     </h4>
-                    <p className="text-sm text-gray-600 leading-tight mb-2">
+
+                    <p className="text-sm text-gray-600">
                       {review.venue}
                     </p>
+
                   </div>
+
                 </div>
 
-                <p className="text-sm text-gray-700 mb-2">{review.text}</p>
+                <p className="text-sm text-gray-700">
+                  {review.text}
+                </p>
 
-                <button className="text-blue-600 text-sm font-medium hover:underline">
+                <button className="mt-3 text-blue-600 font-medium hover:underline">
                   Read more
                 </button>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </div>
     </div>
   );
