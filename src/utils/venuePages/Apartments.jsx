@@ -1,69 +1,96 @@
-export default function Reception() {
+export default function Apartments() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
-      {/* Navigation Section */}
+
+      {/* Breadcrumb */}
       <div className="w-full py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center text-[#FFFFFF] text-xl font-normal">
-            <span className="hover:text-white cursor-pointer">Home</span>
-            <span className="mx-3"> ➡️ </span>
-            <span className="">Wedding reception venues</span>
+          <div className="flex items-center text-white text-lg font-normal">
+            <span className="hover:text-gray-300 cursor-pointer">
+              Home
+            </span>
+
+            <span className="mx-3">→</span>
+
+            <span>Apartments</span>
           </div>
         </div>
       </div>
 
-      {/* Main Content Section - Centered */}
+      {/* Main Content */}
       <div className="flex-1">
         <div className="max-w-7xl mx-auto px-4 py-16">
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-            {/* Left Column */}
-            <div className="space-y-8">
-              <div>
-                <h1 className="text-4xl lg:text-5xl font-light leading-tight mb-6">
-                  How wedding party venues work on Effortless Events
-                </h1>
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  Effortless Events is the easiest way to book unique venues for
-                  wedding receptions. We also have spaces for productions and
-                  meetings.
-                </p>
-              </div>
+
+            {/* Left */}
+
+            <div>
+
+              <h1 className="text-4xl lg:text-5xl font-light leading-tight mb-6">
+                Find Premium Apartments on Effortless Events
+              </h1>
+
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Discover premium apartments perfect for parties, birthdays,
+                staycations, family gatherings and private celebrations.
+                Browse verified properties across Delhi NCR with transparent
+                pricing and seamless booking.
+              </p>
+
             </div>
 
-            {/* Right Column */}
+            {/* Right */}
+
             <div className="space-y-12">
-              {/* Unique venues */}
+
               <div>
-                <h2 className="text-xl font-medium mb-4">Unique venues</h2>
+
+                <h2 className="text-xl font-medium mb-4">
+                  Premium Apartments
+                </h2>
+
                 <p className="text-gray-300 leading-relaxed">
-                  Every day we uncover new, creative spaces perfect for your
-                  wedding party - from neighborhood galleries to hidden
-                  rooftops, and beyond.
+                  Browse carefully selected luxury apartments ideal for
+                  intimate celebrations, weekend stays and private events.
                 </p>
+
               </div>
 
-              {/* Honest pricing */}
               <div>
-                <h2 className="text-xl font-medium mb-4">Honest pricing</h2>
+
+                <h2 className="text-xl font-medium mb-4">
+                  Transparent Pricing
+                </h2>
+
                 <p className="text-gray-300 leading-relaxed">
-                  Our spaces are priced to fit your budget. Hire by the hour for
-                  your wedding reception without worrying about hidden fees.
+                  Compare verified apartment rentals with clear pricing and
+                  no hidden charges.
                 </p>
+
               </div>
 
-              {/* Smooth bookings */}
               <div>
-                <h2 className="text-xl font-medium mb-4">Smooth bookings</h2>
+
+                <h2 className="text-xl font-medium mb-4">
+                  Easy Booking
+                </h2>
+
                 <p className="text-gray-300 leading-relaxed">
-                  No more messy contracts. We build the tools to make hiring out
-                  a space for your wedding party as easy as the click of a
-                  button.
+                  Book your preferred apartment quickly with the help of
+                  Effortless Events and enjoy a smooth experience from enquiry
+                  to confirmation.
                 </p>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
       </div>
+
     </div>
   );
 }
