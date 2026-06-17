@@ -26,7 +26,7 @@ setIsMobileMenuOpen(false);
 
 const browseOptions = [
   { name: "Farmhouses", href: "/farmhouses" },
-  { name: "Reception", href: "/reception" },
+  { name: "Apartments", href: "/apartments" },
   { name: "Wedding Venues", href: "/wedding-venues" },
 ];
 
