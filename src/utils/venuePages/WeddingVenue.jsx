@@ -145,62 +145,6 @@ const WeddingVenue = () => {
           </div>
         </div>
 
-              {/* Reviews */}
-
-        <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            Reviews for Wedding Venues
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {reviews.map((review) => (
-
-              <div
-                key={review.id}
-                className="bg-white p-4 border rounded-lg"
-              >
-
-                <div className="flex items-start mb-3">
-
-                  <img
-                    src={review.avatar}
-                    alt={review.author}
-                    className="w-10 h-10 rounded-full mr-3 object-cover"
-                  />
-
-                  <div>
-
-                    <h4 className="font-semibold">
-                      {review.author}
-                    </h4>
-
-                    <p className="text-sm text-gray-600">
-                      {review.venue}
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <p className="text-sm text-gray-700">
-                  {review.text}
-                </p>
-
-                <button className="mt-3 text-blue-600 font-medium hover:underline">
-                  Read more
-                </button>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
   );
 };
 
