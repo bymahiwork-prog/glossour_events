@@ -20,9 +20,9 @@ export async function GET(req, { params }) {
       SELECT
         p.*,
         c.category_name,
-        (SELECT GROUP_CONCAT(pi.image) 
-         FROM tbl_product_images pi 
-         WHERE pi.product_id = p.id) AS images_list
+        (SELECT GROUP_CONCAT(pi.image SEPARATOR '|||')
+ FROM tbl_product_images pi
+ WHERE pi.product_id = p.id) AS images_list
       FROM tbl_product p
       LEFT JOIN tbl_category c ON p.product_category = c.id
       WHERE p.id = ?
@@ -54,7 +54,7 @@ export async function GET(req, { params }) {
       last_update: row.last_update,
       images: row.images_list
         ? row.images_list
-            .split(",")
+            .split("|||")
             .map((img) => `https://admin.effortlessevents.in/admin/${img}`)
         : [],
     };
