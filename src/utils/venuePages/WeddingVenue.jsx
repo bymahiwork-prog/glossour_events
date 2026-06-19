@@ -143,7 +143,6 @@ const WeddingVenue = () => {
               </div>
             ))}
           </div>
-        </div>
 
   );
 };
