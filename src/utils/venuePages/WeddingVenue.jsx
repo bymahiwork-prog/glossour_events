@@ -109,7 +109,6 @@ const WeddingVenue = () => {
                   >
                     View Details
                   </Link>
-                                    </Link>
 
                 </div>
 
