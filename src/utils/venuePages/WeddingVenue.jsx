@@ -30,36 +30,6 @@ const WeddingVenue = () => {
     }
   };
 
-  const reviews = [
-    {
-      id: 1,
-      author: "J.B.",
-      venue:
-        "Beautiful wedding venue with amazing ambience and exceptional service.",
-      text: "Everything was managed perfectly. The venue looked stunning and our guests had an unforgettable experience.",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 2,
-      author: "A.K.",
-      venue:
-        "Luxury wedding venue in Delhi NCR",
-      text: "Highly recommend this venue. The staff was cooperative and the decorations exceeded our expectations.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 3,
-      author: "S.M.",
-      venue:
-        "Perfect destination wedding venue",
-      text: "From booking to the final event, everything was seamless. Amazing experience!",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80",
-    },
-  ];
-
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -74,8 +44,6 @@ const WeddingVenue = () => {
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
 
-        {/* Wedding Venues */}
-
         <div className="mb-16">
 
           <h1 className="text-4xl font-bold text-gray-900 mb-8">
@@ -85,17 +53,20 @@ const WeddingVenue = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {venues.map((venue) => (
+
               <div
                 key={venue.id}
                 className="bg-white overflow-hidden shadow-sm border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300"
               >
 
                 <div className="relative h-56 overflow-hidden">
+
                   <img
                     src={venue.image}
                     alt={venue.product_name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
+
                 </div>
 
                 <div className="p-4">
@@ -138,12 +109,21 @@ const WeddingVenue = () => {
                   >
                     View Details
                   </Link>
+                                    </Link>
 
                 </div>
+
               </div>
+
             ))}
+
           </div>
 
+        </div>
+
+      </div>
+
+    </div>
   );
 };
 
