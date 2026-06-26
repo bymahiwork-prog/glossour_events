@@ -21,7 +21,7 @@ export const metadata = {
     title: "Best Airbnb Farmhouses for Private Parties in Delhi NCR",
     description:
       "Discover premium Airbnb farmhouses for birthdays, pool parties and private celebrations.",
-    images: ["/blogs/airbnb-farmhouse-cover.jpg"],
+    images: ["/blogs/airbnb-farmhouse-cover.png"],
   },
 };
 
