@@ -1,9 +1,23 @@
-# *
+# Allow all search engines
 User-agent: *
+Allow: /
+
+# OpenAI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google Extended (AI features)
+User-agent: Google-Extended
 Allow: /
 
 # Host
 Host: https://www.effortlessevents.in/
 
-# Sitemaps
+# Sitemap
 Sitemap: https://www.effortlessevents.in/sitemap.xml
