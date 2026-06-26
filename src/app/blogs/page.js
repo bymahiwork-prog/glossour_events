@@ -40,7 +40,7 @@ export default function BlogsPage() {
             className="block border rounded-2xl overflow-hidden hover:shadow-xl transition duration-300"
           >
             <img
-              src="/blogs/airbnb-farmhouse-cover.jpg"
+              src="/blogs/airbnb-farmhouse-cover.png"
               alt="Best Airbnb Farmhouses for Private Parties in Delhi NCR"
               className="w-full h-72 object-cover"
             />
