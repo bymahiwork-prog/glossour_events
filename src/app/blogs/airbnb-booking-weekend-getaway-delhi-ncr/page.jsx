@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Navbar from "@/app/Components/Navbar";
-import Footer from "@/app/Components/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 export const metadata = {
   title:
