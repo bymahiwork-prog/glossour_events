@@ -57,7 +57,7 @@ export default function BlogPage() {
       <section className="max-w-6xl mx-auto px-6 pt-32 pb-10">
 
         <img
-          src="/blogs/airbnb-farmhouse-cover.jpg"
+          src="/blogs/airbnb-farmhouse-cover.png"
           alt="Best Airbnb Farmhouses for Private Parties in Delhi NCR"
           className="w-full rounded-xl mb-10"
         />
