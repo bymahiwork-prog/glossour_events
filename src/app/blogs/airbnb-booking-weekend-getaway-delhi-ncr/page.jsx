@@ -648,3 +648,5 @@ export default function AirbnbWeekendGetawayBlog() {
       </section>
 
     </main>
+  );
+}
