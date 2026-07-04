@@ -86,6 +86,44 @@ export default function BlogsPage() {
             </div>
 
           </a>
+                  {/* BLOG 3 */}
+
+<a
+  href="/blogs/airbnb-booking-weekend-getaway-delhi-ncr"
+  className="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
+>
+
+  <div className="lg:w-2/5">
+    <img
+      src="/blogs/airbnb-booking-weekend-getaway-delhi-ncr-cover.png"
+      alt="Airbnb Booking for Weekend Getaways in Delhi NCR"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  <div className="lg:w-3/5 p-10 flex flex-col justify-center">
+
+    <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold mb-3">
+      Weekend Getaways
+    </span>
+
+    <h2 className="text-4xl font-bold mb-5">
+      Airbnb Booking for Weekend Getaways with Friends &amp; Family
+    </h2>
+
+    <p className="text-gray-600 leading-8 mb-8">
+      Discover luxury Airbnb villas and private farmhouses across Delhi NCR
+      for family vacations, birthday celebrations, staycations, pool parties,
+      and relaxing weekend escapes.
+    </p>
+
+    <span className="font-semibold text-[#B57A3C]">
+      Read Article →
+    </span>
+
+  </div>
+
+</a>
 
         </div>
 
