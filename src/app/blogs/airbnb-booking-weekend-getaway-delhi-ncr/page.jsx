@@ -68,7 +68,7 @@ export default function BlogPage() {
       <section className="max-w-6xl mx-auto px-6 pt-32 pb-10">
 
         <img
-          src="/blogs/airbnb-booking-weekend-getaway-delhi-ncr-cover.webp"
+          src="/blogs/airbnb-booking-weekend-getaway-delhi-ncr-cover.png"
           alt="Airbnb Booking for Weekend Getaways in Delhi NCR"
           className="w-full rounded-xl mb-10"
         />
