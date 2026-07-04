@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-
 export const metadata = {
   title:
     "Airbnb Booking for Weekend Getaways with Friends & Family | Effortless Event",
