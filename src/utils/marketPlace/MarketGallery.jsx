@@ -14,7 +14,7 @@ export default function MarketGallery({ venue }) {
   // Add all your mappings here
 };
 
-const displayName = farmNames{displayName} || venue.product_name;
+const displayName = farmNames[venue.product_name] || venue.product_name;
 
   // Create gallery using API data
   const images = [
