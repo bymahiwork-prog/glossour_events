@@ -6,6 +6,15 @@ import { Share2, Grid, MapPin } from "lucide-react";
 
 export default function MarketGallery({ venue }) {
   const [showAllImages, setShowAllImages] = useState(false);
+  const farmNames = {
+  "Venue 98": "Effortless Farm 45",
+  "Venue 125": "Effortless Farm 16",
+  "Venue 120": "Effortless Farm 3",
+  "Venue 39": "Effortless Farm 13",
+  // Add all your mappings here
+};
+
+const displayName = farmNames[venue.product_name] || venue.product_name;
 
   // Create gallery using API data
   const images = [
@@ -55,7 +64,7 @@ export default function MarketGallery({ venue }) {
           <div>
 
             <h1 className="text-4xl font-bold text-black">
-              {venue.product_name}
+              {displayName}
             </h1>
 
             <p className="flex items-center text-gray-600 mt-2">
@@ -143,7 +152,7 @@ export default function MarketGallery({ venue }) {
               <div className="flex justify-between items-center mb-6">
 
                 <h2 className="text-white text-2xl font-bold">
-                  {venue.product_name}
+                   {displayName}
                 </h2>
 
                 <button
