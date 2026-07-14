@@ -15,7 +15,7 @@ export async function GET(req) {
 
     const offset = (page - 1) * limit;
 
-    let whereClause = "WHERE 1=1";
+    let whereClause = "WHERE p.status = 1";
     const countParams = [];
     const selectParams = [];
 
