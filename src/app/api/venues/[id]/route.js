@@ -25,8 +25,8 @@ export async function GET(req, { params }) {
  WHERE pi.product_id = p.id) AS images_list
       FROM tbl_product p
       LEFT JOIN tbl_category c ON p.product_category = c.id
-      WHERE p.id = ?
-      LIMIT 1
+      WHERE p.id = ? AND p.status = 1
+LIMIT 1
       `,
       [id]
     );
