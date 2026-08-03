@@ -2,31 +2,31 @@ import Link from "next/link";
 
 export const metadata = {
   title:
-    "10 Corporate Event Planning Mistakes That Can Ruin Your Event | Effortless Events",
+    &ldquo;10 Corporate Event Planning Mistakes That Can Ruin Your Event | Effortless Events&ldquo;,
   description:
-    "Avoid the biggest corporate event planning mistakes. Learn expert event management tips for conferences, product launches, networking events, award ceremonies, and business events across Delhi NCR.",
+    &ldquo;Avoid the biggest corporate event planning mistakes. Learn expert event management tips for conferences, product launches, networking events, award ceremonies, and business events across Delhi NCR.&ldquo;,
 };
 
 const faqs = [
   {
-    q: "How early should you start planning a corporate event?",
-    a: "For most corporate events, planning should begin at least 2–6 months in advance, depending on the size and complexity of the event. Larger conferences and product launches often require even more time for venue bookings, vendor coordination, branding, and marketing.",
+    q: &ldquo;How early should you start planning a corporate event?&ldquo;,
+    a: &ldquo;For most corporate events, planning should begin at least 2–6 months in advance, depending on the size and complexity of the event. Larger conferences and product launches often require even more time for venue bookings, vendor coordination, branding, and marketing.&ldquo;,
   },
   {
-    q: "What is the biggest mistake businesses make while planning corporate events?",
-    a: "The most common mistake is starting too late. Delayed planning limits venue availability, increases costs, and leaves little room for contingency planning. Successful events rely on early preparation and detailed coordination.",
+    q: &ldquo;What is the biggest mistake businesses make while planning corporate events?&ldquo;,
+    a: &ldquo;The most common mistake is starting too late. Delayed planning limits venue availability, increases costs, and leaves little room for contingency planning. Successful events rely on early preparation and detailed coordination.&ldquo;,
   },
   {
-    q: "Why should businesses hire a corporate event management company?",
-    a: "A professional event management company handles venue sourcing, vendor management, budgeting, logistics, technical production, guest experience, and on-ground execution, allowing businesses to focus on their attendees and objectives.",
+    q: &ldquo;Why should businesses hire a corporate event management company?&ldquo;,
+    a: &ldquo;A professional event management company handles venue sourcing, vendor management, budgeting, logistics, technical production, guest experience, and on-ground execution, allowing businesses to focus on their attendees and objectives.&ldquo;,
   },
   {
-    q: "What services does Effortless Events provide?",
-    a: "Effortless Events offers end-to-end corporate event management including conferences, product launches, annual meetings, award ceremonies, networking events, employee engagement activities, venue sourcing, production, branding, entertainment, and event execution.",
+    q: &ldquo;What services does Effortless Events provide?&ldquo;,
+    a: &ldquo;Effortless Events offers end-to-end corporate event management including conferences, product launches, annual meetings, award ceremonies, networking events, employee engagement activities, venue sourcing, production, branding, entertainment, and event execution.&ldquo;,
   },
   {
-    q: "How can businesses keep their corporate event within budget?",
-    a: "The best way is to create a detailed event budget with contingency funds, compare vendor quotations early, prioritise business objectives, and work with experienced event planners who understand cost optimisation.",
+    q: &ldquo;How can businesses keep their corporate event within budget?&ldquo;,
+    a: &ldquo;The best way is to create a detailed event budget with contingency funds, compare vendor quotations early, prioritise business objectives, and work with experienced event planners who understand cost optimisation.&ldquo;,
   },
 ];
 
