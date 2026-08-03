@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 export const metadata = {
+  export const metadata = {
   title:
-    &ldquo;10 Corporate Event Planning Mistakes That Can Ruin Your Event | Effortless Events&ldquo;,
+    "10 Corporate Event Planning Mistakes That Can Ruin Your Event | Effortless Events",
   description:
-    &ldquo;Avoid the biggest corporate event planning mistakes. Learn expert event management tips for conferences, product launches, networking events, award ceremonies, and business events across Delhi NCR.&ldquo;,
+    "Avoid the biggest corporate event planning mistakes. Learn expert event management tips for conferences, product launches, networking events, award ceremonies, and business events across Delhi NCR.",
 };
 
 const faqs = [
