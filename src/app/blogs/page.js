@@ -128,7 +128,7 @@ export default function BlogsPage() {
                   {/* BLOG 4 */}
 
           <a
-            href="/blogs/10-event-planning-mistakes-corporate-event"
+            href="/blogs/corporate-event-planning-mistakes"
             className="flex flex-col lg:flex-row-reverse bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
           >
 
