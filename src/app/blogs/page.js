@@ -125,6 +125,46 @@ export default function BlogsPage() {
 
 </a>
 
+                  {/* BLOG 4 */}
+
+          <a
+            href="/blogs/10-event-planning-mistakes-corporate-event"
+            className="flex flex-col lg:flex-row-reverse bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
+          >
+
+            <div className="lg:w-2/5">
+              <img
+                src="/blogs/corporate-event-planning-mistakes-cover.png"
+                alt="10 Event Planning Mistakes That Can Ruin Your Corporate Event"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="lg:w-3/5 p-10 flex flex-col justify-center">
+
+              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold mb-3">
+                Corporate Events
+              </span>
+
+              <h2 className="text-4xl font-bold mb-5">
+                10 Event Planning Mistakes That Can Ruin Your Corporate Event (And How to Avoid Them)
+              </h2>
+
+              <p className="text-gray-600 leading-8 mb-8">
+                Learn the most common corporate event planning mistakes and how
+                to avoid them. From budgeting and venue selection to guest
+                experience and technical preparation, discover expert tips for
+                planning successful business events.
+              </p>
+
+              <span className="font-semibold text-[#B57A3C]">
+                Read Article →
+              </span>
+
+            </div>
+
+          </a>
+                  
         </div>
 
       </div>
