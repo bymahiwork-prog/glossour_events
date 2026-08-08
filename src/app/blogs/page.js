@@ -164,6 +164,46 @@ export default function BlogsPage() {
             </div>
 
           </a>
+
+                  {/* BLOG 5 */}
+
+      <a
+        href="/blogs/how-to-choose-right-event-management-company"
+        className="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
+      >
+
+        <div className="lg:w-2/5">
+          <img
+            src="/blogs/how-to-choose-event-management-company-cover.png"
+            alt="How to Choose the Right Event Management Company for Your Business"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="lg:w-3/5 p-10 flex flex-col justify-center">
+
+          <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold mb-3">
+            Event Management
+          </span>
+
+          <h2 className="text-4xl font-bold mb-5">
+            How to Choose the Right Event Management Company for Your Business
+          </h2>
+
+          <p className="text-gray-600 leading-8 mb-8">
+            Learn how to choose the right event management company for your
+            business. Discover what to look for in experience, communication,
+            creativity, planning, budget transparency, vendor networks and
+            client reviews.
+          </p>
+
+          <span className="font-semibold text-[#B57A3C]">
+            Read Article →
+          </span>
+
+        </div>
+
+      </a>
                   
         </div>
 
