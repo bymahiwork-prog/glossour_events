@@ -168,7 +168,7 @@ export default function BlogsPage() {
                   {/* BLOG 5 */}
 
       <a
-        href="/blogs/how-to-choose-right-event-management-company"
+        href="/blogs/how-to-choose-the-right-event-management-company"
         className="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
       >
 
