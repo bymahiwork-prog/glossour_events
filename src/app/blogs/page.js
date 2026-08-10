@@ -204,6 +204,46 @@ export default function BlogsPage() {
         </div>
 
       </a>
+
+              {/* BLOG 6 */}
+
+<a
+  href="/blogs/why-booking-an-airbnb-is-the-smart-choice"
+  className="flex flex-col lg:flex-row-reverse bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition"
+>
+
+  <div className="lg:w-2/5">
+    <img
+      src="/blogs/airbnb-for-group-stays-and-corporate-travel-cover.png"
+      alt="Why Booking an Airbnb Is the Smart Choice for Group Stays and Corporate Travel"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  <div className="lg:w-3/5 p-10 flex flex-col justify-center">
+
+    <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold mb-3">
+      Airbnb & Corporate Travel
+    </span>
+
+    <h2 className="text-4xl font-bold mb-5">
+      Why Booking an Airbnb Is the Smart Choice for Group Stays &amp; Corporate Travel
+    </h2>
+
+    <p className="text-gray-600 leading-8 mb-8">
+      Discover why Airbnb is becoming a preferred choice for corporate
+      travel, group stays, business trips and weekend getaways. Explore
+      the benefits of more space, greater flexibility, privacy, comfort
+      and better value for groups.
+    </p>
+
+    <span className="font-semibold text-[#B57A3C]">
+      Read Article →
+    </span>
+
+  </div>
+
+</a>
                   
         </div>
 
