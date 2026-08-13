@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function ServicesHero() {
   return (
     <section className="relative w-full min-h-[520px] sm:min-h-[580px] lg:min-h-[620px] overflow-hidden bg-black">
-      
+
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -24,14 +24,14 @@ export default function ServicesHero() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex min-h-[520px] sm:min-h-[580px] lg:min-h-[620px] items-center">
-        
+
         <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl"
+            className="max-w-2xl translate-y-8 sm:translate-y-0"
           >
 
             {/* Eyebrow */}
@@ -61,6 +61,7 @@ export default function ServicesHero() {
             {/* CTA Buttons */}
             <div className="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
 
+              {/* Plan My Event */}
               <Link
                 href="/contact"
                 className="inline-flex min-h-[44px] items-center justify-center bg-[#d6b36a] px-6 sm:px-7 py-3 text-[10px] sm:text-xs font-semibold tracking-[0.12em] uppercase text-black transition-all duration-300 hover:bg-white"
@@ -68,6 +69,7 @@ export default function ServicesHero() {
                 Plan My Event
               </Link>
 
+              {/* Explore Venues */}
               <Link
                 href="/services/party-venues"
                 className="inline-flex min-h-[44px] items-center justify-center border border-white/70 px-6 sm:px-7 py-3 text-[10px] sm:text-xs font-semibold tracking-[0.12em] uppercase text-white transition-all duration-300 hover:bg-white hover:text-black"
