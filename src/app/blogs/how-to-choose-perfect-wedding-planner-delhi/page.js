@@ -1,1323 +1,1081 @@
-export default function WeddingPlannerDelhiBlog() {
+import Link from "next/link";
+
+export const metadata = {
+  title:
+    "How to Choose the Perfect Wedding Planner in Delhi: A Complete Guide | Effortless Events",
+  description:
+    "Discover how to choose the perfect wedding planner in Delhi. Learn about experience, portfolios, vendor networks, wedding décor, budget transparency, destination weddings, and essential wedding planning tips.",
+};
+
+const faqs = [
+  {
+    q: "Why should I hire a Wedding Planner in Delhi?",
+    a: "A professional Wedding Planner in Delhi manages every aspect of your wedding, including budgeting, vendor coordination, décor, logistics, and execution, ensuring a stress-free experience.",
+  },
+  {
+    q: "How do I choose the best wedding planner in Delhi?",
+    a: "Look for experience, client reviews, portfolio quality, transparent pricing, vendor network, communication skills, and expertise in weddings similar to yours.",
+  },
+  {
+    q: "What services do luxury wedding planning services include?",
+    a: "Luxury wedding planning services typically include premium venue selection, customized décor, celebrity entertainment, guest hospitality, travel arrangements, designer styling, and complete event management.",
+  },
+  {
+    q: "Can a destination wedding planner organize weddings outside Delhi?",
+    a: "Yes. A destination wedding planner specializes in planning weddings across India and internationally by managing travel, accommodations, local vendors, logistics, and event execution.",
+  },
+  {
+    q: "What is included in a wedding event management company's services?",
+    a: "A wedding event management company generally handles venue booking, décor, catering, entertainment, photography, logistics, guest management, budgeting, and on-site coordination.",
+  },
+];
+
+export default function BlogPage() {
   return (
-    <main className="bg-[#F8F6F2] text-[#1F1F1F]">
+    <main className="bg-white min-h-screen">
 
-      {/* HERO SECTION */}
+      {/* Hero */}
 
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="max-w-6xl mx-auto px-6 pt-32 pb-10">
 
         <img
-          src="/blogs/wedding-planner-delhi-guide-cover.png"
-          alt="How to Choose the Perfect Wedding Planner in Delhi"
-          className="absolute inset-0 w-full h-full object-cover"
+          src="/blogs/how-to-choose-perfect-wedding-planner-delhi-cover.png"
+          alt="How to Choose the Perfect Wedding Planner in Delhi: A Complete Guide"
+          className="w-full rounded-xl mb-10"
         />
 
-        <div className="absolute inset-0 bg-black/55"></div>
+        <h1 className="text-black text-5xl md:text-6xl font-bold leading-tight mb-4">
+          How to Choose the Perfect Wedding Planner in Delhi: A Complete Guide
+        </h1>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 w-full">
+        <p className="text-gray-500">
+          By Effortless Events • Wedding Planning Guide
+        </p>
 
-          <div className="max-w-4xl">
+      </section>
 
-            <span className="inline-block text-sm uppercase tracking-[0.25em] text-[#D5A15D] font-semibold mb-6">
-              Wedding Planning Guide
-            </span>
+      {/* Blog */}
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-8">
-              How to Choose the Perfect Wedding Planner in Delhi:
-              A Complete Guide
-            </h1>
+      <article className="max-w-6xl mx-auto px-6 pb-20 text-xl leading-9 text-gray-800">
 
-            <p className="text-lg md:text-xl leading-8 text-white/90 max-w-3xl">
-              Discover how to choose the right wedding planner in Delhi,
-              evaluate their experience, understand their planning process,
-              and create a seamless celebration that reflects your vision.
-            </p>
+        <p className="mb-8">
+          A wedding is one of the most memorable milestones in a person&apos;s
+          life, and planning it requires careful attention to every detail.
+          From selecting the venue and coordinating vendors to managing
+          décor, entertainment, catering, and guest experiences, organizing a
+          wedding can quickly become overwhelming. This is where hiring a
+          luxury wedding planner can elevate your wedding experience. A
+          Wedding Planner in Delhi becomes invaluable.
+        </p>
 
-          </div>
+        <p className="mb-8">
+          Delhi is home to some of India&apos;s most talented wedding
+          professionals who specialize in creating extraordinary celebrations.
+          Whether you&apos;re planning a traditional wedding, a modern luxury
+          celebration, or a destination wedding, choosing the right planner
+          ensures your vision becomes reality without unnecessary stress.
+        </p>
+
+        <p className="mb-8">
+          In this comprehensive guide, we&apos;ll help you understand how to
+          select the perfect wedding planner while sharing practical wedding
+          planning tips that can make your special day seamless and
+          unforgettable.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Why Hire a Wedding Planner in Delhi?
+        </h2>
+
+        <p className="mb-8">
+          Planning a wedding involves managing multiple vendors, schedules,
+          budgets, and unexpected challenges. A professional Wedding Planner
+          in Delhi brings expertise, creativity, and industry connections that
+          help streamline every aspect of your celebration.
+        </p>
+
+        <p className="mb-8">
+          Some key benefits include:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Professional budget management</strong>
+          </li>
+
+          <li>
+            <strong>Vendor selection and negotiation</strong>
+          </li>
+
+          <li>
+            <strong>Timeline planning</strong> is critical to ensure
+            everything runs smoothly on your big day.
+          </li>
+
+          <li>
+            <strong>Creative décor concepts</strong>
+          </li>
+
+          <li>
+            <strong>Effective guest management</strong> is crucial for a
+            seamless wedding experience.
+          </li>
+
+          <li>
+            <strong>Crisis handling</strong>
+          </li>
+
+          <li>
+            <strong>Stress-free wedding execution</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Whether your event is intimate or extravagant, a professional
+          planner ensures every detail is handled with precision.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Understand Your Wedding Requirements First
+        </h2>
+
+        <p className="mb-8">
+          Before you begin searching for the best wedding planner in Delhi,
+          define your wedding expectations.
+        </p>
+
+        <p className="mb-8">
+          Ask yourself: What do you envision for your wedding experience?
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>What is your total wedding budget?</strong>
+          </li>
+
+          <li>
+            <strong>How many guests are expected?</strong>
+          </li>
+
+          <li>
+            <strong>Do you want a traditional or modern wedding?</strong>
+          </li>
+
+          <li>
+            <strong>Is it a local wedding or a destination wedding?</strong>
+          </li>
+
+          <li>
+            <strong>What type of décor theme do you prefer?</strong>
+          </li>
+
+          <li>
+            <strong>Which services do you need?</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Having clarity about your expectations allows you to choose a
+          planner whose expertise matches your vision.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Look for Experience and Expertise
+        </h2>
+
+        <p className="mb-8">
+          Experience matters significantly in wedding planning. A planner
+          with years of successful event execution understands how to
+          anticipate problems and provide effective solutions.
+        </p>
+
+        <p className="mb-8">
+          While evaluating planners, consider:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Years in the industry</strong>
+          </li>
+
+          <li>
+            <strong>Portfolio of previous weddings</strong>
+          </li>
+
+          <li>
+            <strong>Variety of wedding styles handled</strong>
+          </li>
+
+          <li>
+            <strong>Experience with luxury and destination weddings</strong>
+          </li>
+
+          <li>
+            <strong>Vendor network</strong>
+          </li>
+
+          <li>
+            <strong>Client testimonials</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          An experienced wedding event management company can often save
+          both time and money through better planning and negotiations.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Review Their Portfolio Carefully
+        </h2>
+
+        <p className="mb-8">
+          A planner&apos;s portfolio reveals their creativity, design
+          capabilities, and attention to detail.
+        </p>
+
+        <p className="mb-8">
+          Pay attention to:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Wedding themes</strong>
+          </li>
+
+          <li>
+            <strong>Floral arrangements</strong>
+          </li>
+
+          <li>
+            <strong>Stage décor</strong>
+          </li>
+
+          <li>
+            <strong>Lighting concepts</strong>
+          </li>
+
+          <li>
+            <strong>Table settings</strong> can transform your wedding
+            venue into a stunning visual experience.
+          </li>
+
+          <li>
+            <strong>Entertainment arrangements</strong>
+          </li>
+
+          <li>
+            <strong>Guest experiences</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          If you are planning a premium celebration, ensure they have
+          experience providing luxury wedding planning services.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Check Their Vendor Network
+        </h2>
+
+        <p className="mb-8">
+          One of the biggest advantages of hiring a professional planner is
+          access to trusted vendors.
+        </p>
+
+        <p className="mb-8">
+          A reputed Wedding Planner in Delhi usually has established
+          relationships with:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Venues</strong>
+          </li>
+
+          <li>
+            <strong>Caterers</strong>
+          </li>
+
+          <li>
+            <strong>Photographers</strong>
+          </li>
+
+          <li>
+            <strong>Makeup artists</strong> play a vital role in helping you
+            look your best on the big day.
+          </li>
+
+          <li>
+            <strong>DJs</strong>
+          </li>
+
+          <li>
+            <strong>Entertainment companies</strong>
+          </li>
+
+          <li>
+            <strong>Florists</strong>
+          </li>
+
+          <li>
+            <strong>Transportation providers</strong> are essential for
+            ensuring your guests arrive at the wedding venue on time.
+          </li>
+
+          <li>
+            <strong>Bridal designers</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          These relationships often lead to better pricing and higher-quality
+          services.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Evaluate Their Wedding Décor Capabilities
+        </h2>
+
+        <p className="mb-8">
+          Wedding décor defines the atmosphere of your celebration,
+          enhancing the overall wedding experience.
+        </p>
+
+        <p className="mb-8">
+          Many planners collaborate with experienced wedding decorators in
+          Delhi to create customized themes ranging from elegant floral
+          weddings to royal palace-inspired celebrations.
+        </p>
+
+        <p className="mb-8">
+          Ask to see examples of:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Mandap décor</strong>
+          </li>
+
+          <li>
+            <strong>Stage design</strong>
+          </li>
+
+          <li>
+            <strong>Entrance décor</strong>
+          </li>
+
+          <li>
+            <strong>Floral installations</strong>
+          </li>
+
+          <li>
+            <strong>Lighting arrangements</strong>
+          </li>
+
+          <li>
+            <strong>Reception themes</strong>
+          </li>
+
+          <li>
+            <strong>Seating layouts</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Ensure their design style aligns with your vision.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Ask About Budget Transparency
+        </h2>
+
+        <p className="mb-8">
+          A trustworthy planner maintains complete transparency regarding
+          costs.
+        </p>
+
+        <p className="mb-8">
+          Discuss:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Planning fees</strong>
+          </li>
+
+          <li>
+            <strong>Vendor commissions</strong>
+          </li>
+
+          <li>
+            <strong>Hidden charges</strong>
+          </li>
+
+          <li>
+            <strong>Payment schedule</strong>
+          </li>
+
+          <li>
+            <strong>Cancellation policies</strong>
+          </li>
+
+          <li>
+            <strong>Budget flexibility</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Professional planners help allocate your budget wisely without
+          compromising quality.
+        </p>
+          <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Consider Communication Skills
+        </h2>
+
+        <p className="mb-8">
+          Wedding planning requires constant coordination.
+        </p>
+
+        <p className="mb-8">
+          Choose someone who:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Responds promptly</strong>
+          </li>
+
+          <li>
+            <strong>Listens carefully</strong>
+          </li>
+
+          <li>
+            <strong>Understands your preferences</strong>
+          </li>
+
+          <li>
+            <strong>Offers practical suggestions</strong>
+          </li>
+
+          <li>
+            <strong>Provides regular updates</strong>
+          </li>
+
+          <li>
+            <strong>Handles family expectations professionally</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Clear communication minimizes misunderstandings throughout the
+          planning process.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Destination Wedding Expertise
+        </h2>
+
+        <p className="mb-8">
+          If you&apos;re planning a wedding outside Delhi, hiring an
+          experienced destination wedding planner becomes even more
+          important.
+        </p>
+
+        <p className="mb-8">
+          Destination weddings involve additional logistics such as:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Venue scouting</strong>
+          </li>
+
+          <li>
+            <strong>Guest accommodation</strong>
+          </li>
+
+          <li>
+            <strong>Transportation</strong>
+          </li>
+
+          <li>
+            <strong>Vendor coordination</strong> is key to making your
+            wedding a memorable experience.
+          </li>
+
+          <li>
+            <strong>Local permissions</strong>
+          </li>
+
+          <li>
+            <strong>Weather planning</strong>
+          </li>
+
+          <li>
+            <strong>Backup arrangements</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          A planner experienced in destination weddings ensures smooth
+          execution regardless of location.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Ask About Their Wedding Planning Process
+        </h2>
+
+        <p className="mb-8">
+          Professional planners follow a structured workflow.
+        </p>
+
+        <p className="mb-8">
+          Typically, their process includes:
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Initial Consultation
+        </h3>
+
+        <p className="mb-8">
+          Understanding your vision, preferences, traditions, and budget.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Budget Planning
+        </h3>
+
+        <p className="mb-8">
+          Creating realistic financial estimates.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Venue Selection
+        </h3>
+
+        <p className="mb-8">
+          Shortlisting venues that suit your style and guest count.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Vendor Management
+        </h3>
+
+        <p className="mb-8">
+          Booking trusted vendors and coordinating services.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Design Planning
+        </h3>
+
+        <p className="mb-8">
+          Developing décor themes, color palettes, and floral concepts.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Timeline Management
+        </h3>
+
+        <p className="mb-8">
+          Preparing schedules for all ceremonies and functions.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Final Execution
+        </h3>
+
+        <p className="mb-8">
+          Managing every detail on the wedding day.
+        </p>
+
+        <p className="mb-8">
+          This organized approach ensures everything stays on schedule.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Verify Reviews and Client Testimonials
+        </h2>
+
+        <p className="mb-8">
+          Before making a decision, read reviews across multiple platforms.
+        </p>
+
+        <p className="mb-8">
+          Look for comments regarding:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Professionalism</strong>
+          </li>
+
+          <li>
+            <strong>Punctuality</strong>
+          </li>
+
+          <li>
+            <strong>Creativity</strong>
+          </li>
+
+          <li>
+            <strong>Budget management</strong>
+          </li>
+
+          <li>
+            <strong>Vendor coordination</strong>
+          </li>
+
+          <li>
+            <strong>Problem-solving abilities</strong> are essential for
+            wedding planners in Delhi NCR to handle unexpected issues.
+          </li>
+
+          <li>
+            <strong>Overall client satisfaction</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Consistent positive feedback is a strong indicator of reliability.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Ask These Important Questions Before Hiring
+        </h2>
+
+        <p className="mb-8">
+          During your consultation, ask:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>How many weddings do you manage annually?</strong>
+          </li>
+
+          <li>
+            <strong>Have you planned weddings similar to ours?</strong>
+          </li>
+
+          <li>
+            <strong>What services are included?</strong>
+          </li>
+
+          <li>
+            <strong>Do you provide complete event management?</strong>
+          </li>
+
+          <li>
+            <strong>How do you handle emergencies?</strong>
+          </li>
+
+          <li>
+            <strong>Will one dedicated planner manage our wedding?</strong>
+          </li>
+
+          <li>
+            <strong>Can you work within our budget?</strong>
+          </li>
+
+          <li>
+            <strong>How frequently will we receive updates?</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          These questions help determine whether they&apos;re the right fit.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Wedding Planning Checklist
+        </h2>
+
+        <p className="mb-8">
+          A simple wedding planning checklist can keep your preparations on
+          track.
+        </p>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          10–12 Months Before
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Set your budget</strong>
+          </li>
+
+          <li>
+            <strong>Hire your wedding planner</strong>
+          </li>
+
+          <li>
+            <strong>Finalize guest list</strong>
+          </li>
+
+          <li>
+            <strong>Book the venue</strong>
+          </li>
+
+        </ul>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          8–10 Months Before
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Book photographer</strong>
+          </li>
+
+          <li>
+            <strong>Confirm caterer</strong>
+          </li>
+
+          <li>
+            <strong>Select décor theme</strong>
+          </li>
+
+          <li>
+            <strong>Hire entertainment</strong>
+          </li>
+
+        </ul>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          6 Months Before
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Send invitations</strong>
+          </li>
+
+          <li>
+            <strong>Book makeup artist</strong>
+          </li>
+
+          <li>
+            <strong>Finalize outfits</strong>
+          </li>
+
+          <li>
+            <strong>Reserve transportation</strong>
+          </li>
+
+        </ul>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          3 Months Before
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Confirm vendors</strong>
+          </li>
+
+          <li>
+            <strong>Schedule fittings</strong>
+          </li>
+
+          <li>
+            <strong>Prepare ceremony timeline</strong>
+          </li>
+
+          <li>
+            <strong>
+              Arrange guest accommodation to enhance their overall wedding
+              experience.
+            </strong>
+          </li>
+
+        </ul>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          1 Month Before
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Review vendor contracts</strong>
+          </li>
+
+          <li>
+            <strong>Confirm guest RSVPs</strong>
+          </li>
+
+          <li>
+            <strong>Finalize seating</strong>
+          </li>
+
+          <li>
+            <strong>Prepare emergency kit</strong>
+          </li>
+
+        </ul>
+
+        <h3 className="text-black text-2xl font-bold mt-10 mb-4">
+          Wedding Week
+        </h3>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Final rehearsals</strong>
+          </li>
+
+          <li>
+            <strong>Vendor confirmations</strong>
+          </li>
+
+          <li>
+            <strong>Guest welcome arrangements</strong>
+          </li>
+
+          <li>
+            <strong>Relax and enjoy the celebration</strong>
+          </li>
+
+        </ul>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Essential Wedding Planning Tips
+        </h2>
+
+        <p className="mb-8">
+          Here are some expert wedding planning tips to make your journey
+          smoother. To make your journey smoother, consult with luxury
+          wedding planners based in Delhi.
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Start planning early.</strong>
+          </li>
+
+          <li>
+            <strong>Set a realistic budget.</strong>
+          </li>
+
+          <li>
+            <strong>Prioritize your must-have elements.</strong>
+          </li>
+
+          <li>
+            <strong>Keep a backup fund.</strong>
+          </li>
+
+          <li>
+            <strong>Hire experienced professionals.</strong>
+          </li>
+
+          <li>
+            <strong>Trust your planner&apos;s expertise.</strong>
+          </li>
+
+          <li>
+            <strong>Avoid making last-minute changes.</strong>
+          </li>
+
+          <li>
+            <strong>Keep communication clear with vendors.</strong>
+          </li>
+
+          <li>
+            <strong>
+              Prepare contingency plans for weather and delays.
+            </strong>
+          </li>
+
+          <li>
+            <strong>Remember to enjoy the process.</strong>
+          </li>
+
+        </ul>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Why Professional Event Planners Make a Difference
+        </h2>
+
+        <p className="mb-8">
+          Professional event planners do much more than organize weddings.
+        </p>
+
+        <p className="mb-8">
+          They help:
+        </p>
+
+        <ul className="space-y-5 mb-8">
+
+          <li>
+            <strong>Reduce stress</strong>
+          </li>
+
+          <li>
+            <strong>Save valuable time</strong>
+          </li>
+
+          <li>
+            <strong>Manage budgets effectively</strong>
+          </li>
+
+          <li>
+            <strong>Coordinate multiple vendors</strong>
+          </li>
+
+          <li>
+            <strong>Handle unforeseen situations</strong>
+          </li>
+
+          <li>
+            <strong>Deliver flawless guest experiences</strong>
+          </li>
+
+          <li>
+            <strong>Execute creative concepts professionally</strong>
+          </li>
+
+        </ul>
+
+        <p className="mb-8">
+          Hiring experienced professionals allows couples and families to
+          focus on celebrating instead of worrying about logistics.
+        </p>
+
+        <h2 className="text-black text-3xl font-bold mt-12 mb-6">
+          Final Thoughts
+        </h2>
+
+        <p className="mb-8">
+          Selecting the right Wedding Planner in Delhi is one of the most
+          important decisions you&apos;ll make during your wedding journey.
+          A skilled planner transforms your ideas into a beautifully
+          organized celebration while managing every detail behind the scenes.
+        </p>
+
+        <p className="mb-8">
+          Whether you&apos;re looking for the best wedding planner in Delhi,
+          premium luxury wedding planning services, an experienced
+          destination wedding planner, a trusted wedding event management
+          company, or talented wedding decorators in Delhi, take time to
+          research, compare portfolios, and communicate your expectations
+          clearly.
+        </p>
+
+        <p className="mb-8">
+          With the right team by your side and a solid wedding planning
+          checklist, your dream wedding can become a memorable celebration
+          filled with joy, elegance, and unforgettable moments.
+        </p>
+
+      </article>
+
+      {/* FAQs */}
+
+      <section className="max-w-4xl mx-auto px-6 pb-20">
+
+        <h2 className="text-black text-4xl font-bold mb-8">
+          Frequently Asked Questions
+        </h2>
+
+        <div className="space-y-4">
+
+          {faqs.map((faq, i) => (
+
+            <details
+              key={i}
+              className="border rounded-xl p-5"
+            >
+
+              <summary className="text-black font-semibold cursor-pointer">
+                {faq.q}
+              </summary>
+
+              <p className="mt-3 text-gray-600">
+                {faq.a}
+              </p>
+
+            </details>
+
+          ))}
 
         </div>
 
       </section>
 
+      {/* CTA */}
 
-      {/* ARTICLE */}
+      <section className="max-w-5xl mx-auto px-6 pb-24">
 
-      <article className="max-w-5xl mx-auto px-6 lg:px-10 py-20">
+        <div className="bg-black text-white rounded-3xl p-12 text-center">
 
-        {/* INTRODUCTION */}
-
-        <section className="mb-16">
-
-          <p className="text-xl md:text-2xl leading-9 text-gray-700 mb-8">
-            A wedding is one of the most memorable milestones in a person&apos;s
-            life, and planning it requires careful attention to every detail.
-            From selecting the venue and coordinating vendors to managing
-            décor, entertainment, catering, and guest experiences, organizing
-            a wedding can quickly become overwhelming.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-6">
-            This is where hiring a luxury wedding planner can elevate your
-            wedding experience. A professional
-            <strong> Wedding Planner in Delhi </strong>
-            becomes invaluable.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600">
-            Delhi is home to some of India&apos;s most talented wedding
-            professionals who specialize in creating extraordinary
-            celebrations. Whether you&apos;re planning a traditional wedding,
-            a modern luxury celebration, or a destination wedding, choosing
-            the right planner ensures your vision becomes reality without
-            unnecessary stress.
-          </p>
-
-        </section>
-
-
-        {/* WHY HIRE */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Why Hire a Wedding Planner in Delhi?
+          <h2 className="text-4xl font-bold mb-4 text-white">
+            Planning Your Dream Wedding in Delhi?
           </h2>
 
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Planning a wedding involves managing multiple vendors, schedules,
-            budgets, and unexpected challenges. A professional
-            <strong> Wedding Planner in Delhi </strong>
-            brings expertise, creativity, and industry connections that help
-            streamline every aspect of your celebration.
+          <p className="text-white/80 mb-8">
+            From wedding planning and venue selection to décor, vendor
+            coordination, guest management, and flawless execution, our team
+            is here to help transform your wedding vision into an unforgettable
+            celebration.
           </p>
 
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm">
-
-            <h3 className="text-xl font-semibold mb-6">
-              Some key benefits include:
-            </h3>
-
-            <ul className="space-y-4 text-lg text-gray-600">
-
-              <li>
-                Professional budget management
-              </li>
-
-              <li>
-                Vendor selection and negotiation
-              </li>
-
-              <li>
-                Timeline planning to ensure everything runs smoothly
-                on your big day
-              </li>
-
-              <li>
-                Creative décor concepts
-              </li>
-
-              <li>
-                Effective guest management for a seamless wedding
-                experience
-              </li>
-
-              <li>
-                Crisis handling
-              </li>
-
-              <li>
-                Stress-free wedding execution
-              </li>
-
-            </ul>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            Whether your event is intimate or extravagant, a professional
-            planner ensures every detail is handled with precision.
-          </p>
-
-        </section>
-
-
-        {/* REQUIREMENTS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Understand Your Wedding Requirements First
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Before you begin searching for the best wedding planner in Delhi,
-            define your wedding expectations.
-          </p>
-
-          <h3 className="text-xl font-semibold mb-6">
-            Ask yourself:
-          </h3>
-
-          <ul className="space-y-4 text-lg text-gray-600 mb-8">
-
-            <li>
-              What is your total wedding budget?
-            </li>
-
-            <li>
-              How many guests are expected?
-            </li>
-
-            <li>
-              Do you want a traditional or modern wedding?
-            </li>
-
-            <li>
-              Is it a local wedding or a destination wedding?
-            </li>
-
-            <li>
-              What type of décor theme do you prefer?
-            </li>
-
-            <li>
-              Which services do you need?
-            </li>
-
-          </ul>
-
-          <p className="text-lg leading-8 text-gray-600">
-            Having clarity about your expectations allows you to choose a
-            planner whose expertise matches your vision.
-          </p>
-
-        </section>
-
-
-        {/* EXPERIENCE */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Look for Experience and Expertise
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Experience matters significantly in wedding planning. A planner
-            with years of successful event execution understands how to
-            anticipate problems and provide effective solutions.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-6">
-            While evaluating planners, consider:
-          </p>
-
-          <ul className="space-y-4 text-lg text-gray-600 mb-8">
-
-            <li>
-              Years in the industry
-            </li>
-
-            <li>
-              Portfolio of previous weddings
-            </li>
-
-            <li>
-              Variety of wedding styles handled
-            </li>
-
-            <li>
-              Experience with luxury and destination weddings
-            </li>
-
-            <li>
-              Vendor network
-            </li>
-
-            <li>
-              Client testimonials
-            </li>
-
-          </ul>
-
-          <p className="text-lg leading-8 text-gray-600">
-            An experienced wedding event management company can often save
-            both time and money through better planning and negotiations.
-          </p>
-
-        </section>
-
-
-        {/* PORTFOLIO */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Review Their Portfolio Carefully
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            A planner&apos;s portfolio reveals their creativity, design
-            capabilities, and attention to detail.
-          </p>
-
-          <div className="bg-[#EFEAE2] rounded-3xl p-8 md:p-10">
-
-            <h3 className="text-xl font-semibold mb-6">
-              Pay attention to:
-            </h3>
-
-            <div className="grid md:grid-cols-2 gap-5">
-
-              <div className="bg-white rounded-2xl p-5">
-                Wedding themes
-              </div>
-
-              <div className="bg-white rounded-2xl p-5">
-                Floral arrangements
-              </div>
-
-              <div className="bg-white rounded-2xl p-5">
-                Stage décor
-              </div>
-
-              <div className="bg-white rounded-2xl p-5">
-                Lighting concepts
-              </div>
-
-              <div className="bg-white rounded-2xl p-5">
-                Table settings
-              </div>
-
-              <div className="bg-white rounded-2xl p-5">
-                Entertainment arrangements
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 md:col-span-2">
-                Guest experiences
-              </div>
-
-            </div>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            If you are planning a premium celebration, ensure they have
-            experience providing luxury wedding planning services.
-          </p>
-
-        </section>
-
-
-        {/* VENDOR NETWORK */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Check Their Vendor Network
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            One of the biggest advantages of hiring a professional planner is
-            access to trusted vendors.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-6">
-            A reputed Wedding Planner in Delhi usually has established
-            relationships with:
-          </p>
-
-          <ul className="grid md:grid-cols-2 gap-4 text-lg text-gray-600 mb-8">
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Venues
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Caterers
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Photographers
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Makeup artists
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              DJs
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Entertainment companies
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Florists
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm">
-              Transportation providers
-            </li>
-
-            <li className="bg-white rounded-2xl p-5 shadow-sm md:col-span-2">
-              Bridal designers
-            </li>
-
-          </ul>
-
-          <p className="text-lg leading-8 text-gray-600">
-            These relationships often lead to better pricing and higher-quality
-            services.
-          </p>
-
-        </section>
-
-
-        {/* DECOR */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Evaluate Their Wedding Décor Capabilities
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Wedding décor defines the atmosphere of your celebration,
-            enhancing the overall wedding experience.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Many planners collaborate with experienced wedding decorators in
-            Delhi to create customized themes ranging from elegant floral
-            weddings to royal palace-inspired celebrations.
-          </p>
-
-          <h3 className="text-xl font-semibold mb-6">
-            Ask to see examples of:
-          </h3>
-
-          <ul className="space-y-4 text-lg text-gray-600">
-
-            <li>
-              Mandap décor
-            </li>
-
-            <li>
-              Stage design
-            </li>
-
-            <li>
-              Entrance décor
-            </li>
-
-            <li>
-              Floral installations
-            </li>
-
-            <li>
-              Lighting arrangements
-            </li>
-
-            <li>
-              Reception themes
-            </li>
-
-            <li>
-              Seating layouts
-            </li>
-
-          </ul>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            Ensure their design style aligns with your vision.
-          </p>
-
-        </section>
-
-
-        {/* BUDGET */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ask About Budget Transparency
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            A trustworthy planner maintains complete transparency regarding
-            costs.
-          </p>
-
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm">
-
-            <h3 className="text-xl font-semibold mb-6">
-              Discuss:
-            </h3>
-
-            <ul className="space-y-4 text-lg text-gray-600">
-
-              <li>
-                Planning fees
-              </li>
-
-              <li>
-                Vendor commissions
-              </li>
-
-              <li>
-                Hidden charges
-              </li>
-
-              <li>
-                Payment schedule
-              </li>
-
-              <li>
-                Cancellation policies
-              </li>
-
-              <li>
-                Budget flexibility
-              </li>
-
-            </ul>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            Professional planners help allocate your budget wisely without
-            compromising quality.
-          </p>
-
-        </section>
-
-        {/* COMMUNICATION */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Consider Communication Skills
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Wedding planning requires constant coordination.
-          </p>
-
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm">
-
-            <h3 className="text-xl font-semibold mb-6">
-              Choose someone who:
-            </h3>
-
-            <ul className="space-y-4 text-lg text-gray-600">
-
-              <li>
-                Responds promptly
-              </li>
-
-              <li>
-                Listens carefully
-              </li>
-
-              <li>
-                Understands your preferences
-              </li>
-
-              <li>
-                Offers practical suggestions
-              </li>
-
-              <li>
-                Provides regular updates
-              </li>
-
-              <li>
-                Handles family expectations professionally
-              </li>
-
-            </ul>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            Clear communication minimizes misunderstandings throughout the
-            planning process.
-          </p>
-
-        </section>
-
-
-        {/* DESTINATION WEDDING */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Destination Wedding Expertise
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            If you&apos;re planning a wedding outside Delhi, hiring an
-            experienced destination wedding planner becomes even more
-            important.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-6">
-            Destination weddings involve additional logistics such as:
-          </p>
-
-          <ul className="space-y-4 text-lg text-gray-600 mb-8">
-
-            <li>
-              Venue scouting
-            </li>
-
-            <li>
-              Guest accommodation
-            </li>
-
-            <li>
-              Transportation
-            </li>
-
-            <li>
-              Vendor coordination
-            </li>
-
-            <li>
-              Local permissions
-            </li>
-
-            <li>
-              Weather planning
-            </li>
-
-            <li>
-              Backup arrangements
-            </li>
-
-          </ul>
-
-          <p className="text-lg leading-8 text-gray-600">
-            A planner experienced in destination weddings ensures smooth
-            execution regardless of location.
-          </p>
-
-        </section>
-
-
-        {/* WEDDING PLANNING PROCESS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ask About Their Wedding Planning Process
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-10">
-            Professional planners follow a structured workflow.
-          </p>
-
-
-          {/* INITIAL CONSULTATION */}
-
-          <div className="space-y-6">
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 01
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Initial Consultation
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Understanding your vision, preferences, traditions, and
-                budget.
-              </p>
-
-            </div>
-
-
-            {/* BUDGET PLANNING */}
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 02
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Budget Planning
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Creating realistic financial estimates.
-              </p>
-
-            </div>
-
-
-            {/* VENUE SELECTION */}
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 03
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Venue Selection
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Shortlisting venues that suit your style and guest count.
-              </p>
-
-            </div>
-
-
-            {/* VENDOR MANAGEMENT */}
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 04
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Vendor Management
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Booking trusted vendors and coordinating services.
-              </p>
-
-            </div>
-
-
-            {/* DESIGN PLANNING */}
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 05
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Design Planning
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Developing décor themes, color palettes, and floral concepts.
-              </p>
-
-            </div>
-
-
-            {/* TIMELINE MANAGEMENT */}
-
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 06
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Timeline Management
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Preparing schedules for all ceremonies and functions.
-              </p>
-
-            </div>
-
-
-            {/* FINAL EXECUTION */}
-
-            <div className="bg-[#EFEAE2] rounded-3xl p-8">
-
-              <span className="text-sm uppercase tracking-widest text-[#B57A3C] font-semibold">
-                Step 07
-              </span>
-
-              <h3 className="text-2xl font-bold mt-3 mb-4">
-                Final Execution
-              </h3>
-
-              <p className="text-lg leading-8 text-gray-600">
-                Managing every detail on the wedding day.
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-10">
-            This organized approach ensures everything stays on schedule.
-          </p>
-
-        </section>
-
-
-        {/* REVIEWS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Verify Reviews and Client Testimonials
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Before making a decision, read reviews across multiple platforms.
-          </p>
-
-          <p className="text-lg leading-8 text-gray-600 mb-6">
-            Look for comments regarding:
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Professionalism
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Punctuality
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Creativity
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Budget management
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Vendor coordination
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              Problem-solving abilities
-            </div>
-
-            <div className="bg-white rounded-2xl p-5 shadow-sm md:col-span-2">
-              Overall client satisfaction
-            </div>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600">
-            Consistent positive feedback is a strong indicator of reliability.
-          </p>
-
-        </section>
-
-
-        {/* IMPORTANT QUESTIONS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ask These Important Questions Before Hiring
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            During your consultation, ask:
-          </p>
-
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm">
-
-            <ul className="space-y-5 text-lg text-gray-600">
-
-              <li>
-                How many weddings do you manage annually?
-              </li>
-
-              <li>
-                Have you planned weddings similar to ours?
-              </li>
-
-              <li>
-                What services are included?
-              </li>
-
-              <li>
-                Do you provide complete event management?
-              </li>
-
-              <li>
-                How do you handle emergencies?
-              </li>
-
-              <li>
-                Will one dedicated planner manage our wedding?
-              </li>
-
-              <li>
-                Can you work within our budget?
-              </li>
-
-              <li>
-                How frequently will we receive updates?
-              </li>
-
-            </ul>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600 mt-8">
-            These questions help determine whether they&apos;re the right fit.
-          </p>
-
-        </section>
-
-
-        {/* WEDDING PLANNING CHECKLIST */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Wedding Planning Checklist
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-10">
-            A simple wedding planning checklist can keep your preparations
-            on track.
-          </p>
-
-
-          {/* 10–12 MONTHS */}
-
-          <div className="mb-10">
-
-            <h3 className="text-2xl font-bold mb-5">
-              10–12 Months Before
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Set your budget</li>
-
-              <li>Hire your wedding planner</li>
-
-              <li>Finalize guest list</li>
-
-              <li>Book the venue</li>
-
-            </ul>
-
-          </div>
-
-
-          {/* 8–10 MONTHS */}
-
-          <div className="mb-10">
-
-            <h3 className="text-2xl font-bold mb-5">
-              8–10 Months Before
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Book photographer</li>
-
-              <li>Confirm caterer</li>
-
-              <li>Select décor theme</li>
-
-              <li>Hire entertainment</li>
-
-            </ul>
-
-          </div>
-
-
-          {/* 6 MONTHS */}
-
-          <div className="mb-10">
-
-            <h3 className="text-2xl font-bold mb-5">
-              6 Months Before
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Send invitations</li>
-
-              <li>Book makeup artist</li>
-
-              <li>Finalize outfits</li>
-
-              <li>Reserve transportation</li>
-
-            </ul>
-
-          </div>
-
-
-          {/* 3 MONTHS */}
-
-          <div className="mb-10">
-
-            <h3 className="text-2xl font-bold mb-5">
-              3 Months Before
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Confirm vendors</li>
-
-              <li>Schedule fittings</li>
-
-              <li>Prepare ceremony timeline</li>
-
-              <li>Arrange guest accommodation</li>
-
-            </ul>
-
-          </div>
-
-
-          {/* 1 MONTH */}
-
-          <div className="mb-10">
-
-            <h3 className="text-2xl font-bold mb-5">
-              1 Month Before
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Review vendor contracts</li>
-
-              <li>Confirm guest RSVPs</li>
-
-              <li>Finalize seating</li>
-
-              <li>Prepare emergency kit</li>
-
-            </ul>
-
-          </div>
-
-
-          {/* WEDDING WEEK */}
-
-          <div className="bg-[#EFEAE2] rounded-3xl p-8">
-
-            <h3 className="text-2xl font-bold mb-5">
-              Wedding Week
-            </h3>
-
-            <ul className="space-y-3 text-lg text-gray-600">
-
-              <li>Final rehearsals</li>
-
-              <li>Vendor confirmations</li>
-
-              <li>Guest welcome arrangements</li>
-
-              <li>Relax and enjoy the celebration</li>
-
-            </ul>
-
-          </div>
-
-        </section>
-
-
-        {/* ESSENTIAL TIPS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Essential Wedding Planning Tips
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Here are some expert wedding planning tips to make your journey
-            smoother.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-4">
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Start planning early.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Set a realistic budget.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Prioritize your must-have elements.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Keep a backup fund.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Hire experienced professionals.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Trust your planner&apos;s expertise.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Avoid making last-minute changes.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Keep communication clear with vendors.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Prepare contingency plans for weather and delays.
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Remember to enjoy the process.
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* WHY PROFESSIONAL EVENT PLANNERS */}
-
-        <section className="mb-16">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Why Professional Event Planners Make a Difference
-          </h2>
-
-          <p className="text-lg leading-8 text-gray-600 mb-8">
-            Professional event planners do much more than organize weddings.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Reduce stress
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Save valuable time
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Manage budgets effectively
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Coordinate multiple vendors
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Handle unforeseen situations
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Deliver flawless guest experiences
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm md:col-span-2">
-              Execute creative concepts professionally
-            </div>
-
-          </div>
-
-          <p className="text-lg leading-8 text-gray-600">
-            Hiring experienced professionals allows couples and families to
-            focus on celebrating instead of worrying about logistics.
-          </p>
-
-        </section>
-
-
-        {/* FINAL THOUGHTS */}
-
-        <section className="mb-20">
-
-          <div className="bg-[#1F1F1F] text-white rounded-3xl p-8 md:p-12">
-
-            <span className="text-sm uppercase tracking-[0.25em] text-[#D5A15D] font-semibold">
-              Final Thoughts
-            </span>
-
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-8">
-              Choose a Wedding Planner Who Understands Your Vision
-            </h2>
-
-            <p className="text-lg leading-8 text-white/80 mb-6">
-              Selecting the right Wedding Planner in Delhi is one of the most
-              important decisions you&apos;ll make during your wedding journey.
-              A skilled planner transforms your ideas into a beautifully
-              organized celebration while managing every detail behind the
-              scenes.
-            </p>
-
-            <p className="text-lg leading-8 text-white/80">
-              Whether you&apos;re looking for the best wedding planner in Delhi,
-              premium luxury wedding planning services, an experienced
-              destination wedding planner, a trusted wedding event management
-              company, or talented wedding decorators in Delhi, take time to
-              research, compare portfolios, and communicate your expectations
-              clearly.
-            </p>
-
-            <p className="text-lg leading-8 text-white/80 mt-6">
-              With the right team by your side and a solid wedding planning
-              checklist, your dream wedding can become a memorable celebration
-              filled with joy, elegance, and unforgettable moments.
-            </p>
-
-          </div>
-
-        </section>
-
-
-        {/* FAQ SECTION */}
-
-        <section className="mb-10">
-
-          <span className="text-sm uppercase tracking-[0.25em] text-[#B57A3C] font-semibold">
-            Frequently Asked Questions
-          </span>
-
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-10">
-            Wedding Planner in Delhi FAQs
-          </h2>
-
-
-          {/* FAQ 1 */}
-
-          <div className="border-b border-gray-300 py-8">
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              Why should I hire a Wedding Planner in Delhi?
-            </h3>
-
-            <p className="text-lg leading-8 text-gray-600">
-              A professional Wedding Planner in Delhi manages every aspect
-              of your wedding, including budgeting, vendor coordination,
-              décor, logistics, and execution, ensuring a stress-free
-              experience.
-            </p>
-
-          </div>
-
-
-          {/* FAQ 2 */}
-
-          <div className="border-b border-gray-300 py-8">
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              How do I choose the best wedding planner in Delhi?
-            </h3>
-
-            <p className="text-lg leading-8 text-gray-600">
-              Look for experience, client reviews, portfolio quality,
-              transparent pricing, vendor network, communication skills,
-              and expertise in weddings similar to yours.
-            </p>
-
-          </div>
-
-
-          {/* FAQ 3 */}
-
-          <div className="border-b border-gray-300 py-8">
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              What services do luxury wedding planning services include?
-            </h3>
-
-            <p className="text-lg leading-8 text-gray-600">
-              Luxury wedding planning services typically include premium
-              venue selection, customized décor, celebrity entertainment,
-              guest hospitality, travel arrangements, designer styling,
-              and complete event management.
-            </p>
-
-          </div>
-
-
-          {/* FAQ 4 */}
-
-          <div className="border-b border-gray-300 py-8">
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              Can a destination wedding planner organize weddings outside
-              Delhi?
-            </h3>
-
-            <p className="text-lg leading-8 text-gray-600">
-              Yes. A destination wedding planner specializes in planning
-              weddings across India and internationally by managing travel,
-              accommodations, local vendors, logistics, and event execution.
-            </p>
-
-          </div>
-
-
-          {/* FAQ 5 */}
-
-          <div className="py-8">
-
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              What is included in a wedding event management company&apos;s
-              services?
-            </h3>
-
-            <p className="text-lg leading-8 text-gray-600">
-              A wedding event management company generally handles venue
-              booking, décor, catering, entertainment, photography, logistics,
-              guest management, budgeting, and on-site coordination.
-            </p>
-
-          </div>
-
-        </section>
-
-
-        {/* CTA */}
-
-        <section className="mt-16">
-
-          <div className="bg-[#EFEAE2] rounded-3xl p-8 md:p-12 text-center">
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-5">
-              Planning Your Wedding in Delhi?
-            </h2>
-
-            <p className="text-lg leading-8 text-gray-600 max-w-2xl mx-auto mb-8">
-              The right planning team can turn a complex wedding journey into
-              a beautifully coordinated celebration.
-            </p>
-
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#1F1F1F] text-white font-semibold hover:bg-[#B57A3C] transition"
-            >
-              Plan Your Wedding
-            </a>
-
-          </div>
-
-        </section>
-
-
-      </article>
+          <a
+            href="https://wa.me/917838008069"
+            className="inline-block bg-white text-black px-8 py-4 rounded-lg font-semibold"
+          >
+            Contact Us
+          </a>
+
+        </div>
+
+        <div className="mt-12 text-sm text-gray-500 border-t pt-8">
+
+          <strong>Effortless Events Pvt. Ltd.</strong> is a professional
+          event and wedding planning company offering wedding planning,
+          luxury wedding planning services, destination wedding planning,
+          décor, vendor coordination, and complete event management across
+          Delhi NCR.
+
+          <br />
+
+          <Link
+            href="https://www.effortlessevents.in"
+            className="underline"
+          >
+            www.effortlessevents.in
+          </Link>
+
+        </div>
+
+      </section>
 
     </main>
   );
