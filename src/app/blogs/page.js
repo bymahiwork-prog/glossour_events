@@ -63,7 +63,7 @@ export default function BlogsPage() {
       title:
         "Why Booking an Airbnb Is the Smart Choice for Group Stays & Corporate Travel",
       description:
-        "Discover why Airbnb is becoming a preferred choice for corporate travel, group stays, business trips, and weekend getaways.",
+        "Discover why Airbnb is becoming a preferred choice for corporate travel, group stays, business trips, and weekend getaways, with more space, comfort, privacy, and flexibility.",
     },
 
     {
@@ -79,32 +79,144 @@ export default function BlogsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#FAFAFA] pt-32 pb-24 px-6">
+    <main className="min-h-screen bg-[#FAFAFA]">
 
-      <div className="max-w-7xl mx-auto">
+      {/* ===================================================== */}
+      {/* HERO SECTION */}
+      {/* ===================================================== */}
 
-        {/* PAGE HEADER */}
+      <section className="relative overflow-hidden bg-black text-white">
 
-        <div className="mb-14">
+        {/* Decorative Gold Circle */}
 
-          <p className="text-sm uppercase tracking-[0.25em] text-[#B57A3C] font-semibold mb-4">
-            Effortless Events
-          </p>
+        <div className="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full border border-[#B57A3C]/20" />
 
-          <h1 className="text-4xl md:text-5xl font-bold text-black tracking-tight">
-            Blog &amp; Resources
-          </h1>
+        <div className="absolute -bottom-48 -left-40 w-[500px] h-[500px] rounded-full border border-[#B57A3C]/10" />
 
-          <p className="mt-5 max-w-2xl text-gray-600 text-lg leading-8">
-            Insights, guides, and ideas to help you plan unforgettable
-            events, celebrations, stays, and experiences across Delhi NCR.
+        {/* Subtle Gold Line */}
+
+        <div className="absolute top-0 right-[32%] w-px h-full bg-gradient-to-b from-transparent via-[#B57A3C]/20 to-transparent" />
+
+        {/* Hero Content */}
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 pb-24 md:pt-40 md:pb-28">
+
+          <div className="max-w-4xl">
+
+            {/* Eyebrow */}
+
+            <p className="text-xs md:text-sm uppercase tracking-[0.35em] text-[#D9B56D] font-semibold mb-7">
+              The Effortless Journal
+            </p>
+
+            {/* Main Heading */}
+
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] tracking-tight mb-8">
+              Stories, Ideas
+              <br />
+              <span className="text-[#D9B56D]">
+                &amp; Inspiration
+              </span>
+            </h1>
+
+            {/* Description */}
+
+            <p className="max-w-2xl text-white/70 text-lg md:text-xl leading-8 mb-10">
+              Discover thoughtful guides, expert insights, and inspiration
+              for weddings, celebrations, corporate events, luxury stays,
+              and unforgettable experiences across Delhi NCR.
+            </p>
+
+            {/* CTA */}
+
+            <a
+              href="#latest-articles"
+              className="inline-flex items-center gap-3 border border-[#D9B56D] text-[#D9B56D] px-7 py-4 text-sm uppercase tracking-widest font-semibold hover:bg-[#D9B56D] hover:text-black transition duration-300"
+            >
+              Explore Articles
+
+              <span className="text-lg">
+                ↓
+              </span>
+            </a>
+
+          </div>
+
+          {/* Hero Categories */}
+
+          <div className="mt-20 pt-7 border-t border-white/10">
+
+            <div className="flex flex-wrap gap-x-8 gap-y-3 text-xs uppercase tracking-[0.2em] text-white/50">
+
+              <span>
+                Weddings
+              </span>
+
+              <span>
+                Events
+              </span>
+
+              <span>
+                Private Celebrations
+              </span>
+
+              <span>
+                Airbnb Stays
+              </span>
+
+              <span>
+                Corporate Travel
+              </span>
+
+              <span>
+                Delhi NCR
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ===================================================== */}
+      {/* BLOG SECTION */}
+      {/* ===================================================== */}
+
+      <section
+        id="latest-articles"
+        className="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-24"
+      >
+
+        {/* Section Heading */}
+
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+
+          <div>
+
+            <p className="text-xs uppercase tracking-[0.25em] text-[#B57A3C] font-semibold mb-3">
+              Latest Articles
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-black tracking-tight">
+              Explore Our Journal
+            </h2>
+
+          </div>
+
+          <p className="mt-5 md:mt-0 max-w-md text-gray-500 leading-7 text-sm md:text-right">
+            Practical guides, planning advice, and inspiration curated by
+            Effortless Events.
           </p>
 
         </div>
 
+
         {/* BLOG GRID */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
 
           {blogs.map((blog, index) => (
 
@@ -121,10 +233,16 @@ export default function BlogsPage() {
                 <img
                   src={blog.image}
                   alt={blog.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  loading={index > 2 ? "lazy" : "eager"}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
 
+                {/* Image Overlay */}
+
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-500" />
+
               </div>
+
 
               {/* CATEGORY */}
 
@@ -132,11 +250,13 @@ export default function BlogsPage() {
                 {blog.category}
               </p>
 
+
               {/* TITLE */}
 
               <h2 className="text-2xl font-bold leading-tight text-black mb-3 group-hover:text-[#B57A3C] transition-colors duration-300">
                 {blog.title}
               </h2>
+
 
               {/* DESCRIPTION */}
 
@@ -144,13 +264,17 @@ export default function BlogsPage() {
                 {blog.description}
               </p>
 
+
               {/* READ ARTICLE */}
 
               <span className="inline-flex items-center gap-2 text-sm font-semibold text-black group-hover:text-[#B57A3C] transition-colors duration-300">
+
                 Read Article
+
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
+
               </span>
 
             </a>
@@ -159,7 +283,55 @@ export default function BlogsPage() {
 
         </div>
 
-      </div>
+      </section>
+
+
+      {/* ===================================================== */}
+      {/* BOTTOM CTA */}
+      {/* ===================================================== */}
+
+      <section className="max-w-7xl mx-auto px-6 md:px-10 pb-24">
+
+        <div className="relative overflow-hidden rounded-3xl bg-black text-white px-8 py-16 md:px-16 md:py-20 text-center">
+
+          {/* Decorative Circle */}
+
+          <div className="absolute -top-32 -right-32 w-80 h-80 rounded-full border border-[#B57A3C]/20" />
+
+          <div className="absolute -bottom-32 -left-32 w-80 h-80 rounded-full border border-[#B57A3C]/10" />
+
+          <div className="relative">
+
+            <p className="text-xs uppercase tracking-[0.3em] text-[#D9B56D] font-semibold mb-5">
+              Effortless Events
+            </p>
+
+            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6">
+              Planning Something
+              <br />
+              <span className="text-[#D9B56D]">
+                Unforgettable?
+              </span>
+            </h2>
+
+            <p className="max-w-2xl mx-auto text-white/70 leading-8 mb-9">
+              From weddings and private celebrations to corporate events
+              and luxury stays, let our team help you create an experience
+              that feels truly effortless.
+            </p>
+
+            <a
+              href="https://wa.me/917838008069"
+              className="inline-flex items-center justify-center bg-[#D9B56D] text-black px-8 py-4 text-sm uppercase tracking-widest font-semibold hover:bg-white transition duration-300"
+            >
+              Get in Touch
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </main>
   );
