@@ -49,7 +49,7 @@ export default function WeddingPlannerDelhiBlog() {
         <section className="mb-16">
 
           <p className="text-xl md:text-2xl leading-9 text-gray-700 mb-8">
-            A wedding is one of the most memorable milestones in a person's
+            A wedding is one of the most memorable milestones in a person&apos;s
             life, and planning it requires careful attention to every detail.
             From selecting the venue and coordinating vendors to managing
             décor, entertainment, catering, and guest experiences, organizing
@@ -60,16 +60,15 @@ export default function WeddingPlannerDelhiBlog() {
             This is where hiring a luxury wedding planner can elevate your
             wedding experience. A professional
             <strong> Wedding Planner in Delhi </strong>
-            becomes invaluable when you want your celebration to be beautiful,
-            organized, and stress-free.
+            becomes invaluable.
           </p>
 
           <p className="text-lg leading-8 text-gray-600">
-            Delhi is home to some of India's most talented wedding
+            Delhi is home to some of India&apos;s most talented wedding
             professionals who specialize in creating extraordinary
-            celebrations. Whether you're planning a traditional wedding, a
-            modern luxury celebration, or a destination wedding, choosing the
-            right planner ensures your vision becomes reality without
+            celebrations. Whether you&apos;re planning a traditional wedding,
+            a modern luxury celebration, or a destination wedding, choosing
+            the right planner ensures your vision becomes reality without
             unnecessary stress.
           </p>
 
@@ -100,25 +99,35 @@ export default function WeddingPlannerDelhiBlog() {
 
             <ul className="space-y-4 text-lg text-gray-600">
 
-              <li>Professional budget management</li>
+              <li>
+                Professional budget management
+              </li>
 
-              <li>Vendor selection and negotiation</li>
+              <li>
+                Vendor selection and negotiation
+              </li>
 
               <li>
                 Timeline planning to ensure everything runs smoothly
                 on your big day
               </li>
 
-              <li>Creative décor concepts</li>
+              <li>
+                Creative décor concepts
+              </li>
 
               <li>
                 Effective guest management for a seamless wedding
                 experience
               </li>
 
-              <li>Crisis handling</li>
+              <li>
+                Crisis handling
+              </li>
 
-              <li>Stress-free wedding execution</li>
+              <li>
+                Stress-free wedding execution
+              </li>
 
             </ul>
 
@@ -151,17 +160,29 @@ export default function WeddingPlannerDelhiBlog() {
 
           <ul className="space-y-4 text-lg text-gray-600 mb-8">
 
-            <li>What is your total wedding budget?</li>
+            <li>
+              What is your total wedding budget?
+            </li>
 
-            <li>How many guests are expected?</li>
+            <li>
+              How many guests are expected?
+            </li>
 
-            <li>Do you want a traditional or modern wedding?</li>
+            <li>
+              Do you want a traditional or modern wedding?
+            </li>
 
-            <li>Is it a local wedding or a destination wedding?</li>
+            <li>
+              Is it a local wedding or a destination wedding?
+            </li>
 
-            <li>What type of décor theme do you prefer?</li>
+            <li>
+              What type of décor theme do you prefer?
+            </li>
 
-            <li>Which services do you need?</li>
+            <li>
+              Which services do you need?
+            </li>
 
           </ul>
 
@@ -193,17 +214,29 @@ export default function WeddingPlannerDelhiBlog() {
 
           <ul className="space-y-4 text-lg text-gray-600 mb-8">
 
-            <li>Years in the industry</li>
+            <li>
+              Years in the industry
+            </li>
 
-            <li>Portfolio of previous weddings</li>
+            <li>
+              Portfolio of previous weddings
+            </li>
 
-            <li>Variety of wedding styles handled</li>
+            <li>
+              Variety of wedding styles handled
+            </li>
 
-            <li>Experience with luxury and destination weddings</li>
+            <li>
+              Experience with luxury and destination weddings
+            </li>
 
-            <li>Vendor network</li>
+            <li>
+              Vendor network
+            </li>
 
-            <li>Client testimonials</li>
+            <li>
+              Client testimonials
+            </li>
 
           </ul>
 
@@ -224,7 +257,7 @@ export default function WeddingPlannerDelhiBlog() {
           </h2>
 
           <p className="text-lg leading-8 text-gray-600 mb-8">
-            A planner's portfolio reveals their creativity, design
+            A planner&apos;s portfolio reveals their creativity, design
             capabilities, and attention to detail.
           </p>
 
@@ -367,19 +400,33 @@ export default function WeddingPlannerDelhiBlog() {
 
           <ul className="space-y-4 text-lg text-gray-600">
 
-            <li>Mandap décor</li>
+            <li>
+              Mandap décor
+            </li>
 
-            <li>Stage design</li>
+            <li>
+              Stage design
+            </li>
 
-            <li>Entrance décor</li>
+            <li>
+              Entrance décor
+            </li>
 
-            <li>Floral installations</li>
+            <li>
+              Floral installations
+            </li>
 
-            <li>Lighting arrangements</li>
+            <li>
+              Lighting arrangements
+            </li>
 
-            <li>Reception themes</li>
+            <li>
+              Reception themes
+            </li>
 
-            <li>Seating layouts</li>
+            <li>
+              Seating layouts
+            </li>
 
           </ul>
 
@@ -411,17 +458,29 @@ export default function WeddingPlannerDelhiBlog() {
 
             <ul className="space-y-4 text-lg text-gray-600">
 
-              <li>Planning fees</li>
+              <li>
+                Planning fees
+              </li>
 
-              <li>Vendor commissions</li>
+              <li>
+                Vendor commissions
+              </li>
 
-              <li>Hidden charges</li>
+              <li>
+                Hidden charges
+              </li>
 
-              <li>Payment schedule</li>
+              <li>
+                Payment schedule
+              </li>
 
-              <li>Cancellation policies</li>
+              <li>
+                Cancellation policies
+              </li>
 
-              <li>Budget flexibility</li>
+              <li>
+                Budget flexibility
+              </li>
 
             </ul>
 
@@ -454,17 +513,29 @@ export default function WeddingPlannerDelhiBlog() {
 
             <ul className="space-y-4 text-lg text-gray-600">
 
-              <li>Responds promptly</li>
+              <li>
+                Responds promptly
+              </li>
 
-              <li>Listens carefully</li>
+              <li>
+                Listens carefully
+              </li>
 
-              <li>Understands your preferences</li>
+              <li>
+                Understands your preferences
+              </li>
 
-              <li>Offers practical suggestions</li>
+              <li>
+                Offers practical suggestions
+              </li>
 
-              <li>Provides regular updates</li>
+              <li>
+                Provides regular updates
+              </li>
 
-              <li>Handles family expectations professionally</li>
+              <li>
+                Handles family expectations professionally
+              </li>
 
             </ul>
 
@@ -472,8 +543,7 @@ export default function WeddingPlannerDelhiBlog() {
 
           <p className="text-lg leading-8 text-gray-600 mt-8">
             Clear communication minimizes misunderstandings throughout the
-            planning process and helps ensure that everyone involved stays
-            aligned with your wedding vision.
+            planning process.
           </p>
 
         </section>
@@ -488,8 +558,9 @@ export default function WeddingPlannerDelhiBlog() {
           </h2>
 
           <p className="text-lg leading-8 text-gray-600 mb-8">
-            If you're planning a wedding outside Delhi, hiring an experienced
-            destination wedding planner becomes even more important.
+            If you&apos;re planning a wedding outside Delhi, hiring an
+            experienced destination wedding planner becomes even more
+            important.
           </p>
 
           <p className="text-lg leading-8 text-gray-600 mb-6">
@@ -498,19 +569,33 @@ export default function WeddingPlannerDelhiBlog() {
 
           <ul className="space-y-4 text-lg text-gray-600 mb-8">
 
-            <li>Venue scouting</li>
+            <li>
+              Venue scouting
+            </li>
 
-            <li>Guest accommodation</li>
+            <li>
+              Guest accommodation
+            </li>
 
-            <li>Transportation</li>
+            <li>
+              Transportation
+            </li>
 
-            <li>Vendor coordination</li>
+            <li>
+              Vendor coordination
+            </li>
 
-            <li>Local permissions</li>
+            <li>
+              Local permissions
+            </li>
 
-            <li>Weather planning</li>
+            <li>
+              Weather planning
+            </li>
 
-            <li>Backup arrangements</li>
+            <li>
+              Backup arrangements
+            </li>
 
           </ul>
 
@@ -522,7 +607,7 @@ export default function WeddingPlannerDelhiBlog() {
         </section>
 
 
-        {/* PLANNING PROCESS */}
+        {/* WEDDING PLANNING PROCESS */}
 
         <section className="mb-16">
 
@@ -531,15 +616,13 @@ export default function WeddingPlannerDelhiBlog() {
           </h2>
 
           <p className="text-lg leading-8 text-gray-600 mb-10">
-            Professional planners follow a structured workflow. Understanding
-            this process before hiring a planner can help you evaluate how
-            organized and prepared their team is.
+            Professional planners follow a structured workflow.
           </p>
 
 
-          <div className="space-y-6">
+          {/* INITIAL CONSULTATION */}
 
-            {/* STEP 1 */}
+          <div className="space-y-6">
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -559,7 +642,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 2 */}
+            {/* BUDGET PLANNING */}
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -578,7 +661,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 3 */}
+            {/* VENUE SELECTION */}
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -597,7 +680,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 4 */}
+            {/* VENDOR MANAGEMENT */}
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -616,7 +699,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 5 */}
+            {/* DESIGN PLANNING */}
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -635,7 +718,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 6 */}
+            {/* TIMELINE MANAGEMENT */}
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
 
@@ -654,7 +737,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
 
-            {/* STEP 7 */}
+            {/* FINAL EXECUTION */}
 
             <div className="bg-[#EFEAE2] rounded-3xl p-8">
 
@@ -736,7 +819,7 @@ export default function WeddingPlannerDelhiBlog() {
         </section>
 
 
-        {/* QUESTIONS */}
+        {/* IMPORTANT QUESTIONS */}
 
         <section className="mb-16">
 
@@ -789,7 +872,7 @@ export default function WeddingPlannerDelhiBlog() {
           </div>
 
           <p className="text-lg leading-8 text-gray-600 mt-8">
-            These questions help determine whether they're the right fit.
+            These questions help determine whether they&apos;re the right fit.
           </p>
 
         </section>
@@ -809,7 +892,7 @@ export default function WeddingPlannerDelhiBlog() {
           </p>
 
 
-          {/* 10-12 MONTHS */}
+          {/* 10–12 MONTHS */}
 
           <div className="mb-10">
 
@@ -832,7 +915,7 @@ export default function WeddingPlannerDelhiBlog() {
           </div>
 
 
-          {/* 8-10 MONTHS */}
+          {/* 8–10 MONTHS */}
 
           <div className="mb-10">
 
@@ -985,7 +1068,7 @@ export default function WeddingPlannerDelhiBlog() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              Trust your planner's expertise.
+              Trust your planner&apos;s expertise.
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm">
@@ -1009,7 +1092,7 @@ export default function WeddingPlannerDelhiBlog() {
         </section>
 
 
-        {/* WHY PROFESSIONAL PLANNERS */}
+        {/* WHY PROFESSIONAL EVENT PLANNERS */}
 
         <section className="mb-16">
 
@@ -1077,14 +1160,14 @@ export default function WeddingPlannerDelhiBlog() {
 
             <p className="text-lg leading-8 text-white/80 mb-6">
               Selecting the right Wedding Planner in Delhi is one of the most
-              important decisions you'll make during your wedding journey. A
-              skilled planner transforms your ideas into a beautifully
+              important decisions you&apos;ll make during your wedding journey.
+              A skilled planner transforms your ideas into a beautifully
               organized celebration while managing every detail behind the
               scenes.
             </p>
 
             <p className="text-lg leading-8 text-white/80">
-              Whether you're looking for the best wedding planner in Delhi,
+              Whether you&apos;re looking for the best wedding planner in Delhi,
               premium luxury wedding planning services, an experienced
               destination wedding planner, a trusted wedding event management
               company, or talented wedding decorators in Delhi, take time to
@@ -1192,7 +1275,7 @@ export default function WeddingPlannerDelhiBlog() {
           <div className="py-8">
 
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              What is included in a wedding event management company's
+              What is included in a wedding event management company&apos;s
               services?
             </h3>
 
@@ -1207,7 +1290,7 @@ export default function WeddingPlannerDelhiBlog() {
         </section>
 
 
-        {/* BLOG CTA */}
+        {/* CTA */}
 
         <section className="mt-16">
 
@@ -1232,6 +1315,7 @@ export default function WeddingPlannerDelhiBlog() {
           </div>
 
         </section>
+
 
       </article>
 
