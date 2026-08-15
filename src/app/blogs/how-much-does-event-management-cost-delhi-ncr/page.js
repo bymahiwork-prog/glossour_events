@@ -394,11 +394,6 @@ export default function EventManagementCostDelhiNCRBlog() {
                 capacity, facilities, and budget.
               </p>
 
-            </div>
-
-          </section>
-
-
           {/* ================================
               MID-BLOG CTA
           ================================= */}
@@ -547,11 +542,6 @@ export default function EventManagementCostDelhiNCRBlog() {
               interruptions can affect the professionalism of the entire
               event.
             </p>
-
-          </section>
-
-        </div>
-      </article>
 
    {/* ================================
     SECTION 6
