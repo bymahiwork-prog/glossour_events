@@ -28,7 +28,7 @@ export default function EventManagementCostDelhiNCRBlog() {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
 
           <div className="relative z-10 flex h-full items-end">
-            <div className="mx-auto w-full max-w-7xl px-6 pb-12 sm:px-8 sm:pb-16 lg:px-12 lg:pb-20">
+            <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 lg:px-12 lg:pt-32 lg:pb-20">
 
               <div className="max-w-4xl">
 
