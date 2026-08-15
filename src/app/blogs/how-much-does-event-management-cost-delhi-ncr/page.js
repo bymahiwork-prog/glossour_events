@@ -65,7 +65,7 @@ export default function EventManagementCostDelhiNCRBlog() {
 
       <article className="w-full">
 
-        <div className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16 lg:px-0 lg:py-20">
+        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 lg:px-12 lg:pt-32 lg:pb-20">
 
 
           {/* ========================================
