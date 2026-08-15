@@ -78,7 +78,7 @@ export default function BlogsPage() {
     },
     {
   href: "/blogs/how-much-does-event-management-cost-delhi-ncr",
-  image: "/blogs/how-much-does-event-management-cost-delhi-ncr.jpg",
+  image: "/blogs/how-much-does-event-management-cost-delhi-ncr.png",
   alt: "How Much Does Event Management Cost in Delhi NCR? A Complete Pricing Guide for Businesses",
   category: "Corporate Events",
   title:
