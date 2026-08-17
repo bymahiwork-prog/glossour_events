@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { Star, MapPin } from "lucide-react";
 
 const Apartments = () => {
@@ -30,33 +31,6 @@ const Apartments = () => {
     }
   };
 
-  const reviews = [
-    {
-      id: 1,
-      author: "J.B.",
-      venue: "Luxury Apartment in Chattarpur",
-      text: "The apartment was spotless and beautifully maintained. Perfect for our private celebration.",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 2,
-      author: "A.K.",
-      venue: "Premium Stay Experience",
-      text: "Amazing interiors, smooth booking process and excellent hospitality throughout our stay.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      id: 3,
-      author: "S.M.",
-      venue: "Weekend Apartment Booking",
-      text: "Highly recommended for staycations and small gatherings. Will definitely book again.",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80",
-    },
-  ];
-
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -70,8 +44,15 @@ const Apartments = () => {
   return (
     <div className="min-h-screen bg-white">
 
+      {/* Elfsight Google Reviews Script */}
+      <Script
+        src="https://elfsightcdn.com/platform.js"
+        strategy="afterInteractive"
+      />
+
       <div className="max-w-7xl mx-auto px-4 py-16">
 
+        {/* Apartments Section */}
         <div className="mb-16">
 
           <h1 className="text-4xl font-bold text-gray-900 mb-8">
@@ -111,10 +92,13 @@ const Apartments = () => {
                   <div className="flex items-center justify-between mb-3">
 
                     <div className="flex items-center">
+
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 mr-1" />
+
                       <span className="font-medium">
                         {venue.rating || "5.0"}
                       </span>
+
                     </div>
 
                     <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">
@@ -147,7 +131,10 @@ const Apartments = () => {
           </div>
 
         </div>
-                {/* Reviews Section */}
+
+        {/* ================================================= */}
+        {/* REAL REVIEWS - ELFSIGHT */}
+        {/* ================================================= */}
 
         <div>
 
@@ -155,48 +142,12 @@ const Apartments = () => {
             Reviews for Apartments
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="w-full">
 
-            {reviews.map((review) => (
-
-              <div
-                key={review.id}
-                className="bg-white p-4 border rounded-lg"
-              >
-
-                <div className="flex items-start mb-3">
-
-                  <img
-                    src={review.avatar}
-                    alt={review.author}
-                    className="w-10 h-10 rounded-full mr-3 object-cover"
-                  />
-
-                  <div>
-
-                    <h4 className="font-semibold">
-                      {review.author}
-                    </h4>
-
-                    <p className="text-sm text-gray-600">
-                      {review.venue}
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <p className="text-sm text-gray-700">
-                  {review.text}
-                </p>
-
-                <button className="mt-3 text-blue-600 font-medium hover:underline">
-                  Read more
-                </button>
-
-              </div>
-
-            ))}
+            <div
+              className="elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b"
+              data-elfsight-app-lazy
+            />
 
           </div>
 
