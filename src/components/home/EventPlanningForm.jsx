@@ -26,21 +26,21 @@ export default function EventPlanningForm() {
 
 I would like to start planning an event.
 
-📌 Planning Type: ${activeTab}
+Planning Type: ${activeTab}
 
-🎉 Occasion:
+Occasion:
 ${occasion}
 
-📝 Description:
+Description:
 ${description}
 
-👥 Number of Guests:
+Number of Guests:
 ${guests}
 
-💰 Budget:
+Budget:
 ${budget}
 
-📅 Preferred Date:
+Preferred Date:
 ${date}
 
 I would like to discuss the details further. Thank you!`;
