@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { Star, MapPin } from "lucide-react";
 
 const WeddingVenue = () => {
@@ -42,7 +43,16 @@ const WeddingVenue = () => {
 
   return (
     <div className="min-h-screen bg-white">
+
+      {/* Elfsight Google Reviews Script */}
+      <Script
+        src="https://elfsightcdn.com/platform.js"
+        strategy="afterInteractive"
+      />
+
       <div className="max-w-7xl mx-auto px-4 py-16">
+
+        {/* Wedding Venues */}
 
         <div className="mb-16">
 
@@ -59,6 +69,8 @@ const WeddingVenue = () => {
                 className="bg-white overflow-hidden shadow-sm border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300"
               >
 
+                {/* Image */}
+
                 <div className="relative h-56 overflow-hidden">
 
                   <img
@@ -68,6 +80,8 @@ const WeddingVenue = () => {
                   />
 
                 </div>
+
+                {/* Details */}
 
                 <div className="p-4">
 
@@ -83,10 +97,13 @@ const WeddingVenue = () => {
                   <div className="flex items-center justify-between mb-3">
 
                     <div className="flex items-center">
+
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400 mr-1" />
+
                       <span className="font-medium">
                         {venue.rating || "5.0"}
                       </span>
+
                     </div>
 
                     <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">
@@ -115,6 +132,29 @@ const WeddingVenue = () => {
               </div>
 
             ))}
+
+          </div>
+
+        </div>
+
+        {/* ================================================= */}
+        {/* REAL GOOGLE REVIEWS - ELFSIGHT */}
+        {/* ================================================= */}
+
+        <div className="mt-20">
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            Reviews for Wedding Venues
+          </h2>
+
+          {/* Elfsight Google Reviews */}
+
+          <div className="w-full">
+
+            <div
+              className="elfsight-app-cf2a2808-87bc-4a9d-8105-d801d0a7be8b"
+              data-elfsight-app-lazy
+            />
 
           </div>
 
