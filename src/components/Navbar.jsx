@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 const Navbar = ({ variant = "transparent" }) => {
@@ -174,9 +176,11 @@ const Navbar = ({ variant = "transparent" }) => {
           </a>
 
 
-          {/* Contact CTA */}
+          {/* Contact CTA - WhatsApp */}
           <a
-            href="/contact"
+            href="https://wa.me/917838008069"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-1 inline-flex items-center justify-center bg-[#d6b36a] px-6 xl:px-7 py-2.5 text-xs font-semibold tracking-[0.08em] uppercase text-black transition-all duration-300 hover:bg-white"
           >
             Get In Touch
@@ -391,7 +395,9 @@ const Navbar = ({ variant = "transparent" }) => {
           <div className="p-6 border-t border-neutral-200">
 
             <a
-              href="/contact"
+              href="https://wa.me/917838008069"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex w-full items-center justify-center bg-[#d6b36a] px-6 py-3.5 text-xs font-semibold tracking-[0.12em] uppercase text-black transition-all duration-300 hover:bg-black hover:text-white"
               onClick={closeMobileMenu}
             >
