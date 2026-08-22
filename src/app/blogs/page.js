@@ -88,7 +88,7 @@ export default function BlogsPage() {
 },
     {
   href: "/blogs/corporate-event-ideas-delhi-ncr",
-  image: "/blogs/corporate-event-ideas-delhi-ncr-cover.png",
+  image: "/blogs/corporate-event-ideas-delhi-ncr.png",
   alt: "15 Corporate Event Ideas in Delhi NCR That Will Impress Your Guests",
   category: "Corporate Events",
   title:
