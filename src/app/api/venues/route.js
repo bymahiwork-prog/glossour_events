@@ -12,9 +12,9 @@ export async function GET(req) {
 
     const page = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
     const limit =
-      Number.isFinite(limitParam) && limitParam > 0 && limitParam <= 50
-        ? limitParam
-        : 9;
+  Number.isFinite(limitParam) && limitParam > 0 && limitParam <= 100
+    ? limitParam
+    : 9;
 
     const search = (searchParams.get("search") || "").trim();
     const categoryId = (searchParams.get("categoryId") || "").trim();
