@@ -86,6 +86,16 @@ export default function BlogsPage() {
   description:
     "Understand event management costs in Delhi NCR, including venue pricing, catering, décor, production, entertainment, staffing, planning fees, and corporate event budgeting.",
 },
+    {
+  href: "/blogs/how-much-does-event-management-cost-delhi-ncr",
+  image: "/blogs/how-much-does-event-management-cost-delhi-ncr.png",
+  alt: "How Much Does Event Management Cost in Delhi NCR? A Complete Pricing Guide for Businesses",
+  category: "Corporate Events",
+  title:
+    "How Much Does Event Management Cost in Delhi NCR? A Complete Pricing Guide for Businesses",
+  description:
+    "Understand event management costs in Delhi NCR, including venue pricing, catering, décor, production, entertainment, staffing, planning fees, and corporate event budgeting.",
+},
   ];
 
   return (
