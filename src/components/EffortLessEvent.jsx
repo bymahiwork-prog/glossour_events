@@ -3,10 +3,13 @@ const EffortLessEvent = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <img
-        src="/home-page.png"
-        alt="Event Background"
-        className="absolute inset-0 w-full h-[80vh] object-cover z-0"
-      />
+  src="/home-page.png"
+  alt="Event Background"
+  className="absolute inset-0 w-full h-[80vh] object-cover z-0"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+/>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 z-10" />
